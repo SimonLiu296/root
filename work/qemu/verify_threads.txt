@@ -1,0 +1,33 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+set $init = 0xffffffc00aaec240
+echo ---INIT-TASK-FIELDS---
+printf "init+0x5d8(signal?) = %016lx\n", *(unsigned long*)($init+0x5d8)
+printf "init+0x5e0 = %016lx\n", *(unsigned long*)($init+0x5e0)
+printf "init+0x5e8 = %016lx\n", *(unsigned long*)($init+0x5e8)
+printf "init+0x5f0 = %016lx\n", *(unsigned long*)($init+0x5f0)
+printf "init+0x608 = %016lx\n", *(unsigned long*)($init+0x608)
+printf "init+0x678 = %016lx\n", *(unsigned long*)($init+0x678)
+echo ---THREAD-HUNT---
+set $sig = *(unsigned long*)($init + 0x5d8)
+printf "sig = %016lx\n", $sig
+set $thead = $sig + 0x5e8
+printf "thead = %016lx\n", $thead
+set $tnode = *(unsigned long*)$thead
+printf "thead.next = %016lx\n", $tnode
+set $tt = $tnode - 0x678
+printf "thread1 task = %016lx\n", $tt
+printf "thread1 pid = %d\n", *(int*)($tt + 0x5c8)
+printf "thread1 pib = %016lx\n", *(unsigned long*)($tt + 0x898)
+set $tnode2 = *(unsigned long*)$tnode
+set $tt2 = $tnode2 - 0x678
+printf "thread2 task = %016lx pid=%d pib=%016lx\n", $tt2, *(int*)($tt2+0x5c8), *(unsigned long*)($tt2+0x898)
+set $tnode3 = *(unsigned long*)$tnode2
+set $tt3 = $tnode3 - 0x678
+printf "thread3 task = %016lx pid=%d pib=%016lx\n", $tt3, *(int*)($tt3+0x5c8), *(unsigned long*)($tt3+0x898)
+echo ---DONE---
+detach
+quit

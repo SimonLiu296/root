@@ -1,0 +1,24 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+set $init = 0xffffffc00aaec240
+set $cur = $init
+set $i = 0
+while $i < 3000
+  set $pid = *(int*)($cur + 0x5c8)
+  set $pib = *(unsigned long*)($cur + 0x898)
+  if $pid > 100
+    printf "task=%016lx pid=%d tgid=%d pib=%016lx\n", $cur, $pid, *(int*)($cur+0x5cc), $pib
+  end
+  set $next = *(unsigned long*)($cur + 0x4c8)
+  if $next == $init
+    set $i = 3000
+  end
+  set $cur = $next - 0x4c8
+  set $i = $i + 1
+end
+echo ===SCAN-DONE===
+detach
+quit

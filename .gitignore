@@ -1,2 +1,7 @@
 # Big files
 *.zip
+
+src/
+tools/
+
+work/ota_out/recovery.img

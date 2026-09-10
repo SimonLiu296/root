@@ -1,0 +1,11 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+echo ---SEARCH-TID-134---\n
+find /w 0xffffffc00b000000, 0xffffffc00c000000, 134
+echo ---SEARCH-DONE---\n
+echo ---CHECK-TASK-CANDIDATES---\n
+detach
+quit

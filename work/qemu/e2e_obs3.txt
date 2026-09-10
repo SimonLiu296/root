@@ -1,0 +1,20 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+break *0xffffffc008227e34
+commands
+  silent
+  printf "ADJUST_PI hit: task=%016lx pib=%016lx\n", $x19, *(unsigned long*)($x19+0x898)
+  continue
+end
+echo ===BREAK1-SET===
+break *0xffffffc008227eac
+commands
+  silent
+  printf "CBZ_X8 hit: pib=%016lx\n", $x8
+  continue
+end
+echo ===BREAK2-SET===
+continue

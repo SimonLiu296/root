@@ -1,0 +1,13 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+set $pib = $x28
+set $base = ($pib & 0xffffffffffffc000)
+printf "PIB=%016lx STACKBASE=%016lx\n", $pib, $base
+echo ---FULLSTACK-DUMP---
+x/2048gx $base
+echo ---END---
+detach
+quit

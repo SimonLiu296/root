@@ -1,0 +1,423 @@
+﻿[    0.000000][    T0] Booting Linux on physical CPU 0x0000000000 [0x410fd083]
+[    0.000000][    T0] Linux version 5.10.246-android12-9-g9c94fefc2317-dirty (build-user@build-host) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), LLD 12.0.5 (/buildbot/src/android/llvm-toolchain/out/llvm-project/lld c935d99d7cf2016289302412d708641d52d2f7ee)) #1 SMP PREEMPT Wed Jul 15 06:16:32 UTC 2026
+[    0.000000][    T0] start_kernel from soc kernel
+[    0.000000][    T0] random: crng init done
+[    0.000000][    T0] Machine model: linux,dummy-virt
+[    0.000000][    T0] Stack Depot is disabled
+[    0.000000][    T0] KVM is not available. Ignoring kvm-arm.mode
+[    0.000000][    T0] efi: UEFI not found.
+[    0.000000][    T0] Zone ranges:
+[    0.000000][    T0]   DMA32    [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000][    T0]   Normal   empty
+[    0.000000][    T0] Movable zone start for each node
+[    0.000000][    T0] Early memory node ranges
+[    0.000000][    T0]   node   0: [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000][    T0] Initmem setup node 0 [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000][    T0] cma: Reserved 16 MiB at 0x00000000bc800000
+[    0.000000][    T0] psci: probing for conduit method from DT.
+[    0.000000][    T0] psci: PSCIv1.1 detected in firmware.
+[    0.000000][    T0] psci: Using standard PSCI v0.2 function IDs
+[    0.000000][    T0] psci: Trusted OS migration not required
+[    0.000000][    T0] psci: SMC Calling Convention v1.0
+[    0.000000][    T0] percpu: Embedded 35 pages/cpu s103064 r8192 d32104 u143360
+[    0.000000][    T0] Detected PIPT I-cache on CPU0
+[    0.000000][    T0] CPU features: SYS_ID_AA64MMFR1_EL1[11:8]: already set to 0
+[    0.000000][    T0] CPU features: detected: Spectre-v3a
+[    0.000000][    T0] CPU features: detected: Spectre-v2
+[    0.000000][    T0] CPU features: detected: Spectre-v4
+[    0.000000][    T0] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000][    T0] CPU features: detected: Spectre-BHB
+[    0.000000][    T0] CPU features: detected: ARM erratum 1742098
+[    0.000000][    T0] Built 1 zonelists, mobility grouping on.  Total pages: 516096
+[    0.000000][    T0] Kernel command line: stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure cgroup.memory=nokmem console=ttyAMA0 nokaslr rdinit=/init panic=-1
+[    0.000000][    T0] cgroup: Disabling pressure control group feature
+[    0.000000][    T0] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000][    T0] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000][    T0] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000][    T0] Memory: 1990340K/2097152K available (28864K kernel code, 2406K rwdata, 11680K rodata, 3200K init, 1957K bss, 90428K reserved, 16384K cma-reserved)
+[    0.000000][    T0] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000][    T0] 
+[    0.000000][    T0] **********************************************************
+[    0.000000][    T0] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.000000][    T0] **                                                      **
+[    0.000000][    T0] ** trace_printk() being used. Allocating extra memory.  **
+[    0.000000][    T0] **                                                      **
+[    0.000000][    T0] ** This means that this is a DEBUG kernel and it is     **
+[    0.000000][    T0] ** unsafe for production use.                           **
+[    0.000000][    T0] **                                                      **
+[    0.000000][    T0] ** If you see this message and you are not debugging    **
+[    0.000000][    T0] ** the kernel, report this immediately to your vendor!  **
+[    0.000000][    T0] **                                                      **
+[    0.000000][    T0] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.000000][    T0] **********************************************************
+[    0.000000][    T0] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000][    T0] rcu: 	RCU event tracing is enabled.
+[    0.000000][    T0] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000][    T0] rcu: 	RCU restricting CPUs from NR_CPUS=32 to nr_cpu_ids=4.
+[    0.000000][    T0] rcu: 	RCU priority boosting: priority 1 delay 500 ms.
+[    0.000000][    T0] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000][    T0] 	Tracing variant of Tasks RCU enabled.
+[    0.000000][    T0] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000][    T0] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000][    T0] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000][    T0] GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+[    0.000000][    T0] rcu: 	Offload RCU callbacks from CPUs: (none).
+[    0.000000][    T0] kfence: initialized - using 524288 bytes for 63 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.000000][    T0] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+[    0.000000][    T0] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+[    0.000050][    T0] sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.003668][    T0] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+[    0.003789][    T0] pid_max: default: 32768 minimum: 301
+[    0.008089][    T0] LSM: Security Framework initializing
+[    0.008842][    T0] SELinux:  Initializing.
+[    0.009379][    T0] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.009416][    T0] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.017051][    T0] PARTITION_PROTECT[create_monitor_kobject]: create group success
+[    0.035883][    T1] /cpus/cpu-map: empty cluster
+[    0.042317][    T1] RSC fifokwoker: set kworker(kworker/0:0H/F) to fifo nice: 0xbeeefeed flags: 0x0.
+[    0.043863][    T1] RSC fifokwoker: set kworker(kworker/0:0H/F) to fifo nice: 0xbeeffeed flags: 0x0.
+[    0.051332][    T1] rcu: Hierarchical SRCU implementation.
+[    0.055458][    T1] EFI services will not be available.
+[    0.056412][    T1] smp: Bringing up secondary CPUs ...
+[    0.061307][    T1] RSC fifokwoker: set kworker(kworker/1:0H/F) to fifo nice: 0xbeeefeed flags: 0x4.
+[    0.061432][    T1] RSC fifokwoker: set kworker(kworker/1:0H/F) to fifo nice: 0xbeeffeed flags: 0x4.
+[    0.063300][    T0] Detected PIPT I-cache on CPU1
+[    0.063964][    T0] CPU1: Booted secondary processor 0x0000000001 [0x410fd083]
+[    0.069991][    T1] RSC fifokwoker: set kworker(kworker/2:0H/F) to fifo nice: 0xbeeefeed flags: 0x4.
+[    0.070642][    T1] RSC fifokwoker: set kworker(kworker/2:0H/F) to fifo nice: 0xbeeffeed flags: 0x4.
+[    0.071907][    T0] Detected PIPT I-cache on CPU2
+[    0.072132][    T0] CPU2: Booted secondary processor 0x0000000002 [0x410fd083]
+[    0.073850][    T1] RSC fifokwoker: set kworker(kworker/3:0H/F) to fifo nice: 0xbeeefeed flags: 0x4.
+[    0.074045][    T1] RSC fifokwoker: set kworker(kworker/3:0H/F) to fifo nice: 0xbeeffeed flags: 0x4.
+[    0.075295][    T0] Detected PIPT I-cache on CPU3
+[    0.075474][    T0] CPU3: Booted secondary processor 0x0000000003 [0x410fd083]
+[    0.075941][    T1] smp: Brought up 1 node, 4 CPUs
+[    0.075972][    T1] SMP: Total of 4 processors activated.
+[    0.076079][    T1] CPU features: detected: 32-bit EL0 Support
+[    0.076127][    T1] CPU features: detected: CRC32 instructions
+[    0.076176][    T1] CPU features: detected: 32-bit EL1 Support
+[    0.080457][    T1] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.225660][    T1] CPU: All CPU(s) started at EL1
+[    0.226652][   T18] alternatives: patching kernel code
+[    0.249038][    T1] Registered cp15_barrier emulation handler
+[    0.249255][    T1] Registered setend emulation handler
+[    0.249507][    T1] KASLR disabled on command line
+[    0.250947][    T1] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.251102][    T1] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.256265][    T1] pinctrl core: initialized pinctrl subsystem
+[    0.268789][    T1] NET: Registered protocol family 16
+[    0.274538][    T8] RSC fifokwoker: set kworker(kworker/0:1H/F) to fifo nice: 0xbeeffeed flags: 0x1.
+[    0.274550][   T43] RSC fifokwoker: set kworker(kworker/3:1H/F) to fifo nice: 0xbeeffeed flags: 0x1.
+[    0.274578][   T27] RSC fifokwoker: set kworker(kworker/1:1H/F) to fifo nice: 0xbeeffeed flags: 0x1.
+[    0.274628][   T35] RSC fifokwoker: set kworker(kworker/2:1H/F) to fifo nice: 0xbeeffeed flags: 0x1.
+[    0.282893][    T1] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    0.284653][    T1] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.285157][    T1] audit: initializing netlink subsys (disabled)
+[    0.287592][   T49] audit: type=2000 audit(0.240:1): state=initialized audit_enabled=0 res=1
+[    0.291176][    T1] thermal_sys: Registered thermal governor 'step_wise'
+[    0.291235][    T1] thermal_sys: Registered thermal governor 'user_space'
+[    0.291256][    T1] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.292430][    T1] cpuidle: using governor menu
+[    0.293507][    T1] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.294225][    T1] ASID allocator initialised with 65536 entries
+[    0.296106][    T1] Serial: AMBA PL011 UART driver
+[    0.315052][    T1] 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 47, base_baud = 0) is a PL011 rev1
+[    0.333897][    T1] printk: console [ttyAMA0] enabled
+[    0.387681][    T1] iommu: Default domain type: Translated 
+[    0.391309][    T1] SCSI subsystem initialized
+[    0.392113][    T1] usbcore: registered new interface driver usbfs
+[    0.392437][    T1] usbcore: registered new interface driver hub
+[    0.392682][    T1] usbcore: registered new device driver usb
+[    0.393669][    T1] mc: Linux media interface: v0.10
+[    0.393952][    T1] videodev: Linux video capture interface: v2.00
+[    0.395107][    T1] EDAC MC: Ver: 3.0.0
+[    0.399438][    T1] Advanced Linux Sound Architecture Driver Initialized.
+[    0.405704][    T1] Bluetooth: Core ver 2.22
+[    0.405942][    T1] NET: Registered protocol family 31
+[    0.406082][    T1] Bluetooth: HCI device and connection manager initialized
+[    0.406390][    T1] Bluetooth: HCI socket layer initialized
+[    0.406546][    T1] Bluetooth: L2CAP socket layer initialized
+[    0.406806][    T1] Bluetooth: SCO socket layer initialized
+[    0.408202][    T1] nfc: nfc_init: NFC Core ver 0.1
+[    0.408715][    T1] NET: Registered protocol family 39
+[    0.410421][    T1] clocksource: Switched to clocksource arch_sys_counter
+[    0.473502][    T1] VFS: Disk quotas dquot_6.6.0
+[    0.473837][    T1] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.476619][    T1] NET: Registered protocol family 2
+[    0.478123][    T1] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.484660][    T1] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.485384][    T1] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.485852][    T1] TCP bind hash table entries: 16384 (order: 6, 262144 bytes, linear)
+[    0.486344][    T1] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.487980][    T1] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.488364][    T1] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.489630][    T1] NET: Registered protocol family 1
+[    0.490089][    T1] NET: Registered protocol family 44
+[    0.490485][    T1] PCI: CLS 0 bytes, default 64
+[    0.497125][    T1] Trying to unpack rootfs image as initramfs...
+[    0.504199][    T1] Freeing initrd memory: 4K
+[    0.514337][    T1] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.515312][    T1] kvm [1]: HYP mode not available
+[    0.526031][    T1] Initialise system trusted keyrings
+[    0.528056][    T1] workingset: timestamp_bits=46 max_order=19 bucket_order=0
+[    0.535522][  T129] VMET:<kthppoold, 594>: kthppoold ...... running
+[    0.539642][    T1] fuse: init (API version 7.32)
+[    0.564634][    T1] Key type asymmetric registered
+[    0.564921][    T1] Asymmetric key parser 'x509' registered
+[    0.565276][    T1] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 241)
+[    0.565839][    T1] io scheduler mq-deadline registered
+[    0.566097][    T1] io scheduler kyber registered
+[    0.566661][    T1] io scheduler bfq registered
+[    0.566795][    T1] FCACHE: filecache_init: total=2054889472
+[    0.571970][    T1] pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+[    0.573163][    T1] pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+[    0.573776][    T1] pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+[    0.574250][    T1] pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+[    0.574453][    T1] pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+[    0.576417][    T1] pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    0.577283][    T1] pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+[    0.577584][    T1] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.577754][    T1] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    0.577882][    T1] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+[    0.578012][    T1] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+[    0.579267][    T1] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    0.582690][    T1] pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000
+[    0.583082][    T1] pci 0000:00:01.0: reg 0x10: [io  0x0000-0x001f]
+[    0.583234][    T1] pci 0000:00:01.0: reg 0x14: [mem 0x00000000-0x00000fff]
+[    0.583554][    T1] pci 0000:00:01.0: reg 0x20: [mem 0x00000000-0x00003fff 64bit pref]
+[    0.583716][    T1] pci 0000:00:01.0: reg 0x30: [mem 0x00000000-0x0003ffff pref]
+[    0.586784][    T1] pci 0000:00:01.0: BAR 6: assigned [mem 0x10000000-0x1003ffff pref]
+[    0.587132][    T1] pci 0000:00:01.0: BAR 4: assigned [mem 0x8000000000-0x8000003fff 64bit pref]
+[    0.587614][    T1] pci 0000:00:01.0: BAR 1: assigned [mem 0x10040000-0x10040fff]
+[    0.588031][    T1] pci 0000:00:01.0: BAR 0: assigned [io  0x1000-0x101f]
+[    0.593855][   T19] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    0.613947][    T1] brd: module loaded
+[    0.628850][    T1] loop: module loaded
+[    0.629312][    T1] mobile_data_tcp_module_init 2023_0620
+[    0.629871][    T1] #### cellular_static_conunt_init in version V0.1
+[    0.634653][    T1] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[    0.634845][    T1] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[    0.638200][    T1] tun: Universal TUN/TAP device driver, 1.6
+[    0.638534][    T1] CAN device driver interface
+[    0.638653][    T1] PPP generic driver version 2.4.2
+[    0.639325][    T1] PPP BSD Compression module registered
+[    0.639518][    T1] PPP Deflate Compression module registered
+[    0.639704][    T1] PPP MPPE Compression module registered
+[    0.639860][    T1] NET: Registered protocol family 24
+[    0.639982][    T1] PPTP driver version 0.8.5
+[    0.640651][    T1] usbcore: registered new interface driver rtl8150
+[    0.640809][    T1] usbcore: registered new interface driver r8152
+[    0.641018][    T1] usbcore: registered new interface driver cdc_ether
+[    0.641245][    T1] usbcore: registered new interface driver cdc_eem
+[    0.642060][    T1] usbcore: registered new interface driver cdc_ncm
+[    0.642594][    T1] usbcore: registered new interface driver aqc111
+[    0.643618][    T1] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.643852][    T1] ehci-pci: EHCI PCI platform driver
+[    0.644100][    T1] ehci-platform: EHCI generic platform driver
+[    0.644844][    T1] usbcore: registered new interface driver cdc_acm
+[    0.644966][    T1] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    0.646005][    T1] usbcore: registered new interface driver uas
+[    0.646230][    T1] usbcore: registered new interface driver usb-storage
+[    0.648066][    T1] dummy_hcd dummy_hcd.0: USB Host+Gadget Emulator, driver 02 May 2005
+[    0.648529][    T1] dummy_hcd dummy_hcd.0: Dummy host controller
+[    0.648822][    T1] dummy_hcd dummy_hcd.0: new USB bus registered, assigned bus number 1
+[    0.652965][    T1] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+[    0.653193][    T1] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.653354][    T1] usb usb1: Product: Dummy host controller
+[    0.653899][    T1] usb usb1: Manufacturer: Linux 5.10.246-android12-9-g9c94fefc2317-dirty dummy_hcd
+[    0.654222][    T1] usb usb1: SerialNumber: dummy_hcd.0
+[    0.657285][    T1] hub 1-0:1.0: USB hub found
+[    0.657822][    T1] hub 1-0:1.0: 1 port detected
+[    0.666574][    T1] usbcore: registered new interface driver xpad
+[    0.669569][    T1] rtc-pl031 9010000.pl031: registered as rtc0
+[    0.670310][    T1] rtc-pl031 9010000.pl031: setting system clock to 2026-08-23T15:52:34 UTC (1787500354)
+[    0.671098][    T1] i2c /dev entries driver
+[    0.671480][    T1] usbcore: registered new interface driver uvcvideo
+[    0.671685][    T1] USB Video Class driver (1.1.1)
+[    0.672059][    T1] gspca_main: v2.14.0 registered
+[    0.672859][    T1] device-mapper: uevent: version 1.0.3
+[    0.673658][    T1] device-mapper: ioctl: 4.44.0-ioctl (2021-02-01) initialised: dm-devel@redhat.com
+[    0.675428][    T1] Bluetooth: HCI UART driver ver 2.3
+[    0.675617][    T1] Bluetooth: HCI UART protocol H4 registered
+[    0.675770][    T1] Bluetooth: HCI UART protocol LL registered
+[    0.675951][    T1] Bluetooth: HCI UART protocol Broadcom registered
+[    0.676102][    T1] Bluetooth: HCI UART protocol QCA registered
+[    0.677427][    T1] sdhci: Secure Digital Host Controller Interface driver
+[    0.677583][    T1] sdhci: Copyright(c) Pierre Ossman
+[    0.677673][    T1] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.678072][    T1] hid: raw HID events driver (C) Jiri Kosina
+[    0.680975][    T1] usbcore: registered new interface driver usbhid
+[    0.681111][    T1] usbhid: USB HID core driver
+[    0.681632][    T1] ashmem: initialized
+[    0.682974][    T1] gnss: GNSS driver registered with major 234
+[    0.683418][    T1] #### sla_static_collector_init in version V0.97
+[    0.683940][    T1] vne(vne_network_qoe_init): complete
+[    0.684142][    T1] vne(vne_network_syn_init): complete
+[    0.684238][    T1] vne(vivo_net_evolve_init): successed!
+[    0.684872][    T1] [netb] netbooster_init: init netbooster ver 1.0
+[    0.685813][    T1] sch_uprio: [prio_module_init]
+[    0.685958][    T1] sch_cfg: callback(1) registered successfully
+[    0.687731][    T1] system_exception initialized
+[    0.688839][    T1] usbcore: registered new interface driver snd-usb-audio
+[    0.690659][    T1] GACT probability NOT on
+[    0.691261][    T1] Mirror/redirect action on
+[    0.691846][    T1] netem: version 1.3
+[    0.692172][    T1] u32 classifier
+[    0.692250][    T1]     input device check on
+[    0.692335][    T1]     Actions configured
+[    0.699244][    T1] xt_time: kernel timezone is -0000
+[    0.699781][    T1] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    0.701642][    T1] gre: GRE over IPv4 demultiplexor driver
+[    0.701804][    T1] ip_gre: GRE over IPv4 tunneling driver
+[    0.703994][    T1] IPv4 over IPsec tunneling driver
+[    0.709387][    T1] Initializing XFRM netlink socket
+[    0.709782][    T1] IPsec XFRM device driver
+[    0.710966][    T1] NET: Registered protocol family 10
+[    0.719329][    T1] Segment Routing with IPv6
+[    0.720077][    T1] mip6: Mobile IPv6
+[    0.723970][    T1] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    0.727221][    T1] ip6_gre: GRE over IPv6 tunneling driver
+[    0.728564][    T1] NET: Registered protocol family 17
+[    0.728986][    T1] NET: Registered protocol family 15
+[    0.729487][    T1] can: controller area network core
+[    0.729998][    T1] NET: Registered protocol family 29
+[    0.730135][    T1] can: raw protocol
+[    0.730332][    T1] can: broadcast manager protocol
+[    0.730558][    T1] can: netlink gateway - max_hops=1
+[    0.731741][    T1] Bluetooth: RFCOMM TTY layer initialized
+[    0.732492][    T1] Bluetooth: RFCOMM socket layer initialized
+[    0.732707][    T1] Bluetooth: RFCOMM ver 1.11
+[    0.732843][    T1] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    0.732999][    T1] Bluetooth: HIDP socket layer initialized
+[    0.733292][    T1] l2tp_core: L2TP core driver, V2.0
+[    0.733634][    T1] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    0.733790][    T1] tipc: Activated (version 2.0.0)
+[    0.735427][    T1] NET: Registered protocol family 30
+[    0.737005][    T1] tipc: Started in single node mode
+[    0.754059][    T1] NET: Registered protocol family 36
+[    0.755042][    T1] NET: Registered protocol family 40
+[    0.756128][    T1] registered taskstats version 1
+[    0.756371][    T1] sizeof(struct vivo_tsk_struct) 352 task_struct 480
+[    0.756395][    T1] ^RSC @rsc_main_data_init: done!
+[    0.761533][    T1] rsc_sys_api: rsc_kallsyms_lookup_name lookup for symbol kernfs_setattr
+[    0.764391][    T1] rsc_sys_api: rsc_kallsyms_lookup_name lookup for symbol filp_open
+[    0.766843][    T1] rsc_sys_api: rsc_kallsyms_lookup_name lookup for symbol kernel_write
+[    0.769865][    T1] ^RSC @rsc_main_pdrv_probe: rsc probe done!
+[    0.772142][    T1] ^RSC init_cpu_core_masks cluster num: 0 topeff: 1024 maxeff: 1024 mineff: 1024 rsc_cpu_bigcore: 0-3 littlecore: 0-3 lastcore: 3 bigcorenum: 4 midcore: 0-3 maxcore: 
+[    0.773488][    T1] rsc_vaudit: rsc_vaudit_init start
+[    0.773496][  T150] wait for cpufreq driver register
+[    0.773800][    T1] rsc_vaudit: rsc_vaudit_init cpu 0 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 4
+[    0.774034][    T1] rsc_vaudit: rsc_vaudit_init cpu 0 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 0
+[    0.774254][    T1] rsc_vaudit: rsc_vaudit_init cpu 1 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 4
+[    0.774450][    T1] rsc_vaudit: rsc_vaudit_init cpu 1 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 0
+[    0.774665][    T1] rsc_vaudit: rsc_vaudit_init cpu 2 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 4
+[    0.775009][    T1] rsc_vaudit: rsc_vaudit_init cpu 2 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 0
+[    0.775265][    T1] rsc_vaudit: rsc_vaudit_init cpu 3 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 4
+[    0.775460][    T1] rsc_vaudit: rsc_vaudit_init cpu 3 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 0
+[    0.775708][    T1] rsc_vaudit: rsc_vaudit_init cpu 4 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 4
+[    0.775920][    T1] rsc_vaudit: rsc_vaudit_init cpu 4 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 0
+[    0.776145][    T1] rsc_vaudit: rsc_vaudit_init cpu 5 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 0
+[    0.776355][    T1] rsc_vaudit: rsc_vaudit_init cpu 5 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 0
+[    0.776556][    T1] rsc_vaudit: rsc_vaudit_init cpu 6 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 0
+[    0.776804][    T1] rsc_vaudit: rsc_vaudit_init cpu 6 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 0
+[    0.777019][    T1] rsc_vaudit: rsc_vaudit_init cpu 7 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 0
+[    0.777238][    T1] rsc_vaudit: rsc_vaudit_init cpu 7 func ffffffc009a21550(wake_up_fifo_out_work_func.cfi_jt+0x0/0x8) flag 0
+[    0.778578][    T1] rsc_sys_api: rsc_kallsyms_lookup_name lookup for symbol get_wchan
+[    0.778650][    T1] rsc_vaudit: rsc_vaudit_init rsc_kallsyms_lookup_name succcess
+[    0.779537][    T1] rsc_vaudit: register_vaudit_vendor_hooks ok
+[    0.779732][    T1] rsc_vaudit: ^RSC vaudit rsc_vaudit_init: inited! vaudit_fifo size: 4096 lastsize: 128
+[    0.780352][    T1] Scheduler tracepoints stat_sleep, stat_iowait, stat_blocked and stat_runtime require the kernel parameter schedstats=enable or kernel.sched_schedstats=1
+[    0.781393][    T1] rsc_binder_event: rsc_binder_event_notif_init finish!
+[    0.782325][    T1] rsc_sys_api: rsc_kallsyms_lookup_name lookup for symbol binder_add_freeze_work
+[    0.790568][    T1] rsc_sys_api: rsc_kallsyms_lookup_name lookup for symbol binder_free_proc
+[    0.799850][    T1] rsc_sys_api: rsc_kallsyms_lookup_name lookup for symbol binder_wakeup_poll_threads_ilocked
+[    0.809956][    T1] rsc_binder_frozen_callback: rsc_binder_frozen_callback_init finish!
+[    0.810824][    T1] rsc_tsk_policy: module init ok!
+[    0.814105][    T1] ^RSC rsc driver init done!
+[    0.814931][    T1] Loading compiled-in X.509 certificates
+[    0.815504][    T1] page_owner is disabled
+[    0.816070][    T1] Key type .fscrypt registered
+[    0.816175][    T1] Key type fscrypt-provisioning registered
+[    0.819991][    T1] 
+[    0.820066][    T1] ********************************************************************
+[    0.820256][    T1] **     NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE           **
+[    0.820423][    T1] **                                                                **
+[    0.820574][    T1] **  WRITEABLE clk DebugFS SUPPORT HAS BEEN ENABLED IN THIS KERNEL **
+[    0.820799][    T1] **                                                                **
+[    0.820949][    T1] ** This means that this kernel is built to expose clk operations  **
+[    0.821102][    T1] ** such as parent or rate setting, enabling, disabling, etc.      **
+[    0.821239][    T1] ** to userspace, which may compromise security on your system.    **
+[    0.821375][    T1] **                                                                **
+[    0.821509][    T1] ** If you see this message and you are not debugging the          **
+[    0.821637][    T1] ** kernel, report this immediately to your vendor!                **
+[    0.821784][    T1] **                                                                **
+[    0.821966][    T1] **     NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE           **
+[    0.822118][    T1] ********************************************************************
+[    0.828507][    T1] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.833434][    T1] clk: Disabling unused clocks
+[    0.834069][    T1] ALSA device list:
+[    0.834224][    T1]   No soundcards found.
+[    0.837959][    T1] uart-pl011 9000000.pl011: no DMA platform data
+[    0.874232][    T1] Freeing unused kernel memory: 3200K
+[    0.875762][    T1] Run /init as init process
+
+=== QEMU-E2E3: userspace reached ===
+mount /proc ret=0x0000000000000000
+BOOTID_BEFORE=c5744928-274d-43b6-b674-c026f883883e
+
+WAITER_TID=0x000000000000009b
+REQUEUE DONE r=0xffffffffffffffdd
+WAITER RETURNED r=0xffffffffffffff92
+OPEN_SELECTED n=0x000000000000009b hi=0x0000000000000161
+FD_VERIFY_DONE
+[    3.954950][  T157] Unable to handle kernel read from unreadable memory at virtual address 0000000000000000
+[    3.955246][  T157] Mem abort info:
+[    3.955324][  T157]   ESR = 0x96000005
+[    3.955406][  T157]   EC = 0x25: DABT (current EL), IL = 32 bits
+[    3.955528][  T157]   SET = 0, FnV = 0
+[    3.955599][  T157]   EA = 0, S1PTW = 0
+[    3.955677][  T157] Data abort info:
+[    3.955964][  T157]   ISV = 0, ISS = 0x00000005
+[    3.956259][  T157]   CM = 0, WnR = 0
+[    3.956524][  T157] user pgtable: 4k pages, 39-bit VAs, pgdp=000000004591a000
+[    3.956661][  T157] [0000000000000000] pgd=00000000448c9003, p4d=00000000448c9003, pud=00000000448c9003, pmd=0000000000000000
+[    3.957173][  T157] Internal error: Oops: 96000005 [#1] PREEMPT SMP
+[    3.957412][  T157] Modules linked in:
+[    3.957651][  T157] CPU: 0 PID: 157 Comm: init Not tainted 5.10.246-android12-9-g9c94fefc2317-dirty #1
+[    3.957854][  T157] Hardware name: linux,dummy-virt (DT)
+[    3.958127][  T157] pstate: 80400085 (Nzcv daIf +PAN -UAO -TCO BTYPE=--)
+[    3.958303][  T157] pc : rt_mutex_adjust_prio_chain+0x188/0x1948
+[    3.958427][  T157] lr : max_tt_usecs+0x61fd/0x1e038
+[    3.958521][  T157] sp : ffffffc00b79bc50
+[    3.958608][  T157] x29: ffffffc00b79bc80 x28: ffffffc00b1d3b10 
+[    3.958736][  T157] x27: 0000000000000000 x26: 0000000000000001 
+[    3.958845][  T157] x25: ffffff8004222fec x24: 0000000000000000 
+[    3.958955][  T157] x23: 0000000000000000 x22: 0000000000000000 
+[    3.959064][  T157] x21: 0000000000000000 x20: ffffff8004220018 
+[    3.959180][  T157] x19: ffffff8004222780 x18: ffffffc00b785040 
+[    3.959281][  T157] x17: ffffffc00aaf0000 x16: ffffffc00ab06000 
+[    3.959391][  T157] x15: ffffffc00aaf0000 x14: 00000000c0000000 
+[    3.959499][  T157] x13: 0000000000000001 x12: ffffff8004220000 
+[    3.959614][  T157] x11: ffffffc00aaf0000 x10: 0000000000000000 
+[    3.959785][  T157] x9 : 0000000000000000 x8 : 0000000000000003 
+[    3.959929][  T157] x7 : 00000000000000e0 x6 : 0000000000000008 
+[    3.960038][  T157] x5 : ffffff8004222780 x4 : 0000000000000010 
+[    3.960146][  T157] x3 : ffffffc00a31006b x2 : 0000000000000000 
+[    3.960262][  T157] x1 : 0000000000000000 x0 : ffffff8004222780 
+[    3.960481][  T157] Call trace:
+[    3.960569][  T157]  rt_mutex_adjust_prio_chain+0x188/0x1948
+[    3.960674][  T157]  rt_mutex_adjust_pi+0x174/0x2fc
+[    3.960760][  T157]  __sched_setscheduler+0xfdc/0x1780
+[    3.960857][  T157]  __do_sys_sched_setattr+0x25c/0x3e8
+[    3.960947][  T157]  __arm64_sys_sched_setattr+0x24/0x34
+[    3.961039][  T157]  el0_svc_common+0xd4/0x270
+[    3.961123][  T157]  el0_svc+0x28/0x98
+[    3.961192][  T157]  el0_sync_handler+0x8c/0xf0
+[    3.961284][  T157]  el0_sync+0x1b8/0x1c0
+[    3.961445][  T157] Code: f9401f9b 88dffe88 11000508 b9000288 (88dfff68) 
+[    3.961697][  T157] ---[ end trace 13798c31a1ebd039 ]---
+[    3.961919][  T157] Kernel panic - not syncing: Oops: Fatal exception
+[    3.962195][  T157] SMP: stopping secondary CPUs
+[    3.962884][  T157] Kernel Offset: disabled
+[    3.963081][  T157] CPU features: 0x001,40240022,61006000
+[    3.963392][  T157] Memory Limit: none

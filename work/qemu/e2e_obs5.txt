@@ -1,0 +1,20 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+break *0xffffffc0085d546c
+commands
+  silent
+  printf "WRITE hit\n"
+  continue
+end
+echo ===B1-SET===
+break *0xffffffc0081c3488
+commands
+  silent
+  printf "SCHED_SETATTR hit\n"
+  continue
+end
+echo ===B2-SET===
+continue

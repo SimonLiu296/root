@@ -1,0 +1,6 @@
+0xffffffc009838c24 in ?? ()
+The target architecture is set to "aarch64".
+===GDB-CONNECTED===Breakpoint 1 at 0xffffffc0082ce764
+===B1===Breakpoint 2 at 0xffffffc008228684
+===B2===Breakpoint 3 at 0xffffffc0082d3d64
+===B3===

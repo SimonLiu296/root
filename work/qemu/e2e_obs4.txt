@@ -1,0 +1,27 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+break *0xffffffc0082ce764
+commands
+  silent
+  printf "FUTEX_REQUEUE hit\n"
+  continue
+end
+echo ===B1===
+break *0xffffffc008228684
+commands
+  silent
+  printf "CLEANUP_PROXY_LOCK hit\n"
+  continue
+end
+echo ===B2===
+break *0xffffffc0082d3d64
+commands
+  silent
+  printf "WAIT_REQUEUE_PI entry\n"
+  continue
+end
+echo ===B3===
+continue

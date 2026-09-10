@@ -1,0 +1,28 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+set $init = 0xffffffc00aaec240
+set $node0 = $init + 0x4c8
+set $cur = $node0
+set $i = 0
+while $i < 500
+  set $t = $cur - 0x4c8
+  set $pid = *(int*)($t + 0x5c8)
+  set $pib = *(unsigned long*)($t + 0x898)
+  if $pib != 0
+    printf "DANGLING: task=%016lx pid=%d tgid=%d comm=", $t, $pid, *(int*)($t+0x5cc)
+    x/s $t+0x790
+    printf "  pib=%016lx\n", $pib
+  end
+  set $cur = *(unsigned long*)$cur
+  set $i = $i + 1
+  if $cur == $node0
+    set $i = 500
+  end
+end
+echo ===SCAN-DONE===
+printf "scan complete, iterations=%d\n", $i
+detach
+quit

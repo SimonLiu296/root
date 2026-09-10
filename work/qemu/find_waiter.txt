@@ -1,0 +1,35 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+set $init = 0xffffffc00aaec240
+set $cur = $init
+set $found = 0
+set $i = 0
+while $i < 2000
+  set $pid = *(int*)($cur + 0x5c8)
+  if $pid == 156
+    printf "FOUND waiter: task=%016lx pid=%d tgid=%d\n", $cur, $pid, *(int*)($cur+0x5cc)
+    printf "  comm="
+    x/s $cur+0x790
+    printf "  pi_blocked_on(0x898)=%016lx\n", *(unsigned long*)($cur+0x898)
+    set $pib = *(unsigned long*)($cur+0x898)
+    if $pib != 0
+      printf "  pib->task(0x30)=%016lx pib->lock(0x38)=%016lx pib->prio(0x40)=%d\n", *(unsigned long*)($pib+0x30), *(unsigned long*)($pib+0x38), *(int*)($pib+0x40)
+      printf "  pib->tree.pc(0x00)=%016lx tree.left(0x10)=%016lx tree.right(0x08)=%016lx\n", *(unsigned long*)($pib+0x00), *(unsigned long*)($pib+0x10), *(unsigned long*)($pib+0x08)
+    end
+    set $found = 1
+  end
+  set $next = *(unsigned long*)($cur + 0x4c8)
+  if $next == $init
+    set $i = 2000
+  end
+  set $cur = $next - 0x4c8
+  set $i = $i + 1
+end
+if $found == 0
+  echo WAITER NOT FOUND\n
+end
+detach
+quit

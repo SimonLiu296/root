@@ -1,0 +1,15 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+break *0xffffffc0082262f8
+commands
+  silent
+  printf "CHAIN-WALK: x28(waiter/pib)=%016lx x19=%016lx\n", $x28, $x19
+  printf "  waiter+0x30(task)=%016lx +0x38(lock)=%016lx\n", *(unsigned long*)($x28+0x30), *(unsigned long*)($x28+0x38)
+  printf "  waiter+0x00(pc)=%016lx +0x10(left)=%016lx\n", *(unsigned long*)($x28+0x00), *(unsigned long*)($x28+0x10)
+  continue
+end
+echo ===BREAK-SET===
+continue

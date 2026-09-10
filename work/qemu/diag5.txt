@@ -1,0 +1,19 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+echo ---PIB-DUMP-AROUND-x28---\n
+set $pib = $x28
+x/32gx $pib-0x200
+echo ---FIND-INIT-TASK-IN-STACK---\n
+set $base = ($pib & 0xffffffffffffc000)
+printf "stackbase=%016lx\n", $base
+find $base, $base+0x4000, 0xffffffc00aaec240
+echo ---FIND-SCRATCH---\n
+find $base, $base+0x4000, 0xffffffc00ae90108
+echo ---FIND-BOOTID-TARGET---\n
+find $base, $base+0x4000, 0xffffffc00aee910d
+echo ---DONE---\n
+detach
+quit

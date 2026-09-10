@@ -1,0 +1,18 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+break *0xffffffc0082262f8
+commands
+  silent
+  if $x28 > 0xffffffc00b400000
+    printf "TARGET-WALK x28=%016lx x19=%016lx\n", $x28, $x19
+    printf "w+0x00=%016lx w+0x08=%016lx w+0x10=%016lx w+0x18=%016lx\n", *(unsigned long*)($x28+0x00), *(unsigned long*)($x28+0x08), *(unsigned long*)($x28+0x10), *(unsigned long*)($x28+0x18)
+    printf "w+0x20=%016lx w+0x28=%016lx w+0x30=%016lx w+0x38=%016lx\n", *(unsigned long*)($x28+0x20), *(unsigned long*)($x28+0x28), *(unsigned long*)($x28+0x30), *(unsigned long*)($x28+0x38)
+    printf "w+0x40=%016lx w+0x48=%016lx w+0x50=%016lx\n", *(unsigned long*)($x28+0x40), *(unsigned long*)($x28+0x48), *(unsigned long*)($x28+0x50)
+  end
+  continue
+end
+echo ===BREAK-SET===
+continue

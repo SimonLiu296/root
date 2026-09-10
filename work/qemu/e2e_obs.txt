@@ -1,0 +1,13 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+break *0xffffffc008227eac
+commands
+  silent
+  printf "PIB x8=%016lx x19=%016lx pib_deref=%016lx\n", \, \, *(unsigned long*)(\+0x898)
+  continue
+end
+echo ===BREAK-SET===
+continue

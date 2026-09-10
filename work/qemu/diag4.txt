@@ -1,0 +1,14 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+echo ---DISASM-WALK-LOOP---\n
+x/16i 0xffffffc0082264c0
+echo ---REGS---\n
+info registers x19 x20 x27 x28 x29 sp pc
+echo ---PIB-DUMP---\n
+x/24gx 0xffffffc00b513aa0
+echo ---DONE---\n
+detach
+quit

@@ -1,0 +1,710 @@
+[+] copy_from_user symbols: 224
+[+] sweep done: 275382 bl sites, funcs with subs: 17777
+[+] copy_from_user call sites: 1271
+
+===== 鏍″噯閿氱偣 =====
+__arm64_sys_sched_setaffinity  depth=0x040 (鏈熸湜 0x40) __arm64_sys_sched_setaffinity(0x40)
+__arm64_sys_select             depth=0x080 (鏈熸湜 0x1f0) __arm64_sys_select(0x80)
+
+===== 鏍堢洰鏍囧€欓€? 670 涓?=====
+func                                           frame  imm      size     depth(s)
+__arm64_sys_seccomp                            0x20   sp+0x0   0x4      0x020
+__arm64_sys_clock_settime32                    0x40   sp+0x10  0x8      0x030
+__arm64_compat_sys_old_select                  0x30   sp+0x0   0x14     0x030
+__arm64_sys_signalfd4                          0x30   sp+0x0   arg2     0x030
+__arm64_sys_signalfd                           0x30   sp+0x0   arg2     0x030
+__arm64_compat_sys_signalfd4                   0x30   sp+0x0   arg2     0x030
+__arm64_compat_sys_signalfd                    0x30   sp+0x0   arg2     0x030
+__arm64_sys_rt_sigprocmask                     0x40   sp+0x8   0x8      0x038
+__do_compat_sys_rt_sigsuspend                  0x40   sp+0x8   arg2     0x038
+__arm64_compat_sys_rt_sigprocmask              0x40   sp+0x8   arg2     0x038
+__arm64_sys_setrlimit                          0x40   sp+0x8   0x10     0x038
+__arm64_sys_clock_settime                      0x50   sp+0x18  0x10     0x038
+__arm64_compat_sys_setrlimit                   0x40   sp+0x0   0x8      0x040
+__arm64_sys_sched_setaffinity                  0x40   sp+0x0   0x8      0x040
+__arm64_sys_clock_nanosleep_time32             0x50   sp+0x10  0x8      0x040
+__do_compat_sys_sendfile64                     0x40   sp+0x0   UNKNOWN  0x040
+__arm64_sys_io_getevents_time32                0x50   sp+0x10  0x8      0x040
+__do_sys_rt_sigsuspend                         0x40   sp+0x8   0x8      0x048
+__arm64_sys_clock_nanosleep                    0x60   sp+0x18  0x10     0x048
+__arm64_sys_epoll_ctl                          0x50   sp+0x8   arg2     0x048
+__arm64_sys_io_getevents                       0x60   sp+0x18  0x10     0x048
+__arm64_sys_rt_sigreturn                       0x50   sp+0x0   0x18     0x050
+__arm64_sys_sigprocmask                        0x50   sp+0x0   0x8      0x050
+__arm64_sys_sigaltstack                        0x70   sp+0x20  0x18     0x050
+__do_compat_sys_rt_sigaction                   0x90   sp+0x40  arg2     0x050
+__arm64_sys_openat2                            0x50   sp+0x0   UNKNOWN  0x050
+__do_sys_sendfile64                            0x40   sp+0x0   UNKNOWN  0x050
+__arm64_sys_recvmmsg_time32                    0x60   sp+0x10  0x8      0x050
+__arm64_sys_rt_sigaction                       0x80   sp+0x28  0x20     0x058
+__do_compat_sys_io_pgetevents_time64           0x70   sp+0x18  0x10     0x058
+__do_compat_sys_io_pgetevents                  0x70   sp+0x18  0x8      0x058
+__arm64_sys_recvmmsg                           0x70   sp+0x18  0x10     0x058
+__arm64_sys_copy_file_range                    0x70   sp+0x10  UNKNOWN  0x060
+__arm64_compat_sys_ppoll_time32                0x70   sp+0x10  0x8      0x060
+__arm64_sys_utimensat_time32                   0x60   sp+0x0   0x8      0x060
+__arm64_sys_utimensat_time32                   0x60   sp+0x0   0x8      0x060
+__do_compat_sys_io_pgetevents_time64           0x70   sp+0x10  0x8      0x060
+compat_restore_sigframe                        0x50   sp+0x8   arg2     0x068, 0x078
+__arm64_sys_sched_setparam                     0x70   sp+0x8   0x4      0x068
+__arm64_sys_timer_create                       0x70   sp+0x8   0x40     0x068
+__arm64_sys_copy_file_range                    0x70   sp+0x8   UNKNOWN  0x068
+__arm64_sys_ppoll                              0x80   sp+0x18  0x10     0x068
+__arm64_compat_sys_ppoll_time64                0x80   sp+0x18  0x10     0x068
+__do_sys_capset                                0x80   sp+0x20  UNKNOWN  0x070
+__do_compat_sys_settimeofday                   0x80   sp+0x10  0x8      0x070
+do_compat_select                               0x60   sp+0x0   0x8      0x070, 0x090
+__arm64_sys_splice                             0x70   sp+0x0   UNKNOWN  0x070
+__arm64_sys_splice                             0x70   sp+0x0   UNKNOWN  0x070
+__arm64_sys_sched_setscheduler                 0x80   sp+0x8   0x4      0x078
+__arm64_sys_utimensat                          0x80   sp+0x8   0x10     0x078
+__arm64_sys_utimensat                          0x80   sp+0x8   0x10     0x078
+__do_sys_io_pgetevents                         0x80   sp+0x18  0x10     0x078
+do_compat_sigaltstack                          0x50   sp+0x0   0xc      0x080, 0x060
+__do_sys_settimeofday                          0x80   sp+0x10  0x8      0x080
+__arm64_sys_select                             0x80   sp+0x0   0x10     0x080
+__arm64_compat_sys_socketcall                  0x80   sp+0x0   UNKNOWN  0x080
+__arm64_sys_nanosleep_time32                   0x90   sp+0x8   0x8      0x088
+__arm64_sys_nanosleep                          0x90   sp+0x8   0x10     0x088
+seccomp_set_mode_filter                        0x70   sp+0x8   0x10     0x088
+do_compat_fcntl64                              0xa0   sp+0x28  0x20     0x088
+do_compat_fcntl64                              0xa0   sp+0x28  0x10     0x088
+do_compat_fcntl64                              0xa0   sp+0x28  0x20     0x088
+do_compat_fcntl64                              0xa0   sp+0x28  0x10     0x088
+seccomp_set_mode_filter                        0x70   sp+0x0   0x8      0x090
+__arm64_sys_io_uring_enter                     0xa0   sp+0x10  0x18     0x090
+__arm64_sys_sethostname                        0xa0   sp+0x8   UNKNOWN  0x098
+__arm64_sys_setdomainname                      0xa0   sp+0x8   UNKNOWN  0x098
+restore_sigframe                               0x60   sp+0x10  0x8      0x0a0
+__arm64_sys_io_uring_setup                     0xa0   sp+0x0   0x78     0x0a0
+__arm64_compat_sys_rt_sigtimedwait_time64      0xf0   sp+0x48  0x10     0x0a8
+__arm64_compat_sys_rt_sigtimedwait_time32      0xf0   sp+0x48  0x8      0x0a8
+__arm64_compat_sys_rt_sigqueueinfo             0xe0   sp+0x38  0x80     0x0a8
+__arm64_compat_sys_rt_sigtimedwait_time64      0xf0   sp+0x40  arg2     0x0b0
+__arm64_compat_sys_rt_sigtimedwait_time32      0xf0   sp+0x40  arg2     0x0b0
+__arm64_compat_sys_rt_tgsigqueueinfo           0xf0   sp+0x38  0x80     0x0b8
+set_compat_user_sigmask                        0x40   sp+0x8   arg2     0x0b8, 0x0a8
+__arm64_sys_pidfd_send_signal                  0x100  sp+0x38  0x80     0x0c8
+do_compat_pselect                              0x90   sp+0x18  0x10     0x0c8
+do_compat_pselect                              0x90   sp+0x18  0x8      0x0c8
+set_user_sigmask                               0x40   sp+0x8   0x8      0x0d8, 0x0b8, 0x078
+kcmp_epoll_target                              0x60   sp+0x8   arg2     0x0d8
+do_vfs_ioctl                                   0xa0   sp+0x18  0x20     0x0d8, 0x0e8
+do_vfs_ioctl                                   0xa0   sp+0x18  0x30     0x0d8, 0x0e8
+do_vfs_ioctl                                   0xa0   sp+0x18  0x20     0x0d8, 0x0e8
+do_vfs_ioctl                                   0xa0   sp+0x18  0x30     0x0d8, 0x0e8
+do_vfs_ioctl                                   0xa0   sp+0x18  0x30     0x0d8, 0x0e8
+__sys_bind                                     0xd0   sp+0x8   UNKNOWN  0x0d8, 0x148
+__sys_recvmmsg                                 0x70   sp+0x18  0x10     0x0d8, 0x068
+__sys_recvmmsg                                 0x70   sp+0x18  0x8      0x0d8, 0x068
+do_fcntl                                       0xa0   sp+0x10  0x20     0x0e0
+do_fcntl                                       0xa0   sp+0x10  0x20     0x0e0
+__sys_sendto                                   0x150  sp+0x78  UNKNOWN  0x0e8, 0x158
+__sys_connect                                  0xe0   sp+0x8   UNKNOWN  0x0e8, 0x158
+__copy_siginfo_from_user                       0x90   sp+0x8   0x50     0x0f8, 0x0e8
+__arm64_sys_clock_adjtime                      0x100  sp+0x8   0xd0     0x0f8
+__io_uring_register                            0x80   sp+0x8   0x10     0x0f8
+__io_uring_register                            0x80   sp+0x8   0x20     0x0f8
+__io_uring_register                            0x80   sp+0x8   0x20     0x0f8
+__io_uring_register                            0x80   sp+0x8   UNKNOWN  0x0f8
+__io_uring_register                            0x80   sp+0x8   0x20     0x0f8
+__io_uring_register                            0x80   sp+0x8   0x20     0x0f8
+__io_uring_register                            0x80   sp+0x8   0x4      0x0f8
+__arm64_sys_adjtimex                           0x110  sp+0x8   0xd0     0x108
+io_submit_one                                  0x80   sp+0x8   0x40     0x108
+sock_setsockopt                                0xa0   sp+0x20  0x4      0x110, 0x180
+sock_setsockopt                                0xa0   sp+0x20  0x8      0x110, 0x180
+sock_setsockopt                                0xa0   sp+0x20  0x8      0x110, 0x180
+sock_setsockopt                                0xa0   sp+0x18  0x8      0x118, 0x188
+sock_setsockopt                                0xa0   sp+0x14  0x4      0x11c, 0x18c
+__sys_recvmsg                                  0x180  sp+0x70  0x38     0x120, 0x190
+__sys_recvmsg                                  0x180  sp+0x70  0x1c     0x120, 0x190
+sock_setsockopt                                0xa0   sp+0x8   0x8      0x128, 0x198
+ptrace_request                                 0x170  sp+0x88  0x8      0x138, 0x3c8
+io_register_iowq_max_workers                   0x40   sp+0x0   0x8      0x140
+io_sqe_files_register                          0x60   sp+0x4   0x4      0x15c
+sock_set_timeout                               0x50   sp+0x18  0x10     0x168, 0x1d8
+ptrace_request                                 0x170  sp+0x48  0x10     0x178, 0x408
+copy_siginfo_from_user                         0x80   sp+0x8   0x50     0x178
+__do_sys_bpf                                   0x1b0  sp+0x48  UNKNOWN  0x178
+sock_set_timeout                               0x50   sp+0x8   0x10     0x178, 0x1e8
+sock_set_timeout                               0x50   sp+0x8   0x8      0x178, 0x1e8
+do_recvmmsg                                    0x1d0  sp+0xa8  0x38     0x188, 0x198
+do_recvmmsg                                    0x1d0  sp+0xa8  0x38     0x188, 0x198
+do_recvmmsg                                    0x1d0  sp+0xa8  0x1c     0x188, 0x198
+sk_getsockopt                                  0x120  sp+0x14  0x4      0x18c, 0x1fc
+io_sqe_buffers_register                        0x90   sp+0x0   0x10     0x190
+io_submit_sqe                                  0x70   sp+0x8   0x10     0x198
+copy_clone_args_from_user                      0xa0   sp+0x0   UNKNOWN  0x1a0
+__sys_sendmsg                                  0x200  sp+0x70  0x1c     0x1a0, 0x210
+__arm64_sys_quotactl                           0x210  sp+0x50  0x48     0x1c0
+__arm64_sys_quotactl                           0x210  sp+0x50  0x70     0x1c0
+__arm64_sys_quotactl                           0x210  sp+0x50  0x1      0x1c0
+__arm64_sys_quotactl                           0x210  sp+0x50  0x18     0x1c0
+__do_sys_prctl                                 0x230  sp+0x50  UNKNOWN  0x1f0
+core_sys_select                                0x1c0  sp+0x50  UNKNOWN  0x1f0, 0x210
+keyctl_pkey_params_get_2                       0x70   sp+0x10  arg2     0x1f0, 0x1d0, 0x200, 0x1e0
+io_timeout_prep                                0x60   sp+0x8   0x10     0x1f8
+bpf_link_get_info_by_fd                        0x60   sp+0x8   UNKNOWN  0x218
+bpf_iter_link_attach                           0x60   sp+0x8   UNKNOWN  0x218
+btf_get_info_by_fd                             0x70   sp+0x8   UNKNOWN  0x228
+__get_compat_msghdr                            0x60   sp+0x8   0x1c     0x228
+__sys_sendmmsg                                 0x2c0  sp+0x90  0x1c     0x240, 0x2b0
+compat_ptrace_request                          0x100  sp+0x38  0x80     0x2a8
+restore_fpsimd_context                         0x250  sp+0x0   0x200    0x300
+bpf_prog_get_info_by_fd                        0x190  sp+0x50  UNKNOWN  0x300
+restore_sve_fpsimd_context                     0x270  sp+0x10  0x200    0x310
+restore_sve_fpsimd_context                     0x270  sp+0x0   0x10     0x320
+prctl_set_package                              0x130  sp+0x18  UNKNOWN  0x358
+compat_gpr_set                                 0x1c0  sp+0x4   UNKNOWN  0x39c
+sendmsg_copy_msghdr                            0x60   sp+0x0   0x1c     0x440, 0x4b0, 0x1c0, 0x230, 0x220, 0x290
+do_sys_poll                                    0x450  sp+0x7c  sp+0x7c  0x454, 0x434, 0x444
+____sys_sendmsg                                0x90   sp+0x10  UNKNOWN  0x460, 0x4d0, 0x290, 0x300, 0x350, 0x3c0
+__copy_msghdr_from_user                        0x80   sp+0x0   0x38     0x4a0, 0x220, 0x290, 0x280, 0x300, 0x350, 0x3c0, 0x4c0, 0x240, 0x2b0, 0x2a0
+cmsghdr_from_user_compat_to_kern               0x90   sp+0x18  0xc      0x4e8, 0x318, 0x388, 0x3d8, 0x448
+__io_sqe_buffers_update                        0xd0   sp+0x38  0x8      0x528, 0x248
+user_backtrace                                 0x50   sp+0x8   0x10     
+compat_user_backtrace                          0x50   sp+0x8   0xc      
+kvm_vm_ioctl                                   0xf0   sp+0x20  0x10     
+kvm_vm_ioctl                                   0xf0   sp+0x0   0x20     
+kvm_vm_ioctl                                   0xf0   sp+0x20  0x18     
+kvm_vm_ioctl                                   0xf0   sp+0x20  0x8      
+kvm_vm_ioctl                                   0xf0   sp+0x20  0x20     
+kvm_vm_ioctl                                   0xf0   sp+0x20  0x68     
+kvm_vm_ioctl                                   0xf0   sp+0x20  0x8      
+kvm_vm_ioctl                                   0xf0   sp+0x20  0xc      
+kvm_vm_ioctl                                   0xf0   sp+0x20  0x10     
+kvm_vm_ioctl                                   0xf0   sp+0x20  0x20     
+kvm_vm_ioctl                                   0xf0   sp+0x20  0x10     
+kvm_vm_ioctl                                   0xf0   sp+0x20  0x40     
+kvm_device_ioctl                               0x50   sp+0x0   0x18     
+kvm_vcpu_ioctl                                 0x270  sp+0x8   0x8      
+kvm_vcpu_ioctl                                 0x270  sp+0x8   0x4      
+kvm_vcpu_ioctl                                 0x270  sp+0x8   0x18     
+kvm_vcpu_ioctl                                 0x270  sp+0x8   0x208    
+kvm_arch_vcpu_ioctl                            0xa0   sp+0x18  0x20     
+kvm_arch_vcpu_ioctl                            0xa0   sp+0x18  0x10     
+kvm_arch_vcpu_ioctl                            0xa0   sp+0x0   0x18     
+kvm_arch_vcpu_ioctl                            0xa0   sp+0x0   0x18     
+kvm_arch_vcpu_ioctl                            0xa0   sp+0x0   0x18     
+kvm_arch_vcpu_ioctl                            0xa0   sp+0x18  0x8      
+kvm_arch_vcpu_ioctl                            0xa0   sp+0x18  0x40     
+kvm_arch_vm_ioctl                              0x50   sp+0x8   0x10     
+kvm_arm_set_fw_reg                             0x30   sp+0x0   arg2     
+kvm_arm_set_reg                                0x50   sp+0x8   UNKNOWN  
+set_core_reg                                   0x60   sp+0x0   UNKNOWN  
+set_sve_vls                                    0x70   sp+0x8   0x40     
+set_id_reg                                     0x40   sp+0x0   0x8      
+set_raz_id_reg                                 0x40   sp+0x0   0x8      
+set_id_aa64pfr0_el1                            0x40   sp+0x0   0x8      
+kvm_arm_sys_reg_set_reg                        0x50   sp+0x10  UNKNOWN  
+vgic_get_common_attr                           0x40   sp+0x0   arg2     
+vgic_set_common_attr                           0x40   sp+0x0   arg2     
+kvm_arm_pmu_v3_set_attr                        0xc0   sp+0x0   UNKNOWN  
+ptrace_writedata                               0xf0   sp+0x8   UNKNOWN  
+copy_siginfo_from_user32                       0xb0   sp+0x8   0x80     
+restore_altstack                               0x30   sp+0x0   0x18     
+sched_feat_write                               0x90   sp+0x8   UNKNOWN  
+psi_write                                      0x70   sp+0x18  UNKNOWN  
+cpu_latency_qos_write                          0x30   sp+0x4   arg2     
+write_profile                                  0x70   sp+0x4   arg2     
+get_timespec64                                 0x40   sp+0x8   0x10     
+get_old_timespec32                             0x30   sp+0x0   0x8      
+get_old_itimerspec32                           0x30   sp+0x0   0x8      
+get_old_itimerspec32                           0x30   sp+0x0   0x8      
+get_itimerspec64                               0x50   sp+0x8   0x10     
+get_itimerspec64                               0x50   sp+0x8   0x10     
+get_old_timex32                                0xb0   sp+0x8   0x80     
+seccomp_notify_ioctl                           0xb0   sp+0x18  0x18     
+seccomp_notify_ioctl                           0xb0   sp+0x18  0x8      
+seccomp_notify_ioctl                           0xb0   sp+0x0   0x18     
+trace_options_write                            0xa0   sp+0x0   UNKNOWN  
+trace_options_core_write                       0xa0   sp+0x0   UNKNOWN  
+buffer_percent_write                           0x90   sp+0x0   UNKNOWN  
+rb_simple_write                                0xa0   sp+0x0   UNKNOWN  
+tracing_clock_write                            0x90   sp+0x8   UNKNOWN  
+tracing_entries_write                          0xa0   sp+0x0   UNKNOWN  
+tracing_trace_options_write                    0x90   sp+0x8   UNKNOWN  
+tracing_set_trace_write                        0xb0   sp+0x0   UNKNOWN  
+tracing_saved_cmdlines_size_write              0x90   sp+0x0   UNKNOWN  
+tracing_thresh_write                           0x90   sp+0x0   UNKNOWN  
+event_enable_write                             0x90   sp+0x0   UNKNOWN  
+system_enable_write                            0xa0   sp+0x0   UNKNOWN  
+perf_event_query_prog_array                    0x70   sp+0x10  UNKNOWN  
+perf_ioctl                                     0x100  sp+0x8   0x8      
+vaudit_write                                   0xc0   sp+0x18  UNKNOWN  
+binder_block_query_store                       0x40   sp+0x10  UNKNOWN  
+uid_remove_write                               0xe0   sp+0x8   UNKNOWN  
+top_exit_write                                 0xc0   sp+0x8   UNKNOWN  
+mem_blocks_mb_write                            0xb0   sp+0x8   UNKNOWN  
+mem_antifrag_write                             0x90   sp+0x8   UNKNOWN  
+swait_write                                    0x90   sp+0x18  UNKNOWN  
+extfreekb_write                                0x70   sp+0x8   UNKNOWN  
+mem_lastfg_write                               0x40   sp+0x8   UNKNOWN  
+fas_scroll_ioctl                               0xd0   sp+0x30  0x38     
+fas_audio_ioctl                                0xb0   sp+0x20  0x28     
+fas_render_ioctl                               0xa0   sp+0x18  0x20     
+block_ioctl                                    0x60   sp+0x8   arg2     
+userfaultfd_api                                0x80   sp+0x10  0x18     
+userfaultfd_copy                               0xa0   sp+0x10  0x20     
+userfaultfd_zeropage                           0xa0   sp+0x18  0x18     
+userfaultfd_writeprotect                       0x90   sp+0x10  0x18     
+userfaultfd_continue                           0xa0   sp+0x18  0x18     
+do_remove_key                                  0xf0   sp+0x10  0x40     
+fscrypt_ioctl_get_key_status                   0xf0   sp+0x8   0x80     
+fscrypt_ioctl_set_policy                       0xd0   sp+0x28  UNKNOWN  
+fscrypt_ioctl_get_policy_ex                    0x80   sp+0x10  0x8      
+fsverity_ioctl_enable                          0x1a0  sp+0x38  0x80     
+fsverity_ioctl_read_metadata                   0x80   sp+0x0   arg2     
+bm_entry_write                                 0x40   sp+0x4   UNKNOWN  
+bm_status_write                                0x40   sp+0x4   UNKNOWN  
+timerslack_ns_write                            0xb0   sp+0x10  UNKNOWN  
+proc_coredump_filter_write                     0x70   sp+0x0   UNKNOWN  
+proc_loginuid_write                            0x70   sp+0x10  UNKNOWN  
+oom_score_adj_write                            0x50   sp+0x8   UNKNOWN  
+oom_adj_write                                  0x50   sp+0x8   UNKNOWN  
+comm_write                                     0x50   sp+0x8   UNKNOWN  
+proc_rsc_svp_write                             0x50   sp+0x8   UNKNOWN  
+ext4_ioc_getfsmap                              0x1a0  sp+0x28  0xc0     
+fat_generic_ioctl                              0x80   sp+0x10  UNKNOWN  
+fuse_conn_congestion_threshold_write           0xc0   sp+0x10  UNKNOWN  
+fuse_conn_max_background_write                 0xc0   sp+0x10  UNKNOWN  
+fuse_conn_limit_write                          0xc0   sp+0x10  UNKNOWN  
+pending_reads_dispatch_ioctl                   0x130  sp+0x58  0x58     
+pending_reads_dispatch_ioctl                   0x130  sp+0x58  0x10     
+pending_reads_dispatch_ioctl                   0x130  sp+0x58  0x4      
+pending_reads_dispatch_ioctl                   0x130  sp+0x58  0x38     
+pending_reads_dispatch_ioctl                   0x130  sp+0x58  0x10     
+dispatch_ioctl                                 0xb0   sp+0x20  0x10     
+dispatch_ioctl                                 0xb0   sp+0x20  0x28     
+dispatch_ioctl                                 0xb0   sp+0x10  0x10     
+dispatch_ioctl                                 0xb0   sp+0x20  0x20     
+incfs_ioctl_enable_verity                      0x1e0  sp+0x90  0x80     
+incfs_ioctl_read_verity_metadata               0x90   sp+0x8   0x28     
+debugfs_write_file_bool                        0x50   sp+0x4   UNKNOWN  
+__f2fs_ioctl                                   0xc0   sp+0x30  0x1c     
+__f2fs_ioctl                                   0xc0   sp+0x30  0x18     
+__f2fs_ioctl                                   0xc0   sp+0x30  0x20     
+__f2fs_ioctl                                   0xc0   sp+0x30  0x8      
+__f2fs_ioctl                                   0xc0   sp+0x30  0x8      
+__f2fs_ioctl                                   0xc0   sp+0x30  0x10     
+__f2fs_ioctl                                   0xc0   sp+0x30  0x18     
+__f2fs_ioctl                                   0xc0   sp+0x30  0x2      
+blkdev_common_ioctl                            0x80   sp+0x0   0x18     
+blkdev_common_ioctl                            0x80   sp+0x0   0x18     
+blkdev_common_ioctl                            0x80   sp+0x0   0x18     
+blkdev_common_ioctl                            0x80   sp+0x0   0x10     
+blkdev_common_ioctl                            0x80   sp+0x0   0x10     
+blkdev_common_ioctl                            0x80   sp+0x0   0x10     
+blkdev_common_ioctl                            0x80   sp+0x0   0x10     
+blk_ioctl_discard                              0x60   sp+0x8   0x10     
+blkpg_do_ioctl                                 0x100  sp+0x10  0x98     
+scsi_cmd_ioctl                                 0x130  sp+0x68  0x40     
+get_sg_io_hdr                                  0x70   sp+0x8   0x40     
+bsg_ioctl                                      0x120  sp+0x0   0xa0     
+queue_state_write                              0x50   sp+0x8   UNKNOWN  
+kstrtoull_from_user                            0x90   sp+0x0   UNKNOWN  
+kstrtoul_from_user                             0x90   sp+0x0   UNKNOWN  
+kstrtouint_from_user                           0x80   sp+0x10  UNKNOWN  
+kstrtou8_from_user                             0x60   sp+0x8   UNKNOWN  
+kstrtou16_from_user                            0x70   sp+0x10  UNKNOWN  
+kstrtos8_from_user                             0x60   sp+0x8   UNKNOWN  
+kstrtos16_from_user                            0x70   sp+0x10  UNKNOWN  
+kstrtoll_from_user                             0xa0   sp+0x10  UNKNOWN  
+kstrtol_from_user                              0xa0   sp+0x10  UNKNOWN  
+kstrtoint_from_user                            0x80   sp+0x10  UNKNOWN  
+kstrtobool_from_user                           0x40   sp+0x4   UNKNOWN  
+gpio_ioctl                                     0x2e0  sp+0x20  0x250    
+gpio_ioctl                                     0x2e0  sp+0x20  0x4      
+gpio_ioctl                                     0x2e0  sp+0x20  0x30     
+gpio_ioctl                                     0x2e0  sp+0x20  0x16c    
+lineinfo_get                                   0x150  sp+0x8   0x100    
+linereq_ioctl                                  0x1a0  sp+0x20  0x10     
+linereq_ioctl                                  0x1a0  sp+0x20  0x110    
+linereq_ioctl                                  0x1a0  sp+0x20  0x10     
+linehandle_ioctl                               0x120  sp+0x60  0x54     
+linehandle_ioctl                               0x120  sp+0x20  0x40     
+tty_ioctl                                      0xc0   sp+0x8   0x48     
+tty_ioctl                                      0xc0   sp+0x8   0x8      
+tty_compat_ioctl                               0xf0   sp+0x0   0x3c     
+tty_mode_ioctl                                 0xc0   sp+0x8   0x24     
+uart_ioctl                                     0x80   sp+0x0   0x28     
+uart_ioctl                                     0x80   sp+0x0   0x20     
+iommu_uapi_cache_invalidate                    0x80   sp+0x0   0x10     
+drm_mode_atomic_ioctl                          0xe0   sp+0x28  UNKNOWN  
+compat_drm_getunique                           0x40   sp+0x10  0x8      
+compat_drm_wait_vblank                         0x60   sp+0x18  0x10     
+connector_write                                0x50   sp+0x8   UNKNOWN  
+regmap_cache_bypass_write_file                 0x50   sp+0x4   UNKNOWN  
+regmap_cache_only_write_file                   0x60   sp+0x4   UNKNOWN  
+lo_ioctl                                       0x240  sp+0x8   0x130    
+lo_ioctl                                       0x240  sp+0x8   0xe8     
+loop_info64_from_compat                        0xc0   sp+0x8   0x8c     
+uid_procstat_write                             0xe0   sp+0x8   UNKNOWN  
+uid_remove_write.42744                         0xe0   sp+0x8   UNKNOWN  
+dma_buf_ioctl                                  0x50   sp+0x10  arg2     
+dma_heap_ioctl                                 0xe0   sp+0x8   UNKNOWN  
+sync_file_ioctl                                0x100  sp+0x20  0x30     
+__tun_chr_ioctl                                0xc0   sp+0x30  UNKNOWN  
+__tun_chr_ioctl                                0xc0   sp+0x20  0x4      
+__tun_chr_ioctl                                0xc0   sp+0x28  0x4      
+__tun_chr_ioctl                                0xc0   sp+0x28  0x4      
+__tun_chr_ioctl                                0xc0   sp+0x24  0x4      
+__tun_chr_ioctl                                0xc0   sp+0x1c  0x4      
+__tun_chr_ioctl                                0xc0   sp+0x18  0x4      
+__tun_chr_ioctl                                0xc0   sp+0x2c  0x4      
+ppp_ioctl                                      0x80   sp+0x8   0x10     
+ppp_ioctl                                      0x80   sp+0x18  0x8      
+ppp_compat_ioctl                               0x60   sp+0x18  0xc      
+ppp_set_compress                               0x70   sp+0x8   UNKNOWN  
+uio_write                                      0x40   sp+0x4   arg2     
+usbdev_ioctl                                   0x1e0  sp+0x38  0x8      
+usbdev_ioctl                                   0x1e0  sp+0x38  0x2c     
+usbdev_ioctl                                   0x1e0  sp+0x68  0x18     
+usbdev_ioctl                                   0x1e0  sp+0x68  0x104    
+usbdev_ioctl                                   0x1e0  sp+0x68  0x108    
+usbdev_ioctl                                   0x1e0  sp+0x68  0x8      
+usbdev_ioctl                                   0x1e0  sp+0x68  0x18     
+usbdev_ioctl                                   0x1e0  sp+0x68  0x10     
+usbdev_ioctl                                   0x1e0  sp+0x68  0x38     
+usbdev_ioctl                                   0x1e0  sp+0x38  0xc      
+usbdev_ioctl                                   0x1e0  sp+0x68  0x10     
+usbdev_ioctl                                   0x1e0  sp+0x68  0x4      
+proc_control_compat                            0x40   sp+0x0   0xc      
+dwc3_link_state_write                          0x80   sp+0x8   UNKNOWN  
+dwc3_testmode_write                            0x70   sp+0x8   UNKNOWN  
+dwc3_mode_write                                0x60   sp+0x8   UNKNOWN  
+dwc3_lsp_write                                 0x70   sp+0x8   UNKNOWN  
+xhci_stream_id_write                           0x60   sp+0x0   UNKNOWN  
+xhci_port_write                                0x70   sp+0x8   UNKNOWN  
+input_event_from_user                          0x40   sp+0x8   0x10     
+evdev_write                                    0x80   sp+0x0   0x18     
+evdev_write                                    0x80   sp+0x18  0x10     
+evdev_do_ioctl                                 0xf0   sp+0x4   0x4      
+evdev_do_ioctl                                 0xf0   sp+0x38  0x10     
+evdev_do_ioctl                                 0xf0   sp+0x38  0x10     
+evdev_do_ioctl                                 0xf0   sp+0x8   0x30     
+evdev_do_ioctl                                 0xf0   sp+0x8   0x2c     
+evdev_do_ioctl                                 0xf0   sp+0x48  UNKNOWN  
+evdev_handle_get_keycode                       0x50   sp+0x8   0x4      
+evdev_handle_set_keycode                       0x50   sp+0x8   0x4      
+uinput_write                                   0xb0   sp+0x20  0x18     
+uinput_ioctl_handler                           0x140  sp+0x0   0xc      
+uinput_ioctl_handler                           0x140  sp+0x0   0xc      
+uinput_ioctl_handler                           0x140  sp+0x10  0x68     
+uinput_ioctl_handler                           0x140  sp+0x10  0x68     
+uinput_abs_setup                               0x60   sp+0x8   UNKNOWN  
+rtc_dev_ioctl                                  0xc0   sp+0x30  0x24     
+rtc_dev_ioctl                                  0xc0   sp+0x8   0x28     
+i2cdev_ioctl                                   0x50   sp+0x8   0x10     
+i2cdev_ioctl                                   0x50   sp+0x8   0x10     
+compat_i2cdev_ioctl                            0x70   sp+0x10  0xc      
+compat_i2cdev_ioctl                            0x70   sp+0x10  0xc      
+i2cdev_ioctl_smbus                             0x80   sp+0x0   UNKNOWN  
+video_get_user                                 0xb0   sp+0x8   0x50     
+cec_ioctl                                      0x100  sp+0x38  0x38     
+cec_ioctl                                      0x100  sp+0x10  0x4      
+cec_ioctl                                      0x100  sp+0x38  0x2      
+cec_ioctl                                      0x100  sp+0x38  0x38     
+cec_ioctl                                      0x100  sp+0x38  0x5c     
+uvc_v4l2_compat_ioctl32                        0xa0   sp+0x18  0x58     
+uvc_v4l2_compat_ioctl32                        0xa0   sp+0x8   0xc      
+mmc_blk_ioctl_multi_cmd                        0x70   sp+0x0   0x8      
+hidraw_ioctl                                   0x50   sp+0x10  UNKNOWN  
+picolcd_debug_reset_write                      0x60   sp+0x8   UNKNOWN  
+wiidebug_drm_write                             0x60   sp+0x8   UNKNOWN  
+hiddev_ioctl                                   0xc0   sp+0x20  0x38     
+vhost_vsock_dev_ioctl                          0x60   sp+0x4   0x4      
+vhost_vsock_dev_ioctl                          0x60   sp+0x10  0x8      
+vhost_vsock_dev_ioctl                          0x60   sp+0x8   0x8      
+vhost_vring_ioctl                              0x90   sp+0x10  0x28     
+vhost_vring_ioctl                              0x90   sp+0x10  0x8      
+vhost_vring_ioctl                              0x90   sp+0x0   0x8      
+vhost_vring_ioctl                              0x90   sp+0x0   0x8      
+vhost_vring_ioctl                              0x90   sp+0x0   0x8      
+vhost_vring_ioctl                              0x90   sp+0x8   0x8      
+vhost_vring_ioctl                              0x90   sp+0x8   0x8      
+vhost_dev_ioctl                                0x80   sp+0x10  0x8      
+vhost_dev_ioctl                                0x80   sp+0x8   0x8      
+ashmem_ioctl                                   0x170  sp+0x10  UNKNOWN  
+rproc_coredump_write                           0x60   sp+0x0   UNKNOWN  
+rproc_crash_write                              0x70   sp+0x0   UNKNOWN  
+rproc_recovery_write                           0x60   sp+0x8   UNKNOWN  
+rproc_cdev_write                               0x50   sp+0x8   UNKNOWN  
+rproc_device_ioctl                             0x30   sp+0x4   0x4      
+rpmsg_ctrldev_ioctl                            0x90   sp+0x20  arg2     
+iio_debugfs_write_reg                          0x90   sp+0x8   UNKNOWN  
+binder_ctl_ioctl                               0x140  sp+0x0   UNKNOWN  
+binder_ioctl                                   0xd0   sp+0x30  0xc      
+binder_ioctl_write_read                        0xb0   sp+0x18  0x30     
+freeze_ctrl                                    0x170  sp+0x38  0x28     
+freeze_ctrl                                    0x170  sp+0x64  0x4      
+freeze_ctrl                                    0x170  sp+0x68  UNKNOWN  
+freeze_ctrl                                    0x170  sp+0x68  UNKNOWN  
+freeze_ctrl                                    0x170  sp+0x68  UNKNOWN  
+freeze_ctrl                                    0x170  sp+0x68  UNKNOWN  
+prio_node_write                                0x270  sp+0x18  UNKNOWN  
+vivolog_write                                  0xb0   sp+0x8   UNKNOWN  
+vivolog_ioctl                                  0x90   sp+0x8   0x50     
+vivolog_ioctl                                  0x90   sp+0x8   0x50     
+vivolog_ioctl                                  0x90   sp+0x8   0x50     
+vivolog_ioctl                                  0x90   sp+0x8   0x50     
+copy_from_user_toio                            0x150  sp+0x8   UNKNOWN  
+snd_ctl_ioctl                                  0x1b0  sp+0x30  0x40     
+snd_ctl_ioctl                                  0x1b0  sp+0x30  0x50     
+snd_ctl_ioctl                                  0x1b0  sp+0x30  0x110    
+snd_ctl_ioctl                                  0x1b0  sp+0x30  0x40     
+snd_ctl_ioctl                                  0x1b0  sp+0x30  0x110    
+snd_ctl_ioctl                                  0x1b0  sp+0x30  0x40     
+snd_ctl_ioctl                                  0x1b0  sp+0x30  0x110    
+snd_ctl_elem_list_compat                       0x80   sp+0x8   0x10     
+snd_ctl_tlv_ioctl                              0x50   sp+0x10  0x8      
+snd_hwdep_ioctl                                0x130  sp+0x8   0x60     
+snd_hwdep_dsp_load_compat                      0x90   sp+0x8   0x44     
+__snd_timer_user_ioctl                         0xf0   sp+0x38  0x14     
+__snd_timer_user_ioctl                         0xf0   sp+0x38  0x34     
+__snd_timer_user_ioctl                         0xf0   sp+0x38  0x50     
+__snd_timer_user_ioctl                         0xf0   sp+0x38  0x48     
+__snd_timer_user_ioctl                         0xf0   sp+0x38  0x50     
+snd_timer_user_gparams_compat                  0x70   sp+0x0   0x14     
+snd_pcm_common_ioctl                           0x180  sp+0x78  0x18     
+snd_pcm_common_ioctl                           0x180  sp+0x78  0x88     
+snd_pcm_ioctl_sync_ptr_buggy                   0xe0   sp+0x48  0x8      
+snd_pcm_sync_ptr                               0xe0   sp+0x48  0x10     
+snd_pcm_xferi_frames_ioctl                     0x50   sp+0x0   0x18     
+snd_pcm_xfern_frames_ioctl                     0x70   sp+0x0   0x18     
+snd_rawmidi_ioctl                              0x80   sp+0x10  0x38     
+snd_rawmidi_ioctl                              0x80   sp+0x10  0x30     
+snd_rawmidi_ioctl_status32                     0x70   sp+0x10  0x24     
+snd_compr_ioctl                                0x110  sp+0x0   0x24     
+snd_compr_ioctl                                0x110  sp+0x0   0x24     
+sock_ioctl                                     0x80   sp+0x10  0x20     
+sock_ioctl                                     0x80   sp+0x10  0x28     
+compat_sock_ioctl                              0x70   sp+0x10  0x8      
+compat_ifr_data_ioctl                          0x60   sp+0x0   0x10     
+compat_siocwandev                              0x70   sp+0x10  0x20     
+compat_sioc_ifmap                              0xc0   sp+0x30  0x10     
+sock_do_ioctl                                  0x80   sp+0x20  0x10     
+sock_do_ioctl                                  0x80   sp+0x20  0x28     
+copy_bpf_fprog_from_user                       0x30   sp+0x0   0x8      
+dev_ifsioc                                     0x70   sp+0x8   UNKNOWN  
+dev_ethtool                                    0x130  sp+0x4   0x4      
+dev_ethtool                                    0x130  sp+0x0   0x4      
+dev_ethtool                                    0x130  sp+0x8   0x8      
+dev_ethtool                                    0x130  sp+0x8   0x10     
+dev_ethtool                                    0x130  sp+0x8   0x10     
+dev_ethtool                                    0x130  sp+0x68  0x8      
+dev_ethtool                                    0x130  sp+0x8   0x10     
+dev_ethtool                                    0x130  sp+0x8   0x10     
+dev_ethtool                                    0x130  sp+0x8   0x8      
+dev_ethtool                                    0x130  sp+0x8   0x8      
+dev_ethtool                                    0x130  sp+0x8   0x14     
+dev_ethtool                                    0x130  sp+0x8   0x10     
+dev_ethtool                                    0x130  sp+0x68  0x2c     
+dev_ethtool                                    0x130  sp+0x8   0x8      
+dev_ethtool                                    0x130  sp+0x8   0x24     
+dev_ethtool                                    0x130  sp+0x8   0xc      
+dev_ethtool                                    0x130  sp+0x8   0x8      
+dev_ethtool                                    0x130  sp+0x8   0x10     
+dev_ethtool                                    0x130  sp+0x8   0xc      
+dev_ethtool                                    0x130  sp+0x8   0x8      
+dev_ethtool                                    0x130  sp+0x8   0x8      
+dev_ethtool                                    0x130  sp+0x8   0x28     
+dev_ethtool                                    0x130  sp+0x8   0x30     
+dev_ethtool                                    0x130  sp+0x68  0x54     
+dev_ethtool                                    0x130  sp+0x8   0x10     
+dev_ethtool                                    0x130  sp+0x8   0x10     
+dev_ethtool                                    0x130  sp+0x8   0x10     
+dev_ethtool                                    0x130  sp+0x8   0x2c     
+dev_ethtool                                    0x130  sp+0x8   0x30     
+dev_ethtool                                    0x130  sp+0x8   0x10     
+dev_ethtool                                    0x130  sp+0x8   0x10     
+dev_ethtool                                    0x130  sp+0x8   0x8      
+dev_ethtool                                    0x130  sp+0x8   0x8      
+ethtool_get_any_eeprom                         0x80   sp+0x8   0x10     
+ethtool_set_coalesce                           0x90   sp+0x8   0x5c     
+ethtool_self_test                              0x60   sp+0x8   0x10     
+ethtool_get_rxnfc                              0x110  sp+0x8   UNKNOWN  
+ethtool_get_rxnfc                              0x110  sp+0x8   0xc0     
+ethtool_set_rxnfc                              0x110  sp+0x8   UNKNOWN  
+ethtool_flash_device                           0xb0   sp+0x0   0x88     
+ethtool_get_sset_info                          0x70   sp+0x8   0x10     
+ethtool_get_rxfh_indir                         0x40   sp+0x4   0x4      
+ethtool_set_rxfh_indir                         0x120  sp+0x4   0x4      
+ethtool_get_rxfh                               0x80   sp+0x10  0x18     
+ethtool_set_rxfh                               0x150  sp+0x10  0x18     
+ethtool_set_channels                           0x80   sp+0x30  0x24     
+ethtool_set_per_queue                          0x240  sp+0x0   0x208    
+ethtool_set_per_queue_coalesce                 0x2d0  sp+0x0   0x5c     
+xt_copy_counters                               0x70   sp+0x0   0x28     
+quota_proc_write                               0x50   sp+0x0   UNKNOWN  
+ip_setsockopt                                  0x2a0  sp+0xc   0x4      
+ip_setsockopt                                  0x2a0  sp+0x20  0x1      
+ip_setsockopt                                  0x2a0  sp+0x20  0xc      
+ip_setsockopt                                  0x2a0  sp+0x20  0x108    
+ip_setsockopt                                  0x2a0  sp+0x128 0x104    
+ip_setsockopt                                  0x2a0  sp+0x20  0x88     
+ip_setsockopt                                  0x2a0  sp+0x20  0x84     
+ip_setsockopt                                  0x2a0  sp+0x20  0x8      
+do_ip_getsockopt                               0x2a0  sp+0xc   0x4      
+do_ip_getsockopt                               0x2a0  sp+0x128 0x90     
+do_ip_getsockopt                               0x2a0  sp+0x128 0x10     
+do_ip_getsockopt                               0x2a0  sp+0x18  0x8c     
+do_tcp_setsockopt                              0xa0   sp+0x18  UNKNOWN  
+do_tcp_setsockopt                              0xa0   sp+0xc   0x4      
+do_tcp_setsockopt                              0xa0   sp+0x18  0x14     
+do_tcp_setsockopt                              0xa0   sp+0x18  0x8      
+do_tcp_getsockopt                              0x180  sp+0x28  UNKNOWN  
+udp_lib_setsockopt                             0x50   sp+0x4   UNKNOWN  
+arp_ioctl                                      0xb0   sp+0x10  UNKNOWN  
+inet_ioctl                                     0xe0   sp+0x8   0x78     
+inet_compat_routing_ioctl                      0xb0   sp+0x8   0x30     
+ip_tunnel_ioctl                                0x80   sp+0x10  arg2     
+do_ipt_set_ctl                                 0x160  sp+0x30  0x60     
+do_ipt_get_ctl                                 0x140  sp+0x58  0x1e     
+do_ipt_get_ctl                                 0x140  sp+0x58  0x28     
+do_ipt_get_ctl                                 0x140  sp+0x18  0x28     
+do_arpt_set_ctl                                0x130  sp+0x20  0x50     
+do_arpt_get_ctl                                0x120  sp+0x50  0x1e     
+do_arpt_get_ctl                                0x120  sp+0x50  0x28     
+do_arpt_get_ctl                                0x120  sp+0x10  0x28     
+inet6_ioctl                                    0x90   sp+0x18  0x50     
+inet6_compat_routing_ioctl                     0x90   sp+0x8   0x30     
+addrconf_set_dstaddr                           0x80   sp+0x8   arg2     
+addrconf_del_ifaddr                            0x80   sp+0x10  UNKNOWN  
+do_ipv6_setsockopt                             0x2d0  sp+0x44  0x4      
+do_ipv6_setsockopt                             0x2d0  sp+0x48  0x108    
+do_ipv6_setsockopt                             0x2d0  sp+0x48  0x14     
+do_ipv6_setsockopt                             0x2d0  sp+0x48  0x14     
+do_ipv6_setsockopt                             0x2d0  sp+0x48  0x88     
+do_ipv6_setsockopt                             0x2d0  sp+0x48  0x14     
+do_ipv6_setsockopt                             0x2d0  sp+0x158 0x104    
+do_ipv6_setsockopt                             0x2d0  sp+0x48  0x84     
+do_ipv6_getsockopt                             0xf0   sp+0x10  0x20     
+compat_ipv6_get_msfilter                       0x280  sp+0x118 0x8c     
+ipv6_get_msfilter                              0x160  sp+0x8   0x90     
+rawv6_setsockopt                               0x50   sp+0x4   0x4      
+ipv6_flowlabel_opt                             0x90   sp+0x8   0x20     
+do_ip6t_set_ctl                                0x160  sp+0x30  0x60     
+do_ip6t_get_ctl                                0x140  sp+0x58  0x1e     
+do_ip6t_get_ctl                                0x140  sp+0x58  0x28     
+do_ip6t_get_ctl                                0x140  sp+0x18  0x28     
+vti6_ioctl                                     0x120  sp+0x60  UNKNOWN  
+vti6_ioctl                                     0x120  sp+0x60  UNKNOWN  
+vti6_ioctl                                     0x120  sp+0x60  UNKNOWN  
+ipip6_tunnel_ioctl                             0xa0   sp+0x10  UNKNOWN  
+ipip6_tunnel_ioctl                             0xa0   sp+0x10  UNKNOWN  
+ipip6_tunnel_get_prl                           0x70   sp+0x8   arg2     
+ip6gre_tunnel_ioctl                            0x160  sp+0x68  UNKNOWN  
+ip6gre_tunnel_ioctl                            0x160  sp+0x68  UNKNOWN  
+ip6gre_tunnel_ioctl                            0x160  sp+0x68  UNKNOWN  
+packet_setsockopt                              0xc0   sp+0x20  UNKNOWN  
+packet_setsockopt                              0xc0   sp+0x20  0x1c     
+packet_setsockopt                              0xc0   sp+0x20  UNKNOWN  
+packet_setsockopt                              0xc0   sp+0x20  0x4      
+packet_setsockopt                              0xc0   sp+0x20  0x4      
+packet_setsockopt                              0xc0   sp+0x20  0x4      
+packet_setsockopt                              0xc0   sp+0x20  0x4      
+packet_setsockopt                              0xc0   sp+0x20  0x4      
+packet_setsockopt                              0xc0   sp+0x20  0x4      
+packet_setsockopt                              0xc0   sp+0x8   0x10     
+packet_setsockopt                              0xc0   sp+0x20  0x4      
+packet_setsockopt                              0xc0   sp+0x20  0x4      
+packet_setsockopt                              0xc0   sp+0x20  0x4      
+packet_setsockopt                              0xc0   sp+0x20  0x4      
+packet_setsockopt                              0xc0   sp+0x20  0x4      
+packet_setsockopt                              0xc0   sp+0x8   0x4      
+packet_setsockopt                              0xc0   sp+0x20  0x8      
+br_ioctl_deviceless_stub                       0x90   sp+0x20  0x18     
+br_ioctl_deviceless_stub                       0x90   sp+0x20  0x10     
+br_ioctl_deviceless_stub                       0x90   sp+0x10  0x10     
+raw_setsockopt.76046                           0x80   sp+0xc   0x4      
+raw_setsockopt.76046                           0x80   sp+0x10  0x8      
+vendor_diag_write                              0x50   sp+0x4   UNKNOWN  
+dut_mode_write                                 0x50   sp+0x4   UNKNOWN  
+hci_inquiry                                    0x70   sp+0x8   0xa      
+hci_dev_cmd                                    0x50   sp+0x8   0x8      
+hci_get_dev_info                               0xa0   sp+0x8   0x5c     
+hci_get_conn_list                              0x50   sp+0x0   0x4      
+hci_get_conn_info                              0x60   sp+0x10  0x8      
+hci_get_auth_info                              0x40   sp+0x0   0x7      
+hci_sock_ioctl                                 0x70   sp+0x10  0x6      
+hci_sock_ioctl                                 0x70   sp+0x10  0x6      
+hci_sock_setsockopt                            0x70   sp+0x4   0x4      
+hci_sock_setsockopt                            0x70   sp+0x4   0x4      
+hci_sock_setsockopt                            0x70   sp+0x8   UNKNOWN  
+l2cap_sock_setsockopt                          0x70   sp+0xc   0x1      
+l2cap_sock_setsockopt                          0x70   sp+0x14  0x4      
+l2cap_sock_setsockopt                          0x70   sp+0x18  0x1      
+l2cap_sock_setsockopt                          0x70   sp+0x14  0x4      
+l2cap_sock_setsockopt                          0x70   sp+0x14  0x4      
+l2cap_sock_setsockopt                          0x70   sp+0x10  0x2      
+l2cap_sock_setsockopt_old                      0x60   sp+0x8   0xc      
+l2cap_sock_setsockopt_old                      0x60   sp+0x4   0x4      
+force_bredr_smp_write                          0x50   sp+0x4   UNKNOWN  
+sco_sock_setsockopt                            0x60   sp+0x10  0x2      
+sco_sock_setsockopt                            0x60   sp+0xc   0x4      
+sco_sock_setsockopt                            0x60   sp+0xc   0x4      
+quirk_simultaneous_discovery_write             0x50   sp+0x4   UNKNOWN  
+quirk_strict_duplicate_filter_write            0x50   sp+0x4   UNKNOWN  
+force_no_mitm_write                            0x70   sp+0x8   UNKNOWN  
+force_static_address_write                     0x50   sp+0x4   UNKNOWN  
+rfcomm_sock_setsockopt                         0x60   sp+0x10  0x2      
+rfcomm_sock_setsockopt                         0x60   sp+0xc   0x4      
+__rfcomm_create_dev                            0x70   sp+0x10  arg2     
+__rfcomm_release_dev                           0x80   sp+0x10  arg2     
+rfcomm_get_dev_info                            0x60   sp+0x10  arg2     
+hidp_sock_ioctl                                0x250  sp+0x20  0x94     
+hidp_sock_ioctl                                0x250  sp+0x0   0x10     
+hidp_sock_ioctl                                0x250  sp+0xb8  0xa8     
+hidp_sock_ioctl                                0x250  sp+0x10  0xc      
+hidp_sock_compat_ioctl                         0x1b0  sp+0xa8  0xa0     
+pppol2tp_ioctl                                 0x80   sp+0x0   0x48     
+pppol2tp_setsockopt                            0x40   sp+0x4   0x4      
+wext_handle_ioctl                              0x60   sp+0x8   0x20     
+ioctl_standard_iw_point                        0xa0   sp+0x10  UNKNOWN  
+compat_wext_handle_ioctl                       0x60   sp+0x8   0x20     
+tipc_ioctl                                     0xa0   sp+0x0   0x4c     
+tipc_setsockopt                                0x70   sp+0x4   0x4      
+tipc_setsockopt                                0x70   sp+0x8   0x10     
+rfkill_fop_write                               0x40   sp+0x0   UNKNOWN  
+ieee802154_sock_ioctl                          0x70   sp+0x10  0x28     
+nfc_llcp_setsockopt                            0x40   sp+0x4   UNKNOWN  
+nfc_llcp_setsockopt                            0x40   sp+0x4   UNKNOWN  
+vsock_stream_setsockopt                        0x70   sp+0x10  0x8      
+vsock_stream_setsockopt                        0x70   sp+0x10  0x8      
+vsock_stream_setsockopt                        0x70   sp+0x10  0x8      
+vsock_stream_setsockopt                        0x70   sp+0x0   0x10     
+xsk_setsockopt                                 0x60   sp+0x8   0x4      
+xsk_setsockopt                                 0x60   sp+0x8   0x4      
+xsk_setsockopt                                 0x60   sp+0x8   UNKNOWN  
+
+===== 绐楀彛 [0x2e0, 0x380] 鍛戒腑 =====
+* 0x300 size=0x200  restore_fpsimd_context                   (restore_fpsimd_context(0x250) -> restore_sigframe(0x60) -> __arm64_sys_rt_sigreturn(0x50))
+* 0x300 size=0x0  bpf_prog_get_info_by_fd                  (bpf_prog_get_info_by_fd(0x190) -> __do_sys_bpf(0x1b0) -> __arm64_sys_bpf(0x10))
+* 0x300 size=0x38  __copy_msghdr_from_user                  (__copy_msghdr_from_user(0x80) -> __sys_sendmsg(0x200) -> __arm64_compat_sys_socketcall(0x80))
+* 0x300 size=0x0  ____sys_sendmsg                          (____sys_sendmsg(0x90) -> __sys_sendmsg(0x200) -> __arm64_compat_sys_socketcall(0x80))
+* 0x310 size=0x200  restore_sve_fpsimd_context               (restore_sve_fpsimd_context(0x270) -> restore_sigframe(0x60) -> __arm64_sys_rt_sigreturn(0x50))
+* 0x318 size=0xc  cmsghdr_from_user_compat_to_kern         (cmsghdr_from_user_compat_to_kern(0x90) -> ____sys_sendmsg(0x90) -> __sys_sendmsg(0x200) -> __arm64_sys_sendmsg(0x10))
+* 0x320 size=0x10  restore_sve_fpsimd_context               (restore_sve_fpsimd_context(0x270) -> restore_sigframe(0x60) -> __arm64_sys_rt_sigreturn(0x50))
+* 0x350 size=0x38  __copy_msghdr_from_user                  (__copy_msghdr_from_user(0x80) -> __sys_sendmmsg(0x2c0) -> __arm64_sys_sendmmsg(0x10))
+* 0x350 size=0x0  ____sys_sendmsg                          (____sys_sendmsg(0x90) -> __sys_sendmmsg(0x2c0) -> __arm64_sys_sendmmsg(0x10))
+* 0x358 size=0x0  prctl_set_package                        (prctl_set_package(0x130) -> __do_sys_prctl(0x230) -> __arm64_sys_prctl(0x10))
+
+===== 閭昏繎绐楀彛 (0x250-0x2e0 / 0x380-0x430) =====
+~ 0x280 size=0x38  __copy_msghdr_from_user                 
+~ 0x290 size=0x38  __copy_msghdr_from_user                 
+~ 0x290 size=0x0  ____sys_sendmsg                         
+~ 0x290 size=0x1c  sendmsg_copy_msghdr                     
+~ 0x2a0 size=0x38  __copy_msghdr_from_user                 
+~ 0x2a8 size=0x80  compat_ptrace_request                   
+~ 0x2b0 size=0x38  __copy_msghdr_from_user                 
+~ 0x2b0 size=0x1c  __sys_sendmmsg                          
+~ 0x388 size=0xc  cmsghdr_from_user_compat_to_kern        
+~ 0x39c size=0x0  compat_gpr_set                          
+~ 0x3c0 size=0x38  __copy_msghdr_from_user                 
+~ 0x3c0 size=0x0  ____sys_sendmsg                         
+~ 0x3c8 size=0x8  ptrace_request                          
+~ 0x3d8 size=0xc  cmsghdr_from_user_compat_to_kern        
+~ 0x408 size=0x10  ptrace_request                          
+[+] json -> C:\Users\QingJ\Desktop\root\work\qemu\cands6.json

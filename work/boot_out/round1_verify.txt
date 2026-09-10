@@ -1,0 +1,56 @@
+PD2238 GhostLock round-1 verification
+generated: 2026-09-09 16:24:28
+kallsyms: 174277 rows, _text=0xffffffc008000000
+banner: Linux version 5.10.246-android12-9-g9c94fefc2317-dirty (build-user@build-host) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), LLD 12.0.5 (/bui
+boot.img ota==boot_out: True
+kernel==Image: True
+CVE tree: {'present': True, 'path': 'E:\\.shuaji\\root\\src\\CyberMeowfia-main\\IonStack\\CVE-2026-43499', 'has_exploit_src': True, 'has_offset_h': True, 'has_poc': True, 'has_tokay_target': True, 'git_dir': False, 'zip': True}
+missing schema symbols: ['CONFIGFS_READ_ITER', 'CONFIGFS_BIN_WRITE_ITER', 'SELINUX_ENFORCING']
+ashmem_misc.fops match: {'ptr': '0xffffffc00a595010', 'expected_ashmem_fops': '0xffffffc00a595010', 'match': True, 'ASHMEM_MISC_FOPS_OFF': '0x2c851e8'}
+configfs bin fops: OrderedDict([('table', '0xffffffc00a44c0e0'), ('read', '0xffffffc009a3b078'), ('write', '0xffffffc009a3b668'), ('read_iter', '0x0'), ('write_iter', '0x0'), ('read_matches_configfs_read_bin_file', False), ('write_matches_configfs_write_bin_file', False), ('read_minus_func', '0x1315a0c'), ('write_minus_func', '0x1315d84')])
+init_task comm scan: {'0x790': 'swapper', '0x848': '', '0x570': '', '0x738': 'ÿÿÿÿÿÿÿÿ', '0x740': '', '0x750': 'ÿÿÿÿÿÿÿÿ'}
+init_uts_ns ascii: ....Linux............................................................(none).....
+
+MACRO                            TOKAY(GKI6.12)     DRAFT              KALLSYMS           RECOMMENDED        DRAFT_OK
+KIMAGE_TEXT_BASE                 0xffffffc008000000 0xffffffc008000000 None               0xffffffc008000000 True
+PSELECT_WAITER_WORD_SHIFT        0x1                -0x2               None               None               None
+ASHMEM_MISC_FOPS_OFF             0x217cb80          0x2c851e8          0x2c851d8          0x2c851e8          True
+ASHMEM_FOPS_OFF                  0x1280b50          0x2595010          0x2595010          0x2595010          True
+ASHMEM_IOCTL_OFF                 0xc38d28           0x1254c78          0x1254c78          0x1254c78          True
+ASHMEM_COMPAT_IOCTL_OFF          0xc39660           0x1254c78          0x1255328          0x1255328          False
+ASHMEM_MMAP_OFF                  0xc396b8           0x1255388          0x1255388          0x1255388          True
+ASHMEM_OPEN_OFF                  0xc398d8           0x12555cc          0x12555cc          0x12555cc          True
+ASHMEM_RELEASE_OFF               0xc39960           0x1255688          0x1255688          0x1255688          True
+ASHMEM_SHOW_FDINFO_OFF           0xc39a80           0x12557e8          0x12557e8          0x12557e8          True
+CONFIGFS_READ_ITER_OFF           0x464400           CONFIGFS_READ_BIN_ None               0x72566c           None
+CONFIGFS_BIN_WRITE_ITER_OFF      0x464930           CONFIGFS_WRITE_BIN None               0x7258e4           None
+CONFIGFS_READ_BIN_OFF            None               0x1a3b078          0x72566c           0x72566c           False
+CONFIGFS_WRITE_BIN_OFF           None               0x1a3b668          0x7258e4           0x7258e4           False
+COPY_SPLICE_READ_OFF             0x3e5fd4           0x656e9c           0x656e9c           0x656e9c           True
+NOOP_LLSEEK_OFF                  0x3986dc           0x5d921c           0x5d921c           0x5d921c           True
+INIT_TASK_OFF                    0x201f640          0x2aec240          0x2aec240          0x2aec240          True
+INIT_UTS_NS_OFF                  0x21a2cb0          0x2aebfe8          0x2aebfe8          0x2aebfe8          True
+EMPTY_ZERO_PAGE_OFF              0x2201000          0x2d2d000          0x2d2d000          0x2d2d000          True
+ROOT_TASK_GROUP_OFF              0x2208580          0x2d33100          0x2d33100          0x2d33100          True
+SELINUX_BLOB_SIZES_OFF           0x15ceb88          0x25d86d0          0x25d86d0          0x25d86d0          True
+SELINUX_ENFORCING_OFF            0x225a420          0x2a94d6c          None               None               None
+SECURITY_HOOK_HEADS_OFF          0x15ce478          0x25d8038          0x25d8038          0x25d8038          True
+KMALLOC_CACHES_OFF               0x15cdfb8          0x25d7b70          0x25d7b70          0x25d7b70          True
+ANON_PIPE_BUF_OPS_OFF            0x1109910          0x2440ba8          0x2440ba8          0x2440ba8          True
+SLIDE_NFULNL_LOGGER_OFF          0x20129d0          0x2ae1618          0x2ae16f0          0x2ae16f0          False
+SLIDE_LOGGERS_0_1_OFF            0x2012920          0x2ae1618          0x2ae1618          0x2ae1620          False
+SLIDE_SYSCTL_BOOTID_OFF          0x227b498          0x2ee910d          0x2ee910d          0x2ee910d          True
+SYSCTL_BOOTID_OFF                None               0x2ee910d          0x2ee910d          0x2ee910d          True
+FOPS_SPLICE_READ_OFF             0xc8               0xc0               None               0xc8               False
+FOPS_SHOW_FDINFO_OFF             0xe0               0xe0               None               0xe0               True
+WAITER_WAKE_STATE_OFF            0x40               -0x1               None               None               None
+WAITER_PRIO_OFF                  0x44               0x40               None               0x40               True
+WAITER_WW_CTX_OFF                0x50               -0x1               None               None               None
+TASK_COMM_OFF                    0x848              0x790              None               None               None
+TASK_CRED_OFF                    0x838              0x780              None               None               None
+CFG_PAGE_OFF                     0x10               0x10               None               0x10               True
+CFG_BIN_BUFFER_OFF               0x58               0x58               None               None               None
+
+draft pass: ['ASHMEM_MISC_FOPS_OFF', 'ASHMEM_FOPS_OFF', 'ASHMEM_IOCTL_OFF', 'ASHMEM_MMAP_OFF', 'ASHMEM_OPEN_OFF', 'ASHMEM_RELEASE_OFF', 'ASHMEM_SHOW_FDINFO_OFF', 'COPY_SPLICE_READ_OFF', 'NOOP_LLSEEK_OFF', 'INIT_TASK_OFF', 'INIT_UTS_NS_OFF', 'EMPTY_ZERO_PAGE_OFF', 'ROOT_TASK_GROUP_OFF', 'SELINUX_BLOB_SIZES_OFF', 'SECURITY_HOOK_HEADS_OFF', 'KMALLOC_CACHES_OFF', 'ANON_PIPE_BUF_OPS_OFF', 'SLIDE_SYSCTL_BOOTID_OFF', 'SYSCTL_BOOTID_OFF']
+draft fail: ['ASHMEM_COMPAT_IOCTL_OFF', 'CONFIGFS_READ_BIN_OFF', 'CONFIGFS_WRITE_BIN_OFF', 'SLIDE_NFULNL_LOGGER_OFF', 'SLIDE_LOGGERS_0_1_OFF']
+overall: {'boot_unpack_ok': True, 'cve_source_ok': True, 'symbol_extract_ok': True, 'critical_missing': [], 'ashmem_fops_ptr_ok': True, 'pixel_numeric_offsets_must_not_be_copied': True, 'struct_offsets_from_pixel_unverified': True}

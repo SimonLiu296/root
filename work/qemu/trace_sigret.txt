@@ -1,0 +1,14 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===CONNECTED===
+reak *0xffffffc0080a6f98
+continue
+echo HIT_RT_SIGRETURN_ENTRY
+printf "SP=%016lx PC=%016lx\n", $sp, $pc
+inish
+echo AFTER_RT_SIGRETURN
+printf "RETVAL=%016lx\n", $x0
+detach
+quit

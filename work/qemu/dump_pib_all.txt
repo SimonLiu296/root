@@ -1,0 +1,28 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+set $init = 0xffffffc00aaec240
+set $node0 = $init + 0x4c8
+set $cur = $node0
+set $i = 0
+while $i < 400
+  set $t = $cur - 0x4c8
+  set $pid = *(int*)($t + 0x5c8)
+  set $pib = *(unsigned long*)($t + 0x898)
+  printf "[%03d] pid=%-5d tgid=%-5d pib=%016lx comm=", $i, $pid, *(int*)($t+0x5cc), $pib
+    x/s $t+0x790
+  set $nonzero = ($pib != 0)
+  if $nonzero
+    printf "   >>> NONZERO PIB <<<\n"
+  end
+  set $cur = *(unsigned long*)$cur
+  set $i = $i + 1
+  if $cur == $node0
+    set $i = 9999
+  end
+end
+printf "LIST-END iter=%d\n", $i
+detach
+quit

@@ -1,0 +1,18 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+echo ---ALL-THREADS-PC---\n
+info threads
+echo ---THREAD-1---\n
+thread 1
+x/i $pc
+echo ---THREAD-2---\n
+thread 2
+x/i $pc
+echo ---REGS-T2---\n
+info registers x0 x1 x2 x30 sp pc
+echo ---CHECK-BADFRAME-SIGSEGV---\n
+detach
+quit

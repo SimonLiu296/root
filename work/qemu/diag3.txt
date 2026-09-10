@@ -1,0 +1,14 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+echo ---DUMP-AROUND-PIB-0xffffffc00b513b10---\n
+x/40gx 0xffffffc00b513a80
+echo ---SEARCH-SCRATCH-INITMARKER-AROUND---\n
+find 0xffffffc00b510000, 0xffffffc00b514000, 0xffffffc00aaec240
+echo ---FIND2---\n
+find 0xffffffc00b510000, 0xffffffc00b514000, 0xffffffc00ae90108
+echo ---DONE---\n
+detach
+quit

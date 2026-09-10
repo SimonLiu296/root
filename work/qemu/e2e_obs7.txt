@@ -1,0 +1,10 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+x/4i 0xffffffc008000000
+x/4i 0xffffffc0085d546c
+x/4bx 0xffffffc008000000
+detach
+quit

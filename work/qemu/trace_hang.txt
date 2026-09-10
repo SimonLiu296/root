@@ -1,0 +1,19 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===CONNECTED===
+info threads
+echo ---THREAD-1-STACK---
+thread 1
+bt
+echo ---THREAD-1-REGS---
+info registers
+echo ---THREAD-2-STACK---
+thread 2
+bt
+echo ---THREAD-2-REGS---  
+info registers
+echo ===DONE===
+detach
+quit

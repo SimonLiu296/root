@@ -1,0 +1,15 @@
+set pagination off
+set confirm off
+target remote :1234
+set architecture aarch64
+echo ===GDB-CONNECTED===
+thread 1
+echo ---REGS---\n
+info registers x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 sp pc
+echo ---CURRENT-WALK-STATE---\n
+printf "x20=%016lx *x20=%016lx\n", $x20, *(unsigned long*)$x20
+printf "x19=%016lx\n", $x19
+echo ---DISASM-AROUND-PC---\n
+x/6i $pc-16
+detach
+quit
